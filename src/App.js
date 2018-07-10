@@ -9,7 +9,11 @@ import TurtleTab from './TurtleTab/TurtleTab';
 import ProjectMatch from './ProjectMatch/ProjectMatch';
 import ErrorPage from './ErrorPage/ErrorPage';
 
-class App extends React.Component  {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
   render() {
     return (
       <div className="App">
