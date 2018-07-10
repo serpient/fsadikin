@@ -1,0 +1,141 @@
+@import '../_variables.scss';
+
+.landing-container {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.landing-shapes {
+    height: 100vh;
+}
+/*
+==========================
+TEXT
+==========================
+*/
+.landing-text {
+    position: absolute;
+    top: 500px;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    left: calc(50% - 275px);
+    color: $dark-grey;
+}
+.landing-name {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.landing-description {
+    font-size: 18px;
+    width: 550px;
+}
+/*
+==========================
+BUTTON
+==========================
+*/
+.btn-navi {
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    left: calc(50% - 85px);
+    color: white;
+    background-color: $theme-blue;
+    padding: 10px 50px;
+    top: 650px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/*
+==========================
+COLORS
+==========================
+*/
+.pink {
+    background-color: $pastel-pink;
+    margin-top: 120px;
+    margin-left: -5vw;
+}
+.yellow {
+    background-color: $pastel-yellow;
+    right: 0px;
+    top: 600px;
+}
+.blue {
+    background-color: $pastel-blue;
+    top: 680px;
+    left: 25vw;
+}
+.green {
+    background-color: $pastel-green;
+    right: 10vw;
+    top: 150px;
+}
+
+.purple {
+    right: 30vw;
+    top: 400px;
+}
+/*
+==========================
+SHAPES
+==========================
+*/
+.diamond-large, .diamond, .circle-small, .circle-big, .triangle {
+    position: absolute;
+}
+.diamond, .diamond-large {
+    transform: rotate(0deg);
+    animation-timing-function: linear;
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+.diamond {
+    width: 400px;
+    height: 400px;
+}
+
+.diamond-large {
+    width: 475px;
+    height: 475px;
+}
+
+.circle-small {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.circle-big {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+}
+
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 200px solid transparent;
+    border-top: 200px solid $pastel-purple;
+    // animation-timing-function: linear;
+    // animation-direction: reverse;
+    // animation-name: rotate;
+    // animation-duration: 20s;
+    // animation-iteration-count: infinite;
+}
+/*
+==========================
+ANIMATION
+==========================
+*/
+@keyframes rotate {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
