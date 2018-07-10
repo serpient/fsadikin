@@ -103,7 +103,9 @@ SHAPES
 
 .diamond {
   width: 400px;
-  height: 400px; }
+  height: 400px; 
+  animation-direction: reverse;
+}
 
 .diamond-large {
   width: 475px;
