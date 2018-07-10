@@ -1,0 +1,60 @@
+/*
+==========================
+COLORS
+==========================
+*/
+/*
+==========================
+FONTS
+==========================
+*/
+/*
+==========================
+GRID
+==========================
+*/
+.header-container {
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "l . . . p b";
+  height: 60px;
+  margin: 0 auto; }
+
+.header-spacer {
+  grid-column: 2 / 5; }
+
+.header-border {
+  border-top: 1px solid #f7f7f7; }
+
+.projects {
+  grid-template-areas: p; }
+
+.about {
+  grid-template-areas: b; }
+
+/*
+==========================
+LINKS
+==========================
+*/
+.logo, .navigation {
+  color: #95989a;
+  font-size: 14px;
+  margin-top: 25px;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.logo {
+  margin-left: 0px;
+  letter-spacing: 2px;
+  font-weight: 600; }
+
+.logo:hover, .navigation:hover {
+  color: #757575; }
+
+.navigation {
+  font-size: 12px; }
+
+.projects, .about {
+  text-align: right; }
