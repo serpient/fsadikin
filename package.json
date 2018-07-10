@@ -2,7 +2,7 @@
   "name": "fs-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://serpient.github.io/",
+  "homepage": "https://serpient.github.io",
   "dependencies": {
     "ajv": "^6.5.2",
     "gh-pages": "^1.2.0",
