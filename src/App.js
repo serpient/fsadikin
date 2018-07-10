@@ -1,0 +1,34 @@
+import * as React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.css';
+import LandingPage from './LandingPage/LandingPage';
+import Projects from './Projects/Projects';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import TurtleTab from './TurtleTab/TurtleTab';
+import ProjectMatch from './ProjectMatch/ProjectMatch';
+import ErrorPage from './ErrorPage/ErrorPage';
+
+class App extends React.Component  {
+  render() {
+    return (
+      <div className="App">
+        <Router>
+          <React.Fragment>
+            <Header />
+            <Switch>
+              <Route exact={true} path="/" component={LandingPage} />
+              <Route exact={true} path="/projects" component={Projects} />
+              <Route exact={true} path="/projects/project-match" component={ProjectMatch} />
+              <Route exact={true} path="/projects/turtle-tab" component={TurtleTab} />
+              <Route exact={true} path="*" component={ErrorPage} />
+            </Switch>
+            <Footer />
+          </React.Fragment>
+        </Router>
+      </div>
+    );
+  }
+}
+
+export default App;
