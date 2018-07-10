@@ -98,23 +98,30 @@ SHAPES
   transform: rotate(0deg);
   animation-timing-function: linear;
   animation-name: rotate;
-  animation-duration: 30s;
+  animation-duration: 60s;
   animation-iteration-count: infinite; }
 
 .diamond {
   width: 400px;
-  height: 400px; 
-  animation-direction: reverse;
-}
+  height: 400px; }
 
 .diamond-large {
   width: 475px;
-  height: 475px; }
+  height: 475px;
+  animation-direction: reverse;
+  animation-delay: 3s; }
+
+.circle-small, .circle-big {
+  animation-timing-function: linear;
+  animation-name: pulse;
+  animation-duration: 7s;
+  animation-iteration-count: infinite; }
 
 .circle-small {
   width: 200px;
   height: 200px;
-  border-radius: 50%; }
+  border-radius: 50%;
+  animation-delay: 3s; }
 
 .circle-big {
   width: 275px;
@@ -137,3 +144,11 @@ ANIMATION
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.8); }
+  100% {
+    transform: scale(1); } }
