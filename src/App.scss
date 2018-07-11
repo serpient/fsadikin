@@ -13,8 +13,9 @@ body {
   height: 100vh;
   margin: 0px;
   padding: 0px;
+  overflow: scroll;
   overflow-x: hidden;
-  overflow-y: hidden;
+  // overflow-y: hidden;
   font-family: $font;
 }
 
