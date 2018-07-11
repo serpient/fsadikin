@@ -17,12 +17,12 @@ GRID
   max-width: 1080px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-areas: "l . . . p b";
+  grid-template-areas: "l l l . p b";
   height: 60px;
   margin: 0 auto; }
 
 .header-spacer {
-  grid-column: 2 / 5; }
+  grid-column: 4 / 5; }
 
 .header-border {
   border-top: 1px solid #f7f7f7; }
@@ -46,6 +46,7 @@ LINKS
   text-transform: uppercase; }
 
 .logo {
+  grid-column: 1 / 4;
   margin-left: 0px;
   letter-spacing: 2px;
   font-weight: 600; }
