@@ -42,7 +42,7 @@ PROJECT
     grid-template-areas: "d d d i";
     grid-template-columns: repeat(4, 1fr);
     text-align: left;
-    grid-gap: 60px;
+    grid-gap: 20px;
 }
 /*
 ==========================
@@ -82,8 +82,8 @@ IMAGE
 */
 .project-coverPhoto {
     grid-area: i;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
 }
 /*
@@ -108,9 +108,9 @@ TIMELINE
 ==========================
 */ 
 .project-timeline-dot {
-    position: absolute;
+    position: relative;
     margin-left: -45px;
-    margin-top: -10px;
+    margin-bottom: -20px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -126,9 +126,7 @@ TIMELINE
 .project-timeline-text {
     display: inline-block;
     text-align: right;
-    margin-left: -30px;
     width: 120px;
-    position: absolute;
-    margin-left: -180px;
-    margin-top: -6px
+    margin-left: -160px;
+    color: $grey;
 }
