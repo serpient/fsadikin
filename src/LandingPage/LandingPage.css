@@ -24,7 +24,7 @@ TEXT
 */
 .landing-text {
   position: absolute;
-  top: 500px;
+  top: 55vh;
   margin: 0 auto;
   padding: 0 auto;
   text-align: center;
@@ -45,16 +45,13 @@ BUTTON
 ==========================
 */
 .btn-navi {
-  position: absolute;
-  margin: 0 auto;
-  padding: 0 auto;
   text-align: center;
-  left: calc(50% - 85px);
   color: white;
   background-color: #3681d1;
+  top: 30px;
   padding: 10px 50px;
-  top: 650px;
   border-radius: 20px;
+  position: relative;
   text-decoration: none; }
 
 /*
