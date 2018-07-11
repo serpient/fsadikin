@@ -124,6 +124,8 @@ TIMELINE
   border: 8px solid #8fb6df; }
 
 .project-timeline-text {
+  position: relative;
+  top: 15px;
   display: inline-block;
   text-align: right;
   width: 120px;
