@@ -12,7 +12,7 @@ const projectMatch = {
 }
 
 const turtleTab = {
-    name: 'TurtleTab',
+    name: 'TurtlesTab',
     date: 'Nov. 2017',
     tech: ['React', 'Redux'],
     description:    `TurtleTab is a Google Chrome Extension Built with React. It creates a new homepage which features current 
