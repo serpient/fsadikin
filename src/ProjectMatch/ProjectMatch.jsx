@@ -3,9 +3,10 @@ import './ProjectMatch.css';
 import { Link } from 'react-router-dom';
 import { projects } from '../utils/projects';
 import { skillCreator } from '../utils/skillCreator';
+import { projectFeatureCreator } from '../utils/projectFeatureCreator';
 
 var projectMatchData = projects[0];
-var feature = [
+var features = [
     {
         title: 'Get Matched',
         description: `Looking for a project to build? Filter through our projects by categories and tags to 
@@ -39,24 +40,6 @@ var feature = [
     }
 ]
 
-const projectFeatureCreator = () => {
-    return feature.map(feature => {
-        return (
-            <React.Fragment>
-                <hr className="hline" />
-                <div className="project-page-feature">
-                    <div className="project-page-feature-title">{feature.title}</div>
-                    <div className="project-page-feature-description">{feature.description}</div>
-                    <img
-                        className="project-image"
-                        src={feature.image}
-                        alt="project-feature"
-                    />
-                </div>
-            </React.Fragment>
-        );
-    })
-}
 class ProjectMatch extends React.Component {
     render() {
         return (
@@ -71,7 +54,7 @@ class ProjectMatch extends React.Component {
                 <div className="project-page-tech">{skillCreator(projectMatchData.tech)}</div>
                 <Link to={projectMatchData.liveLink} className="main-navi-btn">Live Link</Link>
                 <Link to={projectMatchData.githubLink} className="sub-navi-btn">Github Link</Link>
-                {projectFeatureCreator()}
+                {projectFeatureCreator(features)}
             </div>
         )
     }
