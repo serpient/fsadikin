@@ -1,0 +1,73 @@
+/*
+==========================
+COLORS
+==========================
+*/
+/*
+==========================
+FONTS
+==========================
+*/
+/*
+==========================
+GRID
+==========================
+*/
+.project-match-container {
+  margin: 0 auto;
+  color: #757575; }
+
+/*
+==========================
+IMAGE
+==========================
+*/
+.project-image {
+  width: 850px;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto; }
+
+/*
+==========================
+MAIN INFO
+==========================
+*/
+.project-page-title {
+  font-size: 40px;
+  text-align: center; }
+
+.project-page-description {
+  width: 500px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto; }
+
+.project-page-tech {
+  width: 500px;
+  margin: 0 auto; }
+
+/*
+==========================
+FEATURE
+==========================
+*/
+.hline {
+  width: 1080px;
+  border-top: 1px solid #d1d1d1; }
+
+.project-page-feature {
+  width: 100%;
+  background: linear-gradient(white, #f7f7f7);
+  padding: 50px; }
+
+.project-page-feature-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center; }
+
+.project-page-feature-description {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px; }
