@@ -22,11 +22,11 @@ GRID
     border-top: 1px solid $pale-grey;
 }
 
-.projects {
+.nav-projects {
     grid-template-areas: p;
 }
 
-.about {
+.nav-about {
     grid-template-areas: b;
 }
 /*
@@ -56,6 +56,6 @@ LINKS
     font-size: 12px;
 }
 
-.projects, .about {
+.nav-projects, .nav-about {
     text-align: right;
 }

@@ -27,10 +27,10 @@ GRID
 .header-border {
   border-top: 1px solid #f7f7f7; }
 
-.projects {
+.nav-projects {
   grid-template-areas: p; }
 
-.about {
+.nav-about {
   grid-template-areas: b; }
 
 /*
@@ -56,5 +56,5 @@ LINKS
 .navigation {
   font-size: 12px; }
 
-.projects, .about {
+.nav-projects, .nav-about {
   text-align: right; }
