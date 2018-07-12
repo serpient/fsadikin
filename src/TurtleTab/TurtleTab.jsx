@@ -17,6 +17,11 @@ var features = [
     }
 ]
 
+const removeRelativeLink = (string) => {
+    var index = string.search("http");
+    return string.substring(index);
+}
+
 class TurtleTab extends React.Component {
     render() {
         return (
@@ -30,8 +35,8 @@ class TurtleTab extends React.Component {
             <div className="project-page-description">{turtleTabData.description}</div>
             <div className="project-page-tech">{skillCreator(turtleTabData.tech)}</div>
             <div className="project-page-btns">
-                <a href={turtleTabData.liveLink} target="_blank" className="main-navi-btn">Live Link</a>
-                <a href={turtleTabData.githubLink} target="_blank" className="main-navi-btn">Github Link</a>
+                <a href={removeRelativeLink(turtleTabData.liveLink)} rel="external" target="_blank" className="main-navi-btn">Live Link</a>
+                <a href={removeRelativeLink(turtleTabData.githubLink)} rel="external" target="_blank" className="main-navi-btn">Github Link</a>
             </div>
             {projectFeatureCreator(features)}
         </div>
