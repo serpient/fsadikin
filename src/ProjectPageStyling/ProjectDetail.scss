@@ -91,7 +91,7 @@ BUTTON
     padding-bottom: 20px;
     text-align: center;
 }
-.main-navi-btn, .sub-navi-btn {
+.main-navi-btn {
     display: inline-block;
     width: 150px;
     color: white;
@@ -101,4 +101,8 @@ BUTTON
     border-radius: 25px;
     text-align: center;
     text-decoration: none;
+    box-shadow: 5px 5px 10px $light-grey;
+}
+.main-navi-btn:hover {
+    background-color: $hover-blue;
 }

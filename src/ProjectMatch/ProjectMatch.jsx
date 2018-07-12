@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './ProjectMatch.css';
+import '../ProjectPageStyling/ProjectDetail.css';
 import { Link } from 'react-router-dom';
 import { projects } from '../utils/projects';
 import { skillCreator } from '../utils/skillCreator';
@@ -54,7 +54,7 @@ class ProjectMatch extends React.Component {
                 <div className="project-page-tech">{skillCreator(projectMatchData.tech)}</div>
                 <div className="project-page-btns">
                     <Link to={projectMatchData.liveLink} className="main-navi-btn">Live Link</Link>
-                    <Link to={projectMatchData.githubLink} className="sub-navi-btn">Github Link</Link>
+                    <Link to={projectMatchData.githubLink} className="main-navi-btn">Github Link</Link>
                 </div>
                 {projectFeatureCreator(features)}
             </div>
