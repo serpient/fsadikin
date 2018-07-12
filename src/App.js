@@ -16,7 +16,6 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route exact={true} path={'/'} component={LandingPage} />
-            <Route exact={true} path="/fsadikin" component={LandingPage} />
             <Route exact={true} path={'/projects'} component={Projects} />
             <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
             <Route exact={true} path="/projects/turtlesTab" component={TurtleTab} />
