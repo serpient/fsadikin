@@ -52,7 +52,11 @@ BUTTON
   padding: 10px 50px;
   border-radius: 20px;
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #d1d1d1; }
+
+.btn-navi:hover {
+  background-color: #2673c5; }
 
 /*
 ==========================

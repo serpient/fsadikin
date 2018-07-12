@@ -47,6 +47,10 @@ BUTTON
     border-radius: 20px;
     position: relative;
     text-decoration: none;
+    box-shadow: 5px 5px 10px $light-grey;
+}
+.btn-navi:hover {
+    background-color: $hover-blue;
 }
 /*
 ==========================
