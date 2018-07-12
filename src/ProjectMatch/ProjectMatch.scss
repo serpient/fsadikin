@@ -14,11 +14,16 @@ IMAGE
 ==========================
 */
 .project-image {
-    width: 850px;
+    width: 900px;
     height: auto;
     object-fit: cover;
     margin: 0 auto;
+    margin-top: 40px;
     box-shadow: 0px 15px 15px $light-grey;
+    display: block;
+}
+.project-image-padding {
+    margin-top: 80px;
 }
 /*
 ==========================
@@ -28,9 +33,11 @@ MAIN INFO
 .project-page-title {
     font-size: 40px;
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
 }
 .project-page-description {
-    width: 500px;
+    width: 560px;
     text-align: center;
     font-size: 16px;
     margin: 0 auto;
@@ -38,7 +45,11 @@ MAIN INFO
 .project-page-tech {
     width: 500px;
     margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
 }
+
 /*
 ==========================
 FEATURE
@@ -47,10 +58,10 @@ FEATURE
 .hline {
     width: 1080px;
     border-top: 1px solid $light-grey;
+    margin-top: -2px;
 }
 
 .project-page-feature {
-    width: 100%;
     background: linear-gradient(white, $pale-grey);
     padding: 50px;
 }
@@ -66,4 +77,28 @@ FEATURE
     margin: 0 auto;
     text-align: center;
     font-size: 16px;
+}
+
+/*
+==========================
+BUTTON
+==========================
+*/
+.project-page-btns {
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.main-navi-btn, .sub-navi-btn {
+    display: inline-block;
+    width: 150px;
+    color: white;
+    background-color: $theme-blue;
+    padding: 6px 15px;
+    margin: 10px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
 }

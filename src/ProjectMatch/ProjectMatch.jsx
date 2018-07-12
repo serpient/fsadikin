@@ -9,8 +9,8 @@ var projectMatchData = projects[0];
 var features = [
     {
         title: 'Get Matched',
-        description: `Looking for a project to build? Filter through our projects by categories and tags to 
-                        find a team you want to join! Already got an idea? Post a project to 
+        description: `Looking for a project to build? Filter through our projects by categories and tags to
+                        find a team you want to join! Already got an idea? Post a project to
                         find programmers and designers to help build the project.`,
         image: require('../assets/project-match-project.png')
     },
@@ -45,15 +45,17 @@ class ProjectMatch extends React.Component {
         return (
             <div className="project-match-container">
                 <img
-                    className="project-image"
+                    className="project-image project-image-padding"
                     src={require('../assets/project-match-main.png')}
                     alt="main-project"
                 />
                 <div className="project-page-title">{projectMatchData.name}</div>
                 <div className="project-page-description">{projectMatchData.description}</div>
                 <div className="project-page-tech">{skillCreator(projectMatchData.tech)}</div>
-                <Link to={projectMatchData.liveLink} className="main-navi-btn">Live Link</Link>
-                <Link to={projectMatchData.githubLink} className="sub-navi-btn">Github Link</Link>
+                <div className="project-page-btns">
+                    <Link to={projectMatchData.liveLink} className="main-navi-btn">Live Link</Link>
+                    <Link to={projectMatchData.githubLink} className="sub-navi-btn">Github Link</Link>
+                </div>
                 {projectFeatureCreator(features)}
             </div>
         )
