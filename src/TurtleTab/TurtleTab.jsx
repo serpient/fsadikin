@@ -1,6 +1,5 @@
 import * as React from 'react';
 import '../ProjectPageStyling/ProjectDetail.css';
-import { Link } from 'react-router-dom';
 import { projects } from '../utils/projects';
 import { skillCreator } from '../utils/skillCreator';
 import { projectFeatureCreator } from '../utils/projectFeatureCreator';
@@ -31,8 +30,8 @@ class TurtleTab extends React.Component {
             <div className="project-page-description">{turtleTabData.description}</div>
             <div className="project-page-tech">{skillCreator(turtleTabData.tech)}</div>
             <div className="project-page-btns">
-                <Link to={turtleTabData.liveLink} className="main-navi-btn">Live Link</Link>
-                <Link to={turtleTabData.githubLink} className="main-navi-btn">Github Link</Link>
+                <a href={turtleTabData.liveLink} target="_blank" className="main-navi-btn">Live Link</a>
+                <a href={turtleTabData.githubLink} target="_blank" className="main-navi-btn">Github Link</a>
             </div>
             {projectFeatureCreator(features)}
         </div>
