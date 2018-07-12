@@ -6,9 +6,9 @@ import { skillCreator } from '../utils/skillCreator';
 class Projects extends React.Component {
     
     projectCreator = () => {
-        return projects.map(project => {
+        return projects.map((project, index) => {
             return (
-                <React.Fragment>
+                <React.Fragment key={"project_" + index}>
                     <div className="project-timeline-dot" />
                     <div className="project-timeline-text">{project.date}</div>
                     <div className="project">

@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 export const projectFeatureCreator = (feature) => {
-    return feature.map(feature => {
+    return feature.map((feature, index) => {
         return (
-            <React.Fragment>
+            <React.Fragment key={"feature" + index}>
                 <hr className="hline" />
                 <div className="project-page-feature">
                     {feature.title ? <div className="project-page-feature-title">{feature.title}</div> : null }
