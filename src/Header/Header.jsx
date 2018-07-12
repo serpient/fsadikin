@@ -5,7 +5,7 @@ import './Header.css';
 class Header extends React.Component {
     render() {
         return (
-            <React.Fragment>
+            <div className="header-container-all">
                 <div className="header-container">
                     <Link to="/" className="logo">Francesca Sadikin</Link>
                     <div className="header-spacer" />
@@ -13,7 +13,7 @@ class Header extends React.Component {
                     <Link to="/about" className="navigation nav-about">About</Link>
                 </div>
                 <hr className="header-border" />
-            </React.Fragment>
+            </div>
         )
     }
 }

@@ -13,18 +13,28 @@ FONTS
 GRID
 ==========================
 */
+.header-container-all {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.939); }
+
 .header-container {
   max-width: 1080px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas: "l l l . p b";
-  height: 60px;
+  height: 30px;
   margin: 0 auto; }
 
 .header-spacer {
   grid-column: 4 / 5; }
 
 .header-border {
+  position: relative;
+  top: 10px;
   border-top: 1px solid #f7f7f7; }
 
 .nav-projects {
@@ -40,8 +50,8 @@ LINKS
 */
 .logo, .navigation {
   color: #95989a;
-  font-size: 14px;
-  margin-top: 25px;
+  font-size: 12px;
+  margin-top: 15px;
   text-decoration: none;
   text-transform: uppercase; }
 
@@ -55,7 +65,7 @@ LINKS
   color: #757575; }
 
 .navigation {
-  font-size: 12px; }
+  font-size: 10px; }
 
 .nav-projects, .nav-about {
   text-align: right; }
