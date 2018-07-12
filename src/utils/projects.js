@@ -46,7 +46,7 @@ const projectMatch = {
 
 const turtleTab = {
     name: 'TurtlesTab',
-    date: 'Nov. 2017',
+    date: 'Oct. 2017',
     tech: ['React', 'Redux'],
     description:    `TurtleTab is a Google Chrome Extension Built with React. It creates a new homepage which features current 
                     Weather, Todo and Notes functionality. It also accesses your browser data to see Bookmarks, 
