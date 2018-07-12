@@ -2,7 +2,7 @@
   "name": "fs-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://serpient.github.io",
+  "homepage": "https://serpient.github.io/fsadikin",
   "dependencies": {
     "ajv": "^6.5.2",
     "gh-pages": "^1.2.0",
@@ -11,6 +11,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
+    "react-interactive": "^0.8.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
