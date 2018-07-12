@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.dab302ee.css",
-  "main.css.map": "static/css/main.dab302ee.css.map",
-  "main.js": "static/js/main.04c5836a.js",
-  "main.js.map": "static/js/main.04c5836a.js.map",
+  "main.css": "static/css/main.084145ee.css",
+  "main.css.map": "static/css/main.084145ee.css.map",
+  "main.js": "static/js/main.ec5b9966.js",
+  "main.js.map": "static/js/main.ec5b9966.js.map",
   "static\\media\\404-03.png": "static/media/404-03.0d9c03b7.png",
   "static\\media\\project-match-main.png": "static/media/project-match-main.307312c4.png",
   "static\\media\\project-match-project-portal.png": "static/media/project-match-project-portal.d93a17f6.png",
@@ -11,5 +11,9 @@
   "static\\media\\project-match-revision-Portal.png": "static/media/project-match-revision-Portal.45bfc3a4.png",
   "static\\media\\project-match-user-profile.png": "static/media/project-match-user-profile.d4eef54f.png",
   "static\\media\\project-match.png": "static/media/project-match.ebab4ea5.png",
+  "static\\media\\turtleTab-feature1.png": "static/media/turtleTab-feature1.ac6ca761.png",
+  "static\\media\\turtleTab-feature2.png": "static/media/turtleTab-feature2.f966a768.png",
+  "static\\media\\turtleTab-main.png": "static/media/turtleTab-main.fa3f0b94.png",
+  "static\\media\\turtleTab-search.png": "static/media/turtleTab-search.c2f16f1d.png",
   "static\\media\\turtleTab.png": "static/media/turtleTab.7d59b0da.png"
 }
