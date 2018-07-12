@@ -10,22 +10,18 @@ import ProjectMatch from './ProjectMatch/ProjectMatch';
 import ErrorPage from './ErrorPage/ErrorPage';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
     return (
         <div className="App">
-            <Header />
-            <Switch>
-              <Route exact={true} path={'/'} component={LandingPage} />
-              <Route exact={true} path={'/projects'} component={Projects} />
-              <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
-              <Route exact={true} path="/projects/turtleTab" component={TurtleTab} />
-              <Route path="/*" component={ErrorPage} />
-            </Switch>
-            <Footer />
+          <Header />
+          <Switch>
+            <Route exact={true} path={'/'} component={LandingPage} />
+            <Route exact={true} path={'/projects'} component={Projects} />
+            <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
+            <Route exact={true} path="/projects/turtleTab" component={TurtleTab} />
+            <Route path="/*" component={ErrorPage} />
+          </Switch>
+          <Footer />
         </div>
     );
   }
