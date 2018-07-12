@@ -6,8 +6,8 @@ export const projectFeatureCreator = (feature) => {
             <React.Fragment>
                 <hr className="hline" />
                 <div className="project-page-feature">
-                    <div className="project-page-feature-title">{feature.title}</div>
-                    <div className="project-page-feature-description">{feature.description}</div>
+                    {feature.title ? <div className="project-page-feature-title">{feature.title}</div> : null }
+                    {feature.description ? <div className="project-page-feature-description">{feature.description}</div> : null}
                     <img
                         className="project-image"
                         src={feature.image}
