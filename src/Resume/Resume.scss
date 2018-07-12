@@ -1,0 +1,11 @@
+@import '../_variables.scss';
+
+.resume-container {
+    background-color: $black-grey;
+}
+
+.resume-pdf {
+    display: block;
+    margin: 0 auto;
+    padding: 100px;
+}
