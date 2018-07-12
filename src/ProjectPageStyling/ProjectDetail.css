@@ -109,3 +109,14 @@ BUTTON
 
 .main-navi-btn:hover {
   background-color: #2673c5; }
+
+/*
+==========================
+MEDIA QUERY
+==========================
+*/
+@media all and (max-width: 1079px) and (min-width: 0px) {
+  .project-image {
+    width: 80vw; }
+  .project-page-description {
+    width: 450px; } }
