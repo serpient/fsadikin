@@ -8,7 +8,7 @@ import Footer from './Footer/Footer';
 import TurtleTab from './TurtleTab/TurtleTab';
 import ProjectMatch from './ProjectMatch/ProjectMatch';
 import ErrorPage from './ErrorPage/ErrorPage';
-
+import Resume from './Resume/Resume';
 class App extends React.Component {
   render() {
     return (
@@ -20,6 +20,7 @@ class App extends React.Component {
             <Route exact={true} path={'/projects'} component={Projects} />
             <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
             <Route exact={true} path="/projects/turtlesTab" component={TurtleTab} />
+            <Route exact={true} path="/resume" component={Resume} />
             <Route path="/*" component={ErrorPage} />
           </Switch>
           <Footer />

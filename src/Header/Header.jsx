@@ -10,7 +10,7 @@ class Header extends React.Component {
                     <Link to="/" className="logo">Francesca Sadikin</Link>
                     <div className="header-spacer" />
                     <Link to="/projects" className="navigation nav-projects">Projects</Link>
-                    <Link to="/about" className="navigation nav-about">About</Link>
+                    <Link to="/resume" className="navigation nav-about">Resume</Link>
                 </div>
                 <hr className="header-border" />
             </div>
