@@ -167,6 +167,16 @@ TIMELINE
 MEDIA QUERY
 ==========================
 */
-@media all and (max-width: 1079px) and (min-width: 0px) {
-
+@media all and (max-width: 1079px) {
+    .project {
+        max-width: 450px;
+        grid-template-areas: "i i i i" "d d d d";
+    }
+    .projects {
+        margin-left: 20%;
+    }
+    .project-coverPhoto {
+        width: 100%;
+        height: auto;
+    }
 }
