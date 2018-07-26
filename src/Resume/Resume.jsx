@@ -6,7 +6,7 @@ class Resume extends React.Component {
     render() {
         return (
             <div className="resume-container">
-                <img className="resume-pdf" alt="resume" src={require('../assets/180625_Francesca Sadikin_Resume.jpg')}/>
+                <img className="resume-pdf" alt="resume" src={require('../assets/180726_Francesca Sadikin_Resume.jpg')}/>
             </div>
         )
     }

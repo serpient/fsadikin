@@ -3,11 +3,11 @@ import '../ProjectPageStyling/ProjectDetail.css';
 import { projects } from '../utils/projects';
 import { individualProjectPageCreator } from '../utils/individualProjectPageCreator';
 
-var projectMatchData = projects[1];
-class ProjectMatch extends React.Component {
+var ChinguData = projects[0];
+class Chingu extends React.Component {
     render() {
-        return (individualProjectPageCreator(projectMatchData, "project-match-main.png"))
+        return (individualProjectPageCreator(ChinguData, "chingu-landingImage.JPG"))
     }
 }
 
-export default ProjectMatch;
+export default Chingu;

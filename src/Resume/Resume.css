@@ -14,4 +14,7 @@ FONTS
 .resume-pdf {
   display: block;
   margin: 0 auto;
-  padding: 100px; }
+  padding-top: 100px;
+  padding: 100px;
+  width: 1080px;
+  height: auto; }
