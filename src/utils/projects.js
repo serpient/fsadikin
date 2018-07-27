@@ -22,7 +22,7 @@ const Chingu = {
                         to handle new applications and extract data. The new Chingu site has formal
                         forms from which data can be extracted to efficiently approve users, and sort them
                         into teams on the admin side.`,
-            image: require('../assets/chingu-registration.JPG')
+            image: require('../assets/chingu-voyage-application-2.png')
         },
         {
             title: 'Voyage Portal',
