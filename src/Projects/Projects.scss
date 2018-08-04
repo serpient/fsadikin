@@ -142,11 +142,12 @@ MEDIA QUERY
 */
 @media all and (max-width: 1079px) {
     .project {
-        max-width: 450px;
+        max-width: 65%;
         grid-template-areas: "i i i i" "d d d d";
     }
     .projects {
         margin-left: 20%;
+        width: 100%;
     }
     .project-coverPhoto {
         width: 100%;
