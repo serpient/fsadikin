@@ -2,6 +2,7 @@
 
 .resume-container {
     background-color: $black-grey;
+    min-height: 100vh;
 }
 
 .resume-pdf {
@@ -11,4 +12,11 @@
     padding: 100px;
     width: 1080px;
     height: auto;
+}
+@media all and (max-width: 1079px) {
+    .resume-pdf {
+        width: 90%;
+        padding: 0px;
+        padding-top: 20%;
+    }
 }

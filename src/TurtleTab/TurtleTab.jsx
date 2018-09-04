@@ -3,7 +3,7 @@ import '../ProjectPageStyling/ProjectDetail.css';
 import { projects } from '../utils/projects';
 import { individualProjectPageCreator } from '../utils/individualProjectPageCreator';
 
-var turtleTabData = projects[1];
+var turtleTabData = projects[2];
 
 class TurtleTab extends React.Component {
     render() {
