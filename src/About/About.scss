@@ -49,6 +49,21 @@ USER INFO
 .location {
     font-size: 14px;
 }
+/*
+==========================
+USER LINKS
+==========================
+*/
+.user-links-section {
+    margin-top: 10px;
+}
+
+.user-link-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin: 8px;
+}
 
 /*
 ==========================
@@ -64,7 +79,7 @@ DESCRIPTION
 }
 
 .bio-link {
-    color: $attention-red;
+    color: $light-blue;
     display: inline-block;
 }
 
