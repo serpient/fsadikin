@@ -72,3 +72,15 @@ LINKS
 .nav-projects, .nav-about {
     text-align: right;
 }
+
+/*
+==========================
+MEDIA QUERY
+==========================
+*/
+
+@media all and (max-width: 1079px) and (min-width: 0px) {
+    .header-container {
+        padding: 0px 20px;
+    }
+}
