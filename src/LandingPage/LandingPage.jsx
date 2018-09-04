@@ -16,7 +16,6 @@ class LandingPage extends React.Component {
         )
     }
     render() {
-        console.log(this.props.about)
         return (
             <div className="landing-container">
                 <div className="landing-shapes">
