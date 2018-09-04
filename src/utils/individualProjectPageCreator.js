@@ -20,7 +20,7 @@ export const individualProjectPageCreator = (projectData, mainImage) => {
             <div className="project-page-work">{
                 projectData.workDone.map((role, index) => {
                     return (
-                    <div className="role-container">
+                    <div key={index} className="role-container">
                         <div className="role" key={index}>
                             <div className="role-dot"/> 
                             {role}
