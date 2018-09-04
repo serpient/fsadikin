@@ -14,19 +14,20 @@ import Chingu from './Chingu/Chingu';
 class App extends React.Component {
   render() {
     return (
-        <div className="App">
-          <Header />
-          <Switch>
-            <Route exact={true} path={'/'} component={LandingPage} />
-            <Route exact={true} path={'/projects'} component={Projects} />
-            <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
-            <Route exact={true} path="/projects/turtlesTab" component={TurtleTab} />
-            <Route exact={true} path="/projects/chingu" component={Chingu} />
-            <Route exact={true} path="/resume" component={Resume} />
-            <Route path="/*" component={ErrorPage} />
-          </Switch>
-          <Footer />
-        </div>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact={true} path={'/'} component={LandingPage} />
+          <Route exact={true} path={'/about'} render={() => <LandingPage about={true} />} />
+          <Route exact={true} path={'/projects'} component={Projects} />
+          <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
+          <Route exact={true} path="/projects/turtlesTab" component={TurtleTab} />
+          <Route exact={true} path="/projects/chingu" component={Chingu} />
+          <Route exact={true} path="/resume" component={Resume} />
+          <Route path="/*" component={ErrorPage} />
+        </Switch>
+        <Footer />
+      </div>
     );
   }
 }
