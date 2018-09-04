@@ -14,16 +14,14 @@ GRID
     background-color: rgba(255, 255, 255, 0.939);
 }
 .header-container {
+    width: 100%;
     max-width: 1080px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: "l l l . p b";
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas: "logo logo logo . about project resume";
     height: 30px;
     margin: 0 auto; 
-}
-
-.header-spacer {
-    grid-column: 4 / 5;
+    justify-items: center;
 }
 
 .header-border {
@@ -33,11 +31,15 @@ GRID
 }
 
 .nav-projects {
-    grid-template-areas: p;
+    grid-area: project;
 }
 
 .nav-about {
-    grid-template-areas: b;
+    grid-area: about;
+}
+
+.nav-resume {
+    grid-area: resume;
 }
 /*
 ==========================
@@ -53,8 +55,8 @@ LINKS
 }
 
 .logo {
-    grid-column: 1 / 4;
-    margin-left: 0px;
+    justify-self: start;
+    grid-area: logo;
     letter-spacing: 2px;
     font-weight: 600;
 }

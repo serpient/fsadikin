@@ -8,9 +8,9 @@ class Header extends React.Component {
             <div className="header-container-all">
                 <div className="header-container">
                     <Link to="/" className="logo">Francesca Sadikin</Link>
-                    <div className="header-spacer" />
+                    <Link to="/about" className="navigation nav-about">About</Link>
                     <Link to="/projects" className="navigation nav-projects">Projects</Link>
-                    <Link to="/resume" className="navigation nav-about">Resume</Link>
+                    <Link to="/resume" className="navigation nav-resume">Resume</Link>
                 </div>
                 <hr className="header-border" />
             </div>
