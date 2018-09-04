@@ -6,7 +6,7 @@ class About extends React.Component {
         return (
             <div className="about-page-container">
                 <div className="user-info-section">
-                    <img className="profile" alt="profile" src={require('../assets/profile.jpg')} />
+                    <img className="profile-img" alt="profile" src={require('../assets/profile.jpg')} />
                     <div className="name">Francesca Sadikin</div>
                     <div className="location">Based in Los Angeles</div>
                 </div>
@@ -18,6 +18,7 @@ class About extends React.Component {
                     my job because I was not creatively or intellectually challenged.
 
                     <br />
+                    <br />
 
                     Once I found programming and web development, I realized that this is where my passion is.
                     After honing my skills by making my dream projects and contributing to open source projects,
@@ -26,9 +27,10 @@ class About extends React.Component {
                     reach new heights.
 
                     <br />
+                    <br />
 
                     If you would like to chat with me, please feel free to email me at
-                    FrancescaSadikin@gmail.com
+                    <div className="bio-link">  FrancescaSadikin@gmail.com</div>
 
                 </div>
             </div>
