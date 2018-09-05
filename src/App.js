@@ -12,9 +12,25 @@ import Resume from './Resume/Resume';
 import Chingu from './Chingu/Chingu';
 
 class App extends React.Component {
+  scrollWithArrows = (e) => {
+    let keyCode = e.key;
+    let interval = 1000;
+    switch (keyCode) {
+      case 38:
+        document.body.scrollTop -= interval;
+        document.documentElement.scrollTop -= interval;
+        break;
+      case 39:
+        document.body.scrollTop += interval;
+        document.documentElement.scrollTop += interval;
+        break;
+      default:
+        return;
+    }
+  }
   render() {
     return (
-      <div className="App">
+      <div onKeyPress={e => this.scrollWithArrows(e)} className="App">
         <Header />
         <Switch>
           <Route exact={true} path={'/'} component={LandingPage} />
