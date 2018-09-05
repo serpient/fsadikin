@@ -8,9 +8,9 @@ const Chingu = {
                     and a process for admins to approve applicants, sort them into teams and check on the "health"
                     of each cohort and voyage as a whole. `,
     workDone: [
-        'Acted as designer and front-end web developer in a remote team of 8',
+        'Acted as designer and front-end web developer in a remote engineering team of 8',
         'Designed the user and admin portions of the platform.',
-        'Coded the user-facing side with React and Apollo (which grabs API data from GraphQL)'
+        'Worked as part of the front-end team to code the user-facing side with React and Apollo (which grabs API data from GraphQL)'
     ],
     liveLink: 'https://fb.chingu.io/',
     githubLink: 'https://github.com/luoto/chingu-frontend/tree/development',
@@ -30,30 +30,43 @@ const Chingu = {
             image: require('../assets/chingu-voyage.png')
         },
         {
+            title: 'Newsfeed',
+            description: `Once accepted as a user and part of a team, users can get the most updated news from Chingu and their teams from the newsfeed.
+                        The Team newsfeed will feature a team card which describes the team projects, teammates, and
+                        links to team related tools such as team standup forms, public project page, and team workspace page`,
+            image: require('../assets/Chingu-Example NewsFeed.png')
+        },
+        // {
+        //     title: 'Weekly Checkin',
+        //     description: `Admin use this data to spot problematic teams and team members, at which point, 
+        //                 admin can then intervene and try to get the team back on track.`,
+        //     image: require('../assets/chingu-checkin.png')
+        // },
+        {
+            title: 'Project Page',
+            description: `Teams can create a project page for their specific project. Upon completion, the page will be submitted
+                        to the admins and displayed in the Project Showcase section on the site where all team projects are visible. 
+                        Description section is markdown supported.`,
+            image: require('../assets/chingu-project-page.png')
+        },
+        {
             title: 'User Profile',
-            description: `Users have an overview of all current and past voyages, and submit weekly-checkins
-                        for their current teams.`,
+            description: `Users have an overview of all of their current and past voyages, as well as update their bios`,
             image: require('../assets/chingu-user-profile.png')
         },
-        {
-            title: 'Weekly Checkin',
-            description: `Admin use this data to spot problematic teams and team members, at which point, 
-                        admin can then intervene and try to get the team back on track.`,
-            image: require('../assets/chingu-checkin.png')
-        },
-        {
-            title: 'Landing Page Re-Design',
-            description: `Redesign the flow of information on the landing page, so that users have
-                          a clear vision of what Chingu is, who the targeted audience is, and what
-                          Chingu can provide for users.`,
-            image: require('../assets/chingu-home.png')
-        }
+        // {
+        //     title: 'Landing Page Re-Design',
+        //     description: `Redesign the flow of information on the landing page, so that users have
+        //                   a clear vision of what Chingu is, who the targeted audience is, and what
+        //                   Chingu can provide for users.`,
+        //     image: require('../assets/chingu-home.png')
+        // }
     ]
 }
 
 const projectMatch = {
     name: 'Project Match',
-    date: 'Feb. 2018 - Current',
+    date: 'Feb. 2018 - July. 2018',
     tech: ['MongoDB', 'Express', 'React', 'NodeJS', 'TypeScript', 'Redux'],
     description: `Project Match is a web app created with the MERN stack with typescript integration. 
                     It's primary function is to help programmers and designers match with projects they would be interested in. 
