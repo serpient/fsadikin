@@ -10,10 +10,10 @@ class About extends React.Component {
                     <div className="name">Francesca Sadikin</div>
                     <div className="location">Based in Los Angeles</div>
                     <div className="user-links-section">
-                        <a className="user-link" href="https://github.com/serpient" target="_blank">
+                        <a className="user-link" rel="noopener noreferrer" href="https://github.com/serpient" target="_blank">
                             <img className="user-link-img" alt="github" src={require('../assets/github.png')} />
                         </a>
-                        <a className="user-link" href="https://www.linkedin.com/in/fsadikin/" target="_blank">
+                        <a className="user-link" rel="noopener noreferrer" href="https://www.linkedin.com/in/fsadikin/" target="_blank">
                             <img className="user-link-img" alt="github" src={require('../assets/linkedin.png')} />
                         </a>
                     </div>
