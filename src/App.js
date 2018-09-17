@@ -18,7 +18,8 @@ class App extends React.Component {
   closeDropdown = () => {
     this.setState({ dropdownVisibility: false })
   }
-  toggleDropdown = () => {
+  toggleDropdown = (e) => {
+    e.stopPropagation();
     this.setState({ dropdownVisibility: !this.state.dropdownVisibility })
   }
   scrollWithArrows = (e) => {
@@ -39,8 +40,8 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div onClick={this.closeDropdown} onKeyPress={e => this.scrollWithArrows(e)} className="App">
-        <Header dropdown={this.state.dropdownVisibility}/>
+      <div onClick={() => this.closeDropdown()} onKeyPress={e => this.scrollWithArrows(e)} className="App">
+        <Header dropdownVisibility={this.state.dropdownVisibility} toggleDropdown={this.toggleDropdown}/>
         <Switch>
           <Route exact={true} path={'/'} component={LandingPage} />
           <Route exact={true} path={'/about'} render={() => <LandingPage about={true} />} />
