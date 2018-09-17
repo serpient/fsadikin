@@ -13,6 +13,11 @@ GRID
     right: 0px;
     background-color: rgba(255, 255, 255, 0.939);
 }
+/*
+==========================
+MAIN HEADER
+==========================
+*/
 .header-container {
     width: 100%;
     max-width: 1080px;
@@ -72,7 +77,57 @@ LINKS
 .nav-projects, .nav-about {
     text-align: right;
 }
-
+/*
+==========================
+MOBILE HEADER
+==========================
+*/
+.header-container--mobile {
+    height: 30px;
+    width: 90%;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "logo logo menu";
+    height: 30px;
+    margin: 0 auto; 
+    align-items: center;
+    padding-top: 16px;
+    .logo {
+        margin: 0;
+        justify-self: start;
+        grid-area: logo;
+    }
+    .menu-icon {
+        justify-self: end;
+        grid-area: menu;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+    .menu {
+        position: relative;
+        z-index: 20;
+        justify-self: end;
+        grid-column: 2 / -1;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        width: 50%;
+        min-width: 100px;
+        vertical-align: middle;
+        background-color: white;
+        box-shadow: $box-shadow;
+        padding-bottom: 10px;
+    }
+    .navigation {
+        text-align: center;
+        padding: 10px;
+        &:hover {
+            background-color: $lightest-blue;
+        }
+    }
+    display: none;
+}
 /*
 ==========================
 MEDIA QUERY
@@ -82,5 +137,14 @@ MEDIA QUERY
 @media all and (max-width: 1079px) and (min-width: 0px) {
     .header-container {
         padding: 0px 20px;
+    }
+}
+
+@media all and (max-width: 500px) and (min-width: 0px) {
+    .header-container--mobile {
+        display: grid;
+    }
+    .header-container {
+        display: none;
     }
 }
