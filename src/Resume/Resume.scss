@@ -5,18 +5,14 @@
     min-height: 100vh;
 }
 
-.resume-pdf {
+.resume-object {
+    width: 100vw;
+    min-height: calc(100vh - 50px);
     display: block;
     margin: 0 auto;
-    padding-top: 100px;
-    padding: 100px;
-    width: 1080px;
+    padding-top: 50px;
     height: auto;
 }
-@media all and (max-width: 1079px) {
-    .resume-pdf {
-        width: 90%;
-        padding: 0px;
-        padding-top: 20%;
-    }
+.resume-iframe {
+    width: 90%;
 }

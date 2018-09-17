@@ -1,13 +1,15 @@
 import * as React from 'react';
 import './Resume.css';
-// import { Link } from 'react-router-dom';
 
 class Resume extends React.Component {
     render() {
         return (
-            <div className="resume-container">
-                <img className="resume-pdf" alt="resume" src={require('../assets/180914_Francesca Sadikin_Resume.jpg')}/>
-            </div>
+            <object className="resume-object" data={require('../assets/180914_Francesca Sadikin_Resume.pdf')} type="application/pdf">
+                <iframe className="resume-iframe" data={require('../assets/180914_Francesca Sadikin_Resume.pdf')}>
+                    This browser does not support PDFs. Please download the PDF to view it:
+                        <a href="https://drive.google.com/file/d/1R7iZWnmW7NXnlAHxMNBuQFt7584qowP3/view?usp=sharing">Download PDF</a>
+                </iframe>
+            </object>
         )
     }
 }
