@@ -82,10 +82,11 @@ FEATURE
 }
 
 .project-page-feature-description {
-    width: 400px;
+    width: 550px;
     margin: 0 auto;
     text-align: center;
     font-size: 16px;
+    margin-top: 10px;
 }
 
 /*
@@ -167,7 +168,7 @@ MEDIA QUERY
     }
 }
 
-@media all and (max-width: 600px) and (min-width: 0px) {
+@media (max-width: 650px) and (min-width: 0px) {
     .project-image {
         width: 90vw;
     }
@@ -176,7 +177,7 @@ MEDIA QUERY
         font-weight: 600;
     }
     .project-page-description {
-        width: 90vw;
+        width: 80vw;
         font-size: 14px;
         text-align: left;
     }
