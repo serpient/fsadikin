@@ -12,6 +12,15 @@ import Resume from './Resume/Resume';
 import Chingu from './Chingu/Chingu';
 
 class App extends React.Component {
+  state = {
+    dropdownVisibility: false
+  }
+  closeDropdown = () => {
+    this.setState({ dropdownVisibility: false })
+  }
+  toggleDropdown = () => {
+    this.setState({ dropdownVisibility: !this.state.dropdownVisibility })
+  }
   scrollWithArrows = (e) => {
     let keyCode = e.key;
     let interval = 1000;
@@ -30,8 +39,8 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div onKeyPress={e => this.scrollWithArrows(e)} className="App">
-        <Header />
+      <div onClick={this.closeDropdown} onKeyPress={e => this.scrollWithArrows(e)} className="App">
+        <Header dropdown={this.state.dropdownVisibility}/>
         <Switch>
           <Route exact={true} path={'/'} component={LandingPage} />
           <Route exact={true} path={'/about'} render={() => <LandingPage about={true} />} />
