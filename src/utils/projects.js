@@ -2,14 +2,12 @@ const Chingu = {
     name: 'Chingu',
     date: 'July. 2018 - Current',
     tech: ['React', 'Apollo'],
-    description: `Chingu is building a global collaboration platform and coding-cohort generator. 
-                    The platform supports programmers and the admin team who manages the Chingu
-                    community by providing a formal user application process for available Build To Learn Voyages
-                    and a process for admins to approve applicants, sort them into teams and check on the "health"
-                    of each cohort and voyage as a whole. `,
+    description: `Chingu is aims to build a coding platform where programmers elevate their skills by building a project in 8 weeks 
+                with a remote team. The platform helps users by providing a formal user application process, access to collab tools 
+                such as a team newsfeed and project pages for the teams finished project. `,
     workDone: [
         'Acted as designer and front-end web developer in a remote engineering team of 8',
-        'Designed the user and admin portions of the platform.',
+        'Work as sole designer to re-brand the Chingu platform on the admin and user side.',
         'Worked as part of the front-end team to code the user-facing side with React and Apollo (which grabs API data from GraphQL)'
     ],
     liveLink: 'https://fb.chingu.io/',
@@ -51,8 +49,14 @@ const Chingu = {
         },
         {
             title: 'User Profile',
-            description: `Users have an overview of all of their current and past voyages, as well as update their bios`,
+            description: `Users have an overview of all of their current and past projects. Users can also update their bios using the editable text fields.`,
             image: require('../assets/chingu-user-profile.png')
+        },
+        {
+            title: 'Ticketbox',
+            description: `The persistent ticketbox modal helps users easily log issues and suggestions for the site, as well as log any team
+                        conflict issues they want the admin's help on.`,
+            image: require('../assets/ticketbox-01.png')
         },
         // {
         //     title: 'Landing Page Re-Design',
