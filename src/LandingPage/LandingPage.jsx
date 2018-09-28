@@ -6,31 +6,31 @@ import About from '../About/About'
 class LandingPage extends React.Component {
     landingText = () => {
         return (
-            <div className="landing-text">
+            <section className="landing-text">
                 <div className="landing-name">Francesca Sadikin</div>
                 <div className="landing-description">
                     Architect turned Web Developer looking for the opportunity to build awesome projects with an amazing team.
                     </div>
                 <Link to="/projects" className="btn-navi">Projects</Link>
-            </div>
+            </section>
         )
     }
     render() {
         return (
-            <div className="landing-container">
-                <div className="landing-shapes">
+            <main className="landing-container">
+                <section className="landing-shapes">
                     <div className="diamond-large pink" />
                     <div className="diamond yellow" />
                     <div className="circle-small blue" />
                     <div className="circle-big green" />
                     <div className="triangle purple" />
-                </div>
+                </section>
                 {
                     this.props.about
                         ? <About />
                         : this.landingText()
                 }
-            </div>
+            </main>
         )
     }
 }

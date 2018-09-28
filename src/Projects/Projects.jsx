@@ -26,12 +26,12 @@ class Projects extends React.Component {
     }
     render() {
         return (
-            <div className="projects-container">
+            <main className="projects-container">
                 <div className="projects-container-title">Projects</div>
-                <div className="projects projects-border">
+                <section className="projects projects-border">
                     {this.projectCreator()}
-                </div>
-            </div>
+                </section>
+            </main>
         )
     }
 }

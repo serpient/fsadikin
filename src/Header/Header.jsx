@@ -5,33 +5,33 @@ import './Header.css';
 class Header extends React.Component {
     render() {
         return (
-            <div className="header-container-all">
-                <div className="header-container">
+            <header className="header-container-all">
+                <nav className="header-container">
                     <Link to="/" className="logo">Francesca Sadikin</Link>
                     <Link to="/about" className="navigation nav-about">About</Link>
                     <Link to="/projects" className="navigation nav-projects">Projects</Link>
                     <Link to="/resume" className="navigation nav-resume">Resume</Link>
-                </div>
-                <div className="header-container--mobile">
+                </nav>
+                <nav className="header-container--mobile">
                     <Link to="/" className="logo">Francesca Sadikin</Link>
                     <img onClick={(e) => this.props.toggleDropdown(e)} className="menu-icon" alt="menu" src={require('../assets/menu.png')} />
                     {
                         this.props.dropdownVisibility && <MobileHeaderDropdown />
                     }
-                </div>
+                </nav>
                 <hr className="header-border" />
-            </div>
+            </header>
         )
     }
 }
 
 const MobileHeaderDropdown = () => {
     return (
-        <div className="menu">
+        <section className="menu">
             <Link to="/about" className="navigation">About</Link>
             <Link to="/projects" className="navigation">Projects</Link>
             <Link to="/resume" className="navigation">Resume</Link>
-        </div>
+        </section>
     )
 }
 

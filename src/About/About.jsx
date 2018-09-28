@@ -4,8 +4,8 @@ import './About.css';
 class About extends React.Component {
     render() {
         return (
-            <div className="about-page-container">
-                <div className="user-info-section">
+            <main className="about-page-container">
+                <section className="user-info-section">
                     <img className="profile-img" alt="profile" src={require('../assets/profile.jpg')} />
                     <div className="name">Francesca Sadikin</div>
                     <div className="location">Based in Los Angeles</div>
@@ -17,9 +17,9 @@ class About extends React.Component {
                             <img className="user-link-img" alt="github" src={require('../assets/linkedin.png')} />
                         </a>
                     </div>
-                </div>
+                </section>
 
-                <div className="description">
+                <section className="description">
                     After graduating from UC Berkeley with a B.A. in Architecture, I became a professional
                     Architectural Designer at a boutique firm in Los Angeles working on multi-million dollar
                     projects for well-known brands. But after 3+ years of working, I realized I was bored at
@@ -40,8 +40,8 @@ class About extends React.Component {
                     If you would like to chat with me, please feel free to email me at
                     <div className="bio-link">  FrancescaSadikin@gmail.com</div>
 
-                </div>
-            </div>
+                </section>
+            </main>
         )
     }
 }
