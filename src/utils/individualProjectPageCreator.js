@@ -9,7 +9,7 @@ const removeRelativeLink = (string) => {
 
 export const individualProjectPageCreator = (projectData, mainImage) => {
     return (
-        <div className="individual-project-container">
+        <section className="individual-project-container">
             <img
                 className="project-image project-image-padding"
                 src={require('../assets/' + mainImage)}
@@ -35,6 +35,6 @@ export const individualProjectPageCreator = (projectData, mainImage) => {
                 <a href={removeRelativeLink(projectData.githubLink)} rel="external" target="_blank" className="main-navi-btn">Github Link</a>
             </div>
             {projectFeatureCreator(projectData.features)}
-        </div>
+        </section>
     )
 }
