@@ -1,17 +1,50 @@
+const Chingu_Admin = {
+    name: 'Chingu-Admin',
+    date: 'July. 2018 - Current',
+    tech: ['React', 'Apollo'],
+    description: `Chingu Admin platform provides internal tools for admins to facilitate the Chingu cohorts. 
+                 The platform allows users to create/manage cohorts, review applicants and sort them into teams 
+                 of similarily matched applicants, manage team conflict issues, and check on the "health" of an ongoing
+                 cohort and corresponding teams. 
+                `,
+    workDone: [
+        'Work in a remote engineering team of 8',
+        'Work as sole UI/UX Designer',
+        'Work as part of the front-end team with React and Apollo (which grabs API data from GraphQL)'
+    ],
+    liveLink: 'https://admin.chingu.io/',
+    githubLink: 'https://github.com/the-vampiire/chingu-admin',
+    coverPhoto: require('../assets/chingu.png'),
+    features: [
+        {
+            title: 'Voyage Portal',
+            description: `Admin can create and manage voyages`,
+            image: require('../assets/chingu-voyage.png')
+        },
+        {
+            title: 'Applicant Review & Team Sort',
+            description: `Team sort algorithsm matches users into best-match teams based off key categories and the user's 
+                        desired techstack. The admin then reviews the teams, adjust as necessary, and then officially forms them as teams. 
+                        `,
+            image: require('../assets/chingu-voyage.png')
+        }
+    ]
+}
+
 const Chingu = {
     name: 'Chingu',
     date: 'July. 2018 - Current',
     tech: ['React', 'Apollo'],
-    description: `Chingu is aims to build a coding platform where programmers elevate their skills by building a project in 8 weeks 
+    description: `Chingu aims to build a coding platform where programmers elevate their skills by building a project in 8 weeks 
                 with a remote team. The platform helps users by providing a formal user application process, access to collab tools 
                 such as a team newsfeed and project pages for the teams finished project. `,
     workDone: [
-        'Acted as designer and front-end web developer in a remote engineering team of 8',
-        'Work as sole designer to re-brand the Chingu platform on the admin and user side.',
-        'Worked as part of the front-end team to code the user-facing side with React and Apollo (which grabs API data from GraphQL)'
+        'Work in a remote engineering team of 8',
+        'Work as sole UI/UX Designer to re-brand the Chingu platform on the user side.',
+        'Work as part of the front-end team to code the user-facing side with React and Apollo (which grabs API data from GraphQL)'
     ],
-    liveLink: 'https://fb.chingu.io/',
-    githubLink: 'https://github.com/luoto/chingu-frontend/tree/development',
+    liveLink: 'https://beta.chingu.io/',
+    githubLink: 'https://github.com/chingu-x/chingu-frontend/tree/master',
     coverPhoto: require('../assets/chingu.png'),
     features: [
         {
@@ -110,13 +143,13 @@ const projectMatch = {
             description: `Update your user profile with a bio, techstack and projects so that others 
                             can learn more about you as a potential teammate.`,
             image: require('../assets/project-match-user-profile.png')
-        },
-        {
-            title: 'Project Showcase',
-            description: `Once your project is complete, enter it into the Project Showcase where 
-                            users can rate the project based off its design, usability, and code quality. `,
-            image: require('../assets/project-match-project-showcase.png')
         }
+        // {
+        //     title: 'Project Showcase',
+        //     description: `Once your project is complete, enter it into the Project Showcase where 
+        //                     users can rate the project based off its design, usability, and code quality. `,
+        //     image: require('../assets/project-match-project-showcase.png')
+        // }
     ]
 }
 
@@ -148,4 +181,4 @@ const turtleTab = {
     ]
 }
 
-export const projects = [Chingu, projectMatch, turtleTab];
+export const projects = [turtleTab, projectMatch, Chingu, Chingu_Admin];
