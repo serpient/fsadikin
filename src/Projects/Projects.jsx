@@ -6,7 +6,8 @@ import { skillCreator } from '../utils/skillCreator';
 class Projects extends React.Component {
     
     projectCreator = () => {
-        return projects.map((project, index) => {
+        const reversedProjects = projects.reverse();
+        return reversedProjects.map((project, index) => {
             return (
                 <React.Fragment key={"project_" + index}>
                     <div className="project-timeline-dot" />
