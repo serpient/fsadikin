@@ -3,7 +3,7 @@ import '../ProjectPageStyling/ProjectDetail.css';
 import { projects } from '../utils/projects';
 import { individualProjectPageCreator } from '../utils/individualProjectPageCreator';
 
-var ChinguData = projects[0];
+var ChinguData = projects[2];
 class Chingu extends React.Component {
     render() {
         return (individualProjectPageCreator(ChinguData, "chingu-landingImage.JPG"))
