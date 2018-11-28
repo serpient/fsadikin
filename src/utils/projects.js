@@ -34,14 +34,19 @@ const Chingu_Admin = {
 const Chingu = {
     name: 'Chingu',
     date: 'July. 2018 - Current',
-    tech: ['React', 'Apollo'],
-    description: `Chingu aims to build a coding platform where programmers elevate their skills by building a project in 8 weeks 
-                with a remote team. The platform helps users by providing a formal user application process, access to collab tools 
-                such as a team newsfeed and project pages for the teams finished project. `,
+    tech: ['React', 'Apollo', 'GraphQL', 'D3'],
+    description: `Chingu aims to build a coding platform in which programmers elevate their technical and professional team skills by building a project in 8 weeks with a remote team. `,
     workDone: [
-        'Work in a remote engineering team of 8',
-        'Work as sole UI/UX Designer to re-brand the Chingu platform on the user side.',
-        'Work as part of the front-end team to code the user-facing side with React and Apollo (which grabs API data from GraphQL)'
+        'Sole designer to mockup and implement custom styles and page layouts on the entire platform.',
+        'Work as part of a 3-person front-end team to code the platform using React and interface with the Chingu API using Apollo / GraphQL.',
+        'Successfully launched and running a Beta cohort with a test group of 100 users.',
+        `Implemented a series of form question/answer components which include standard question types like text as well as custom ones such as a drag-drop skill selector.`,
+        `Implemented a Ticket Box for user-submitted help/bug/suggestion tickets.`,
+        `Created a flexible project card component to handle the numerous project card types.`,
+        `Implemented the user interface for a team-sort feature. Uses an interactive D3 force-graph which renders user nodes in circle sizes dependent on 
+        match-score, drag-drop area to pull users into team cards and set team formation, and an interactive table that displays all applicant information 
+        for each user node.  These components are used together to quickly find the best matches between users and sort them into teams. Currently using with a 
+        live group size of 100 applicants.`
     ],
     liveLink: 'https://beta.chingu.io/',
     githubLink: 'https://github.com/chingu-x/chingu-frontend/tree/master',
