@@ -38,15 +38,16 @@ const Chingu = {
     description: `Chingu aims to build a coding platform in which programmers elevate their technical and professional team skills by building a project in 8 weeks with a remote team. `,
     workDone: [
         'Sole designer to mockup and implement custom styles and page layouts on the entire platform.',
-        'Work as part of a 3-person front-end team to code the platform using React and interface with the Chingu API using Apollo / GraphQL.',
-        'Successfully launched and running a Beta cohort with a test group of 100 users.',
-        `Implemented a series of form question/answer components which include standard question types like text as well as custom ones such as a drag-drop skill selector.`,
-        `Implemented a Ticket Box for user-submitted help/bug/suggestion tickets.`,
-        `Created a flexible project card component to handle the numerous project card types.`,
-        `Implemented the user interface for a team-sort feature. Uses an interactive D3 force-graph which renders user nodes in circle sizes dependent on 
-        match-score, drag-drop area to pull users into team cards and set team formation, and an interactive table that displays all applicant information 
-        for each user node.  These components are used together to quickly find the best matches between users and sort them into teams. Currently using with a 
-        live group size of 100 applicants.`
+        'Part of a 3-person team using React and Apollo / GraphQL to build the front-end.',
+        'Launched and running a Beta cohort with a test group of 100 users.',
+        `Improved code reuse and ease of development by implementing a standard series of
+        form question/answer components which include standard question types as well as
+        custom ones such as a drag & drop skill selector.`,
+        `Provided a funnel for user submitted help/bug/suggestion tickets by implementing a
+        floating ticketbox entirely in React.`,
+        `Reduced team sorting process from a few days to a few hours by using D3 data
+        visualization, drag-drop user interface, and an interactive table to quickly find and sort
+        similar users into teams.`
     ],
     liveLink: 'https://beta.chingu.io/',
     githubLink: 'https://github.com/chingu-x/chingu-frontend/tree/master',
