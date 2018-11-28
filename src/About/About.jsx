@@ -22,17 +22,15 @@ class About extends React.Component {
                 <section className="description">
                     After graduating from UC Berkeley with a B.A. in Architecture, I became a professional
                     Architectural Designer at a boutique firm in Los Angeles working on multi-million dollar
-                    projects for well-known brands. But after 3+ years of working, I realized I was bored at
-                    my job because I was not creatively or intellectually challenged.
+                    projects for well-known brands. But after 3+ years of working, I realized I was unsatisfied at my job because 
+                    I was not creatively or intellectually challenged.
 
                     <br />
                     <br />
 
-                    Once I found programming and web development, I realized that this is where my passion is.
-                    After honing my skills by making my dream projects and contributing to open source projects,
-                    I'm looking for a company whose goals and values I believe in, a place where I can pour my
-                    effort and creativity into, and where I can do my best to help the company succeed and
-                    reach new heights.
+                    Once I found programming and web development, I realized that this is where my passion is. After honing my skills
+                    by working on and helping launch an educational platform, I'm looking to further improve my skills and use my 
+                    solid design background to bring a company's vision to life.
 
                     <br />
                     <br />
