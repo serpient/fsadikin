@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import './Projects.css';
 import { projects } from '../utils/projects';
 import { skillCreator } from '../utils/skillCreator';
+
+const reversedProjects = projects.reverse();
+
 class Projects extends React.Component {
-    
     projectCreator = () => {
-        const reversedProjects = projects.reverse();
         return reversedProjects.map((project, index) => {
             return (
                 <React.Fragment key={"project_" + index}>
