@@ -181,4 +181,8 @@ const turtleTab = {
     ]
 }
 
-export const projects = [turtleTab, projectMatch, Chingu, Chingu_Admin];
+export const projects = new Map([
+    ['chingu', Chingu],
+    ['project-match', projectMatch], 
+    ['turtle-tab', turtleTab],
+]);
