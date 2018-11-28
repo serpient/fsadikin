@@ -8,7 +8,7 @@ class Resume extends React.Component {
     render() {
         return (
             <object className="resume-object" data={resume} type="application/pdf">
-                <iframe title="resume" width={window.innerWidth} height={window.innerHeight} className="resume-iframe" src={embeddedGoogleLinkToResume}>
+                <iframe title="resume" width={window.innerWidth} height={window.innerHeight - (window.innerHeight * 0.15)} className="resume-iframe" src={embeddedGoogleLinkToResume}>
                     This browser does not support PDFs. Please download the PDF to view it:
                     <a href={googleLinkToResume}>Download PDF</a>
                 </iframe>
