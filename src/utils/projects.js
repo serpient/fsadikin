@@ -171,6 +171,10 @@ const turtleTab = {
     coverPhoto: require('../assets/turtleTab.png'),
     features: [
         {
+            title: 'Project Walkthrough',
+            video: 'https://www.youtube.com/embed/Lp4x_BwPMho',
+        },
+        {
             image: require('../assets/turtleTab-search.png')
         },
         {
