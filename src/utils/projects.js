@@ -53,6 +53,7 @@ const Chingu = {
     ],
     liveLink: 'https://beta.chingu.io/',
     githubLink: 'https://github.com/chingu-x/chingu-frontend/tree/master',
+    blogLink: 'https://medium.com/@fsadikin/team-sort-version-1-afea3c018120',
     coverPhoto: require('../assets/chingu.png'),
     features: [
         {
@@ -118,6 +119,7 @@ const projectMatch = {
     ],
     liveLink: 'https://www.projectmatch.me',
     githubLink: 'https://github.com/ProjectMatch/ProjectMatch',
+    blogLink: 'https://medium.com/@fsadikin/project-match-post-mortem-3f79496d727d',
     coverPhoto: require('../assets/project-match.png'),
     features: [
         {
@@ -168,6 +170,7 @@ const turtleTab = {
     ],
     liveLink: 'https://chrome.google.com/webstore/detail/turtletab/imaanfkbpecmdapjnoonjjbofnfplcbd/reviews?hl=en',
     githubLink: 'https://github.com/chingu-coders/Voyage2-Turtles-11',
+    blogLink: 'https://medium.com/chingu/turtlestab-chrome-extension-a-chingu-voyage-2-project-97d5b664d2fd',
     coverPhoto: require('../assets/turtleTab.png'),
     features: [
         {
