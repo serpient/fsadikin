@@ -23,7 +23,7 @@ MAIN HEADER
     max-width: 1080px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: "logo logo logo . about project resume";
+    grid-template-areas: "logo logo . about project resume blog";
     height: 30px;
     margin: 0 auto; 
     justify-items: center;
@@ -46,6 +46,10 @@ MAIN HEADER
 .nav-resume {
     grid-area: resume;
 }
+
+.nav-blog {
+    grid-area: blog;
+}
 /*
 ==========================
 LINKS
@@ -67,7 +71,7 @@ LINKS
 }
 
 .logo:hover, .navigation:hover {
-    color: $dark-grey;
+    color: $theme-blue;
 }
 
 .navigation {

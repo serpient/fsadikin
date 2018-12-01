@@ -11,6 +11,7 @@ class Header extends React.Component {
                     <Link to="/about" className="navigation nav-about">About</Link>
                     <Link to="/projects" className="navigation nav-projects">Projects</Link>
                     <Link to="/resume" className="navigation nav-resume">Resume</Link>
+                    <Link to="/blog" className="navigation nav-blog">Blog</Link>
                 </nav>
                 <nav className="header-container--mobile">
                     <Link to="/" className="logo">Francesca Sadikin</Link>
