@@ -89,6 +89,13 @@ FEATURE
     margin-top: 10px;
 }
 
+.project-page-feature--video {
+    margin: 30px auto;
+    display: block;
+    width: 900px;
+    height: 600px;
+}
+
 /*
 ==========================
 WORK
@@ -166,11 +173,20 @@ MEDIA QUERY
     .project-page-description {
         width: 450px;
     }
+    .project-page-feature--video {
+        width: 80vw;
+        height: auto;
+        min-height: 400px;
+    }
 }
 
 @media (max-width: 650px) and (min-width: 0px) {
     .project-image {
         width: 90vw;
+    }
+    .project-page-feature--video {
+        width: 90vw;
+        min-height: 300px;
     }
     .project-page-title {
         font-size: 35px;

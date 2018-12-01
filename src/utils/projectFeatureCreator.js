@@ -13,6 +13,18 @@ export const projectFeatureCreator = (feature) => {
                         src={feature.image}
                         alt="project-feature"
                     />
+                    {
+                        feature.video && (
+                            <iframe 
+                                className="project-page-feature--video"
+                                src={feature.video} 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                            >
+                            </iframe>
+                        )
+                    }
                 </section>
             </React.Fragment>
         );

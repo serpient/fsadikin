@@ -63,7 +63,8 @@ const Chingu = {
                             
                             The first version of Team Sort features a D3-Force Graph to visualize the closest matches to a selected user, 
                             React Drag-and-Drop areas to set teams, and a interactive table to quickly pull up all applicant data.`,
-            image: require('../assets/Team-Sort-Features.png')
+            image: require('../assets/Team-Sort-Features.png'),
+            video: 'https://www.youtube.com/embed/VPtOTSXOl-A',
         },
         {
             title: 'Forms & Applications',
