@@ -1,0 +1,43 @@
+@import '../_variables.scss';
+
+.blog-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  max-width: $max-width;
+  margin: 0 auto;
+}
+/*
+==========================
+SIDEBAR
+==========================
+*/
+.blog-sidebar--open,
+.blog-sidebar--close {
+  background-color: $dark-grey;
+}
+.blog-sidebar--open {
+  grid-column: 1 / 2;
+  width: 300px;
+  z-index: 2;
+}
+.blog-sidebar--close {
+  grid-column: 1 / 2;
+  min-width: 20px;
+  z-index: 2;
+}
+/*
+==========================
+READER
+==========================
+*/
+.blog-reader--open,
+.blog-reader--close {
+  background-color: $light-grey;
+}
+.blog-reader--open {
+  grid-column: 2 / -1;
+}
+.blog-reader--close {
+  grid-column: 2 / -1;
+}
