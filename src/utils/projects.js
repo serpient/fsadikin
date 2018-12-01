@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 const Chingu_Admin = {
     name: 'Chingu-Admin',
     date: 'July. 2018 - Current',
@@ -54,6 +56,16 @@ const Chingu = {
     coverPhoto: require('../assets/chingu.png'),
     features: [
         {
+            title: 'Team Sort',
+            description: `Chingu needs to sort hundreds of users into teams, a process which currently takes a 
+                            few days of manual sorting by one guy. We needed a solution that makes this time intensive 
+                            process more efficient so it can scale as Chingu’s community grows. 
+                            
+                            The first version of Team Sort features a D3-Force Graph to visualize the closest matches to a selected user, 
+                            React Drag-and-Drop areas to set teams, and a interactive table to quickly pull up all applicant data.`,
+            image: require('../assets/Team-Sort-Features.png')
+        },
+        {
             title: 'Forms & Applications',
             description: `Chingu was previously using external tools such as Google Forms and Excel
                         to handle new applications and extract data. The new Chingu site has formal
@@ -62,23 +74,12 @@ const Chingu = {
             image: require('../assets/chingu-voyage-application-2.png')
         },
         {
-            title: 'Voyage Portal',
-            description: `Users can apply to upcoming voyages from this page.`,
-            image: require('../assets/chingu-voyage.png')
-        },
-        {
             title: 'Newsfeed',
             description: `Once accepted as a user and part of a team, users can get the most updated news from Chingu and their teams from the newsfeed.
                         The Team newsfeed will feature a team card which describes the team projects, teammates, and
                         links to team related tools such as team standup forms, public project page, and team workspace page`,
             image: require('../assets/Chingu-Example NewsFeed.png')
         },
-        // {
-        //     title: 'Weekly Checkin',
-        //     description: `Admin use this data to spot problematic teams and team members, at which point, 
-        //                 admin can then intervene and try to get the team back on track.`,
-        //     image: require('../assets/chingu-checkin.png')
-        // },
         {
             title: 'Project Page',
             description: `Teams can create a project page for their specific project. Upon completion, the page will be submitted
@@ -97,13 +98,6 @@ const Chingu = {
                         conflict issues they want the admin's help on.`,
             image: require('../assets/ticketbox-01.png')
         },
-        // {
-        //     title: 'Landing Page Re-Design',
-        //     description: `Redesign the flow of information on the landing page, so that users have
-        //                   a clear vision of what Chingu is, who the targeted audience is, and what
-        //                   Chingu can provide for users.`,
-        //     image: require('../assets/chingu-home.png')
-        // }
     ]
 }
 
