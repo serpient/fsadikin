@@ -32,6 +32,7 @@ const MobileHeaderDropdown = () => {
             <Link to="/about" className="navigation">About</Link>
             <Link to="/projects" className="navigation">Projects</Link>
             <Link to="/resume" className="navigation">Resume</Link>
+            <Link to="/blog" className="navigation">Blog</Link>
         </section>
     )
 }

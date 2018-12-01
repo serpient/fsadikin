@@ -115,7 +115,7 @@ MOBILE HEADER
         justify-self: end;
         grid-column: 2 / -1;
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
         width: 50%;
         min-width: 100px;
         vertical-align: middle;
