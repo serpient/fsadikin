@@ -7,6 +7,20 @@ const removeRelativeLink = (string) => {
     return string.substring(index);
 }
 
+const projectLinks = (projectData) => [
+    {
+        title: 'Live Link',
+        link: removeRelativeLink(projectData.liveLink),
+    },
+    {
+        title: 'Github Link',
+        link: removeRelativeLink(projectData.githubLink),
+    },
+    {
+        title: 'Writeup Link',
+        link: removeRelativeLink(projectData.blogLink),
+    },
+]
 export const individualProjectPageCreator = (projectData, mainImage) => {
     return (
         <section className="individual-project-container">
@@ -31,8 +45,21 @@ export const individualProjectPageCreator = (projectData, mainImage) => {
             }</div>
             <div className="project-page-tech">{skillCreator(projectData.tech)}</div>
             <div className="project-page-btns">
-                <a href={removeRelativeLink(projectData.liveLink)} rel="external" target="_blank" className="main-navi-btn">Live Link</a>
-                <a href={removeRelativeLink(projectData.githubLink)} rel="external" target="_blank" className="main-navi-btn">Github Link</a>
+                {
+                    projectLinks(projectData).map((linkObject, idx) => {
+                        return linkObject.link && (
+                            <a 
+                                key={idx}
+                                href={linkObject.link} 
+                                rel="external" 
+                                target="_blank" 
+                                className="main-navi-btn"
+                            >
+                                {linkObject.title}
+                            </a>
+                        )
+                    })
+                }
             </div>
             {projectFeatureCreator(projectData.features)}
         </section>
