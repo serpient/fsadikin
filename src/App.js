@@ -9,6 +9,7 @@ import ProjectMatch from './ProjectMatch/ProjectMatch';
 import ErrorPage from './ErrorPage/ErrorPage';
 import Resume from './Resume/Resume';
 import Chingu from './Chingu/Chingu';
+import Blog from './Blog/Blog';
 
 class App extends React.Component {
   state = {
@@ -49,6 +50,7 @@ class App extends React.Component {
           <Route exact={true} path="/projects/turtlesTab" component={TurtleTab} />
           <Route exact={true} path="/projects/chingu" component={Chingu} />
           <Route exact={true} path="/resume" component={Resume} />
+          <Route exact={true} path="/blog" component={Blog} />
           <Route path="/*" component={ErrorPage} />
         </Switch>
       </div>
