@@ -1,5 +1,47 @@
 import * as React from 'react';
 
+const Book_Finder = {
+    name: 'Book-Finder',
+    date: 'Jan. 2019',
+    tech: ['React', 'Jest/Enzyme'],
+    description: `Powered by Google Books API, search for any book and find more information about it.`,
+    workDone: [
+        'Design and implement web app in React.',
+        'Test units for mock async API calls, and rendering edge cases using Jest/Enzyme',
+    ],
+    liveLink: 'https://quiet-brushlands-15098.herokuapp.com/',
+    githubLink: 'https://github.com/serpient/google-books-api',
+    coverPhoto: require('../assets/book-finder_1000.png'),
+    features: [
+        {
+            title: 'Voyage Portal',
+            description: `Admin can create and manage voyages`,
+            image: require('../assets/chingu-voyage.png')
+        },
+    ]
+}
+
+const Connect_4 = {
+    name: 'Connect-4',
+    date: 'Jan. 2019',
+    tech: ['React', 'Jest/Enzyme'],
+    description: `Connect 4 game with 2 local players. Match 4 coins horizontally, vertically, or diagonally to win.`,
+    workDone: [
+        'Design and implement game in React',
+        'Test units for horizontal, vertical and diagonal wins.',
+    ],
+    liveLink: 'https://morning-forest-11537.herokuapp.com/',
+    githubLink: 'https://github.com/serpient/connect-4',
+    coverPhoto: require('../assets/connect-4_1000.png'),
+    features: [
+        {
+            title: 'Voyage Portal',
+            description: `Admin can create and manage voyages`,
+            image: require('../assets/chingu-voyage.png')
+        },
+    ]
+}
+
 const Chingu_Admin = {
     name: 'Chingu-Admin',
     date: 'July. 2018 - Current',
@@ -42,9 +84,7 @@ const Chingu = {
         'Sole designer to mockup and implement custom styles and page layouts on the entire platform.',
         'Part of a 3-person team using React and Apollo / GraphQL to build the front-end.',
         'Launched and running a Beta cohort with a test group of 100 users.',
-        `Improved code reuse and ease of development by implementing a standard series of
-        form question/answer components which include standard question types as well as
-        custom ones such as a drag & drop skill selector.`,
+        `Improved code reuse and ease of development by implementing a data driven form creator.`,
         `Provided a funnel for user submitted help/bug/suggestion tickets by implementing a
         floating ticketbox entirely in React.`,
         `Reduced team sorting process from a few days to a few hours by using D3 data
@@ -191,6 +231,8 @@ const turtleTab = {
 
 export const projects = new Map([
     ['chingu', Chingu],
+    ['connect-4', Connect_4],
+    ['book-finder', Book_Finder],
     ['project-match', projectMatch], 
-    ['turtle-tab', turtleTab],
+    ['turtle-tab', turtleTab]
 ]);
