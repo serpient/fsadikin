@@ -8,15 +8,16 @@ const Book_Finder = {
     workDone: [
         'Design and implement web app in React.',
         'Test units for mock async API calls, and rendering edge cases using Jest/Enzyme',
+        'Use media queries to make app mobile responsive'
     ],
     liveLink: 'https://quiet-brushlands-15098.herokuapp.com/',
     githubLink: 'https://github.com/serpient/google-books-api',
     coverPhoto: require('../assets/book-finder_1000.png'),
     features: [
         {
-            title: 'Voyage Portal',
-            description: `Admin can create and manage voyages`,
-            image: require('../assets/chingu-voyage.png')
+            title: 'Book Finder Usability',
+            description: `App has error handling and edge cases.`,
+            image: require('../assets/book-finder.gif')
         },
     ]
 }
@@ -35,9 +36,9 @@ const Connect_4 = {
     coverPhoto: require('../assets/connect-4_1000.png'),
     features: [
         {
-            title: 'Voyage Portal',
-            description: `Admin can create and manage voyages`,
-            image: require('../assets/chingu-voyage.png')
+            title: 'Connect 4 Gameplay',
+            // description: `Admin can create and manage voyages`,
+            image: require('../assets/connect-4.gif')
         },
     ]
 }
@@ -147,7 +148,7 @@ const projectMatch = {
     name: 'Project Match',
     date: 'Feb. 2018 - July. 2018',
     tech: ['MongoDB', 'Express', 'React', 'NodeJS', 'TypeScript', 'Redux'],
-    description: `Project Match is a web app created with the MERN stack with typescript integration. 
+    description: `Project Match is a full-stack web app created with the MERN stack with typescript integration. 
                     It's primary function is to help programmers and designers match with projects they would be interested in. 
                     Project Match will then provide team collaboration tools to support new teams with features such as a 
                     dedicated platform for mockup reviews/redlines and group chat.`,
