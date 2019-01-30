@@ -54,7 +54,7 @@ const Connect_4 = {
         'Design and implement game in React',
         'Test units for horizontal, vertical and diagonal wins using Jest/Enzyme.',
     ],
-    liveLink: 'https://morning-forest-11537.herokuapp.com/',
+    liveLink: 'https://serpient.github.io/connect-4/',
     githubLink: 'https://github.com/serpient/connect-4',
     coverPhoto: require('../assets/connect-4_1000.png'),
     features: [
