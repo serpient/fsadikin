@@ -1,7 +1,30 @@
 import * as React from 'react';
 
+const Form_Creator = {
+    name: 'Form Creator',
+    date: 'Aug. 2018',
+    tech: ['React'],
+    description: `Data driven form creator in React.`,
+    workDone: [
+        'Convert question data objects into a fully functioning form.',
+        'Implement standard input elements such as radio, checkbox, textarea, etc.',
+        'Standardize form styling for all question and answer components.',
+        'Fully integrated change handlers in all input elements hooked up to parent state management.',
+    ],
+    liveLink: 'https://serpient.github.io/form-creator/',
+    githubLink: 'https://github.com/serpient/form-creator',
+    coverPhoto: require('../assets/form-creator_1000.png'),
+    features: [
+        {
+            title: 'Converts data into React form',
+            description: `Takes array of question objects and converts it into a fully functioning form`,
+            image: require('../assets/form-creator-main.png')
+        },
+    ]
+}
+
 const Book_Finder = {
-    name: 'Book-Finder',
+    name: 'Book Finder',
     date: 'Jan. 2019',
     tech: ['React', 'Jest/Enzyme'],
     description: `Powered by Google Books API, search for any book and find more information about it.`,
@@ -23,7 +46,7 @@ const Book_Finder = {
 }
 
 const Connect_4 = {
-    name: 'Connect-4',
+    name: 'Connect 4',
     date: 'Jan. 2019',
     tech: ['React', 'Jest/Enzyme'],
     description: `Connect 4 game with 2 local players. Match 4 coins horizontally, vertically, or diagonally to win.`,
@@ -234,6 +257,7 @@ export const projects = new Map([
     ['chingu', Chingu],
     ['connect-4', Connect_4],
     ['book-finder', Book_Finder],
+    ['form-creator', Form_Creator], 
     ['project-match', projectMatch], 
     ['turtle-tab', turtleTab]
 ]);
