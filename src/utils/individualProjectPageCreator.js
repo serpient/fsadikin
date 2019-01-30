@@ -7,20 +7,31 @@ const removeRelativeLink = (string) => {
     return string.substring(index);
 }
 
-const projectLinks = (projectData) => [
-    {
-        title: 'Live Link',
-        link: removeRelativeLink(projectData.liveLink),
-    },
-    {
-        title: 'Github Link',
-        link: removeRelativeLink(projectData.githubLink),
-    },
-    {
-        title: 'Writeup Link',
-        link: removeRelativeLink(projectData.blogLink),
-    },
-]
+const projectLinks = (projectData) => {
+    let returnedArray = [
+        {
+            title: 'Live Link',
+            link: removeRelativeLink(projectData.liveLink),
+        },
+        {
+            title: 'Github Link',
+            link: removeRelativeLink(projectData.githubLink),
+        },
+    ];
+
+    if (projectData.blogLink) {
+        returnedArray.push([
+            {
+                title: 'Writeup Link',
+                link: removeRelativeLink(projectData.blogLink),
+            },
+        ])
+    }
+
+    return returnedArray;
+}
+    
+
 export const individualProjectPageCreator = (projectData, mainImage) => {
     return (
         <section className="individual-project-container">
