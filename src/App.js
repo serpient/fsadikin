@@ -4,11 +4,13 @@ import './App.css';
 import LandingPage from './LandingPage/LandingPage';
 import Projects from './Projects/Projects';
 import Header from './Header/Header';
-import TurtleTab from './TurtleTab/TurtleTab';
-import ProjectMatch from './ProjectMatch/ProjectMatch';
+import TurtleTab from './Projects/TurtleTab';
+import ProjectMatch from './Projects/ProjectMatch';
 import ErrorPage from './ErrorPage/ErrorPage';
 import Resume from './Resume/Resume';
-import Chingu from './Chingu/Chingu';
+import Chingu from './Projects/Chingu';
+import Connect4 from './Projects/Connect4';
+import BookFinder from './Projects/BookFinder';
 
 class App extends React.Component {
   state = {
@@ -48,6 +50,8 @@ class App extends React.Component {
           <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
           <Route exact={true} path="/projects/turtlesTab" component={TurtleTab} />
           <Route exact={true} path="/projects/chingu" component={Chingu} />
+          <Route exact={true} path="/projects/Book-Finder" component={BookFinder} />
+          <Route exact={true} path="/projects/Connect-4" component={Connect4} />
           <Route exact={true} path="/resume" component={Resume} />
           <Route path="/*" component={ErrorPage} />
         </Switch>
