@@ -38,7 +38,7 @@ const Connect_4 = {
         {
             title: 'Connect 4 Gameplay',
             // description: `Admin can create and manage voyages`,
-            image: require('../assets/connect-4.gif')
+            image: require('../assets/connect-4-short.gif')
         },
     ]
 }
