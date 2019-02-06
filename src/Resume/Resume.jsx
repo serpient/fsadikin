@@ -1,9 +1,9 @@
 import * as React from 'react';
 import './Resume.css';
 
-const resume = require('../assets/181127_2_Francesca Sadikin_Resume.pdf');
-const googleLinkToResume = `https://drive.google.com/file/d/19-xyzuNHGXjtiwg1hZuhEEdHOOKBiAvQ/view?usp=sharing`;
-const embeddedGoogleLinkToResume = `https://drive.google.com/file/d/19-xyzuNHGXjtiwg1hZuhEEdHOOKBiAvQ/preview`;
+const resume = require('../assets/190129_francesca resume_programming.pdf');
+const googleLinkToResume = `https://drive.google.com/file/d/187O5LIWAhOzcjyhKzdogsnWEoxkk_Krm/view?usp=sharing`;
+const embeddedGoogleLinkToResume = `https://drive.google.com/file/d/187O5LIWAhOzcjyhKzdogsnWEoxkk_Krm/preview`;
 class Resume extends React.Component {
     render() {
         return (
