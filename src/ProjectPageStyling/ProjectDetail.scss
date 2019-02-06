@@ -76,7 +76,7 @@ FEATURE
 }
 
 .project-page-feature-title {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
 }
@@ -209,21 +209,25 @@ MEDIA QUERY
         font-size: 35px;
         font-weight: 600;
     }
-    .project-page-description {
+    .role {
         width: 90vw;
-        font-size: 12px;
-        text-align: left;
     }
-    .project-page-work {
+    .project-page-description,
+    .project-page-work,
+    .project-page-feature-description,
+    .role-text {
         width: 90vw;
-        text-align: left;
-        font-size: 12px;
+        font-size: 17px;
     }
-    .role-container {
-        margin: 0 auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
+
+    .role-text {
+        width: auto;
     }
+    // .role-container {
+    //     margin: 0 auto;
+    //     margin-top: 10px;
+    //     margin-bottom: 10px;
+    // }
     .project-page-tech {
         width: 90vw;
     }
@@ -235,13 +239,11 @@ MEDIA QUERY
     .project-page-feature-title {
         margin: 0 auto;
         max-width: 90vw;
-        margin-bottom: 10px;
-        font-size: 20px;
+        // margin-bottom: 10px;
+        font-size: 24px;
     }
     .project-page-feature-description {
         margin: 0 auto;
-        width: 90vw;
-        font-size: 12px;
         margin-bottom: -20px;
     }
 }
