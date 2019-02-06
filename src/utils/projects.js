@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 const Form_Creator = {
     name: 'Form Creator V1',
@@ -50,8 +50,7 @@ const Connect_4 = {
     date: 'Jan. 2019',
     tech: ['React', 'Jest/Enzyme'],
     description: `Connect 4 game with 2 local players. Match 4 coins horizontally, vertically, or diagonally to win.`,
-    workDone: [
-        'Design and implement game in React',
+    workDone: [ 'Design and implement game in React',
         'Test units for horizontal, vertical and diagonal wins using Jest/Enzyme.',
     ],
     liveLink: 'https://serpient.github.io/connect-4/',
@@ -66,39 +65,6 @@ const Connect_4 = {
     ]
 }
 
-const Chingu_Admin = {
-    name: 'Chingu-Admin',
-    date: 'July. 2018 - Current',
-    tech: ['React', 'Apollo'],
-    description: `Chingu Admin platform provides internal tools for admins to facilitate the Chingu cohorts. 
-                 The platform allows users to create/manage cohorts, review applicants and sort them into teams 
-                 of similarily matched applicants, manage team conflict issues, and check on the "health" of an ongoing
-                 cohort and corresponding teams. 
-                `,
-    workDone: [
-        'Work in a remote engineering team of 8',
-        'Work as sole UI/UX Designer',
-        'Work as part of the front-end team with React and Apollo (which grabs API data from GraphQL)'
-    ],
-    liveLink: 'https://admin.chingu.io/',
-    githubLink: 'https://github.com/the-vampiire/chingu-admin',
-    coverPhoto: require('../assets/chingu.png'),
-    features: [
-        {
-            title: 'Voyage Portal',
-            description: `Admin can create and manage voyages`,
-            image: require('../assets/chingu-voyage.png')
-        },
-        {
-            title: 'Applicant Review & Team Sort',
-            description: `Team sort algorithsm matches users into best-match teams based off key categories and the user's 
-                        desired techstack. The admin then reviews the teams, adjust as necessary, and then officially forms them as teams. 
-                        `,
-            image: require('../assets/chingu-voyage.png')
-        }
-    ]
-}
-
 const Chingu = {
     name: 'Chingu',
     date: 'July. 2018 - Current',
@@ -107,11 +73,10 @@ const Chingu = {
                 The client facing sites are built with React and Apollo Client (GraphQL).`,
     workDone: [
         'Sole designer to mockup and implement custom styles and page layouts on the entire platform.',
-        'Part of a 3-person team using React and Apollo / GraphQL to build the front-end.',
-        'Launched and running a Beta cohort with a test group of 100 users.',
-        `Reduced code reuse and ease of development by implementing reusable input elements and standardized styles for a data-driven form creator.`,
+        'Ideate user features and implement them as part of a 3-person team using React and Apollo / GraphQL. Features include User Profile, Newsfeed, and Project Pages.',
+        'Gathered feedback from users, identified the main issue (high attrition rates), created a hypothesis and drafted solutions & metrics to be implemented in the next launch. ',
+        `Improved ease of development by implementing reusable input elements and standardized styles for a data-driven form creator.`,
         `Reduced team sorting process from 4-Days to 4-Hours by using D3 data visualization to sort users into teams.`,
-        `Provided a funnel for user submitted help/bug/suggestion tickets by implementing a floating ticketbox entirely in React.`,
     ],
     liveLink: 'https://beta.chingu.io/',
     githubLink: 'https://github.com/chingu-x/chingu-frontend/tree/master',
@@ -120,40 +85,45 @@ const Chingu = {
     features: [
         {
             title: 'Team Sort',
-            description: `Chingu needs to sort hundreds of users into teams, a process which currently takes a 
-                            few days of manual sorting by one guy. We needed a solution that makes this time intensive 
-                            process more efficient so it can scale as Chingu’s community grows. 
-                            
-                            The first version of Team Sort features a D3-Force Graph to visualize the closest matches to a selected user, 
-                            React Drag-and-Drop areas to set teams, and a interactive table to quickly pull up all applicant data.`,
+            description: `Chingu currently manually sort hundreds of users into teams using Google Sheets. We needed a solution that can scale as Chingu’s community grows. 
+                            <br />
+                            <br />
+                            The first version of Team Sort features a D3 Force Graph to visualize the closest matches to a selected user, 
+                            React Drag-and-Drop areas to set teams, and a interactive table to quickly pull up all applicant data.`
+                            ,
             image: require('../assets/Team-Sort-Features.png'),
             video: 'https://www.youtube.com/embed/VPtOTSXOl-A',
         },
         {
             title: 'Forms & Applications',
             description: `Chingu was previously using external tools such as Google Forms and Excel
-                        to handle new applications and extract data. The new Chingu site has formal
-                        forms from which data can be extracted to efficiently approve users, and sort them
-                        into teams on the admin side.`,
+                        to handle new applications and extract data. 
+                        <br />
+                        <br />
+                        The new Chingu site features data-driven form creators to quickly generate new forms and feed data to the admins.`,
             image: require('../assets/chingu-voyage-application-2.png')
         },
         {
             title: 'Newsfeed',
             description: `Once accepted as a user and part of a team, users can get the most updated news from Chingu and their teams from the newsfeed.
-                        The Team newsfeed will feature a team card which describes the team projects, teammates, and
-                        links to team related tools such as team standup forms, public project page, and team workspace page`,
+                        <br />
+                        <br />
+                        The Team newsfeed features a card with the team projects, teammates, and
+                        links to team related tools such as standup forms, public project page, and team workspace.`,
             image: require('../assets/Chingu-Example NewsFeed.png')
         },
         {
             title: 'Project Page',
-            description: `Teams can create a project page for their specific project. Upon completion, the page will be submitted
-                        to the admins and displayed in the Project Showcase section on the site where all team projects are visible. 
-                        Description section is markdown supported.`,
+            description: `Teams can create a project page for their specific project. <br />
+                        <br />
+                        Upon completion, the page will be submitted
+                        to the admins and displayed in the Project Showcase. Project Description section is markdown supported.
+                        `,
             image: require('../assets/chingu-project-page.png')
         },
         {
             title: 'User Profile',
-            description: `Users have an overview of all of their current and past projects. Users can also update their bios using the editable text fields.`,
+            description: `Users can update their profiles, share their profile page with others, and view their current and past projects.`,
             image: require('../assets/chingu-user-profile.png')
         },
         {
@@ -186,8 +156,11 @@ const projectMatch = {
     features: [
         {
             title: 'Get Matched',
-            description: `Looking for a project to build? Filter through our projects by categories and tags to
-                            find a team you want to join! Already got an idea? Post a project to
+            description: `<b>Looking for a project to build?</b> Filter through our projects by categories and tags to
+                            find a team you want to join! 
+                            <br />
+                            <br />
+                            <b>Already got an idea?</b> Post a project to
                             find programmers and designers to help build the project.`,
             image: require('../assets/project-match-project.png')
         },

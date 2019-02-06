@@ -44,9 +44,9 @@ MAIN INFO
 }
 
 .project-page-description {
-    width: 560px;
-    text-align: center;
-    font-size: 16px;
+    width: 450px;
+    text-align: left;
+    font-size: 18px;
     margin: 0 auto;
 }
 
@@ -82,10 +82,10 @@ FEATURE
 }
 
 .project-page-feature-description {
-    width: 550px;
+    width: 450px;
     margin: 0 auto;
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -104,29 +104,46 @@ WORK
 
 .project-page-work {
     display: block;
-    width: 560px;
+    width: 450px;
     margin: 0 auto;
     margin-top: 20px;
     text-align: left;
 }
 
-.role-container {
+.project-page-work--title {
     display: block;
-    margin: 10px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+    color: $light-blue;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-.role-dot {
-    transform: rotate(45deg);
-    width: 10px;
-    height: 10px;
-    background-color: $light-blue;
-    display: inline-block;
-    margin: 0 auto;
-    margin-right: 10px;
+.role-container {
+    display: block;
+    margin-bottom: 10px;
 }
 
 .role {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    justify-items: start;
+    grid-gap: 10px;
+    margin-bottom: 15px;
+}
+
+.role-dot {
+    justify-self: center;
+    color: $light-blue;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.role-text {
+    font-size: 18px;
+    text-align: left;
 }
 
 /*
