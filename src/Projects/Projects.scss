@@ -94,14 +94,17 @@ BUTTON
 ==========================
 */
 .btn-more {
-    color: $light-blue;
+    background-color: $theme-blue;
+    color: white;
+    border-radius: 25px;
     text-decoration: none;
     border: 1px solid $light-blue;
-    padding: 5px 15px;
+    padding: 6px 20px;
+    box-shadow: $box-shadow;
 }
 
 .btn-more:hover {
-    background-color: $pastel-blue;
+    background-color: $hover-blue;
 }
 
 /*

@@ -11,11 +11,10 @@ $pale-grey: #f7f7f7;
 $black-grey: #2b353d;
 $palest-grey: #f8f8f8;
 $almost-white: #fdfdfd;
-
-$theme-blue: rgb(54, 129, 209);
-$hover-blue: rgb(38, 115, 197);
-$light-blue: rgb(143, 182, 223);
+$light-blue: rgb(110, 157, 207);
 $lightest-blue: rgb(195, 215, 236);
+$theme-blue: $light-blue;
+$hover-blue: rgb(103, 145, 190);
 $attention-red: #f37070;
 $light-red: #f5cbcb;
 
@@ -37,4 +36,4 @@ $font: 'Segoe UI', 'Open Sans', 'Helvetica Neue', Helvetica, 'Varela Round', san
 STYLING
 ==========================
 */
-$box-shadow: 0px 3px 6px $light-grey;
+$box-shadow: 0px 3px 4px $light-grey;
