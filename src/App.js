@@ -45,7 +45,7 @@ class App extends React.Component {
       <div onClick={() => this.closeDropdown()} onKeyPress={e => this.scrollWithArrows(e)} className="App">
         <Header dropdownVisibility={this.state.dropdownVisibility} toggleDropdown={this.toggleDropdown}/>
         <Switch>
-          <Route exact={true} path={'/'} component={LandingPage} />
+          <Route exact={true} path={'/'} component={Projects} />
           <Route exact={true} path={'/about'} render={() => <LandingPage about={true} />} />
           <Route exact={true} path={'/projects'} component={Projects} />
           <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
