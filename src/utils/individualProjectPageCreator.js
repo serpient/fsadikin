@@ -42,18 +42,23 @@ export const individualProjectPageCreator = (projectData, mainImage) => {
             />
             <div className="project-page-title">{projectData.name}</div>
             <div className="project-page-description">{projectData.description}</div>
-            <div className="project-page-work">{
-                projectData.workDone.map((role, index) => {
-                    return (
-                    <div key={index} className="role-container">
-                        <div className="role" key={index}>
-                            <div className="role-dot"/> 
-                            {role}
+            <div className="project-page-work">
+                <div className='project-page-work--title'>My Accomplishments</div>
+                {
+                    projectData.workDone.map((role, index) => {
+                        return (
+                        <div key={index} className="role-container">
+                            <div className="role" key={index}>
+                                <i className="role-dot fas fa-check"></i>
+                                <div className='role-text'>
+                                    {role}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    )
-                })
-            }</div>
+                        )
+                    })
+                }
+            </div>
             <div className="project-page-tech">{skillCreator(projectData.tech)}</div>
             <div className="project-page-btns">
                 {

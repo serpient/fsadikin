@@ -48,8 +48,7 @@ const Connect_4 = {
     date: 'Jan. 2019',
     tech: ['React', 'Jest/Enzyme'],
     description: `Connect 4 game with 2 local players. Match 4 coins horizontally, vertically, or diagonally to win.`,
-    workDone: [
-        'Design and implement game in React',
+    workDone: [ 'Design and implement game in React',
         'Test units for horizontal, vertical and diagonal wins using Jest/Enzyme.',
     ],
     liveLink: 'https://serpient.github.io/connect-4/',
