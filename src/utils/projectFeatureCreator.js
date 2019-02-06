@@ -1,4 +1,5 @@
 import * as React from 'react';
+const ReactMarkdown = require('react-markdown/with-html')
 
 export const projectFeatureCreator = (feature) => {
     return feature.map((feature, index) => {
@@ -7,7 +8,11 @@ export const projectFeatureCreator = (feature) => {
                 <hr className="hline" />
                 <section className="project-page-feature">
                     {feature.title ? <div className="project-page-feature-title">{feature.title}</div> : null}
-                    {feature.description ? <div className="project-page-feature-description">{feature.description}</div> : null}
+                    {feature.description 
+                        ?   <div className="project-page-feature-description">
+                                <ReactMarkdown source={feature.description} escapeHtml={false} />
+                            </div> 
+                        : null}
                     {
                         feature.image && (
                             <img

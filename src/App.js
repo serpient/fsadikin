@@ -53,7 +53,7 @@ class App extends React.Component {
           <Route exact={true} path="/projects/chingu" component={Chingu} />
           <Route exact={true} path="/projects/Book-Finder" component={BookFinder} />
           <Route exact={true} path="/projects/Connect-4" component={Connect4} />
-          <Route exact={true} path="/projects/form-creator" component={FormCreator} />
+          <Route exact={true} path="/projects/form-creator-v1" component={FormCreator} />
           <Route exact={true} path="/resume" component={Resume} />
           <Route path="/*" component={ErrorPage} />
         </Switch>

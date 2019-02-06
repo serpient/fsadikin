@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Form_Creator = {
     name: 'Form Creator V1',
     date: 'Aug. 2018',
@@ -83,40 +85,45 @@ const Chingu = {
     features: [
         {
             title: 'Team Sort',
-            description: `Chingu needs to sort hundreds of users into teams, a process which currently takes a 
-                            few days of manual sorting by one guy. We needed a solution that makes this time intensive 
-                            process more efficient so it can scale as Chingu’s community grows. 
-                            
-                            The first version of Team Sort features a D3-Force Graph to visualize the closest matches to a selected user, 
-                            React Drag-and-Drop areas to set teams, and a interactive table to quickly pull up all applicant data.`,
+            description: `Chingu currently manually sort hundreds of users into teams using Google Sheets. We needed a solution that can scale as Chingu’s community grows. 
+                            <br />
+                            <br />
+                            The first version of Team Sort features a D3 Force Graph to visualize the closest matches to a selected user, 
+                            React Drag-and-Drop areas to set teams, and a interactive table to quickly pull up all applicant data.`
+                            ,
             image: require('../assets/Team-Sort-Features.png'),
             video: 'https://www.youtube.com/embed/VPtOTSXOl-A',
         },
         {
             title: 'Forms & Applications',
             description: `Chingu was previously using external tools such as Google Forms and Excel
-                        to handle new applications and extract data. The new Chingu site has formal
-                        forms from which data can be extracted to efficiently approve users, and sort them
-                        into teams on the admin side.`,
+                        to handle new applications and extract data. 
+                        <br />
+                        <br />
+                        The new Chingu site features data-driven form creators to quickly generate new forms and feed data to the admins.`,
             image: require('../assets/chingu-voyage-application-2.png')
         },
         {
             title: 'Newsfeed',
             description: `Once accepted as a user and part of a team, users can get the most updated news from Chingu and their teams from the newsfeed.
-                        The Team newsfeed will feature a team card which describes the team projects, teammates, and
-                        links to team related tools such as team standup forms, public project page, and team workspace page`,
+                        <br />
+                        <br />
+                        The Team newsfeed features a card with the team projects, teammates, and
+                        links to team related tools such as standup forms, public project page, and team workspace.`,
             image: require('../assets/Chingu-Example NewsFeed.png')
         },
         {
             title: 'Project Page',
-            description: `Teams can create a project page for their specific project. Upon completion, the page will be submitted
-                        to the admins and displayed in the Project Showcase section on the site where all team projects are visible. 
-                        Description section is markdown supported.`,
+            description: `Teams can create a project page for their specific project. <br />
+                        <br />
+                        Upon completion, the page will be submitted
+                        to the admins and displayed in the Project Showcase. Project Description section is markdown supported.
+                        `,
             image: require('../assets/chingu-project-page.png')
         },
         {
             title: 'User Profile',
-            description: `Users have an overview of all of their current and past projects. Users can also update their bios using the editable text fields.`,
+            description: `Users can update their profiles, share their profile page with others, and view their current and past projects.`,
             image: require('../assets/chingu-user-profile.png')
         },
         {
@@ -149,8 +156,11 @@ const projectMatch = {
     features: [
         {
             title: 'Get Matched',
-            description: `Looking for a project to build? Filter through our projects by categories and tags to
-                            find a team you want to join! Already got an idea? Post a project to
+            description: `<b>Looking for a project to build?</b> Filter through our projects by categories and tags to
+                            find a team you want to join! 
+                            <br />
+                            <br />
+                            <b>Already got an idea?</b> Post a project to
                             find programmers and designers to help build the project.`,
             image: require('../assets/project-match-project.png')
         },
