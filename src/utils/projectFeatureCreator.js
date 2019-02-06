@@ -25,6 +25,7 @@ export const projectFeatureCreator = (feature) => {
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
+                                title="resume"
                             >
                             </iframe>
                         )

@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 const Form_Creator = {
     name: 'Form Creator V1',
     date: 'Aug. 2018',
@@ -63,39 +61,6 @@ const Connect_4 = {
             // description: `Admin can create and manage voyages`,
             image: require('../assets/connect-4-short.gif')
         },
-    ]
-}
-
-const Chingu_Admin = {
-    name: 'Chingu-Admin',
-    date: 'July. 2018 - Current',
-    tech: ['React', 'Apollo'],
-    description: `Chingu Admin platform provides internal tools for admins to facilitate the Chingu cohorts. 
-                 The platform allows users to create/manage cohorts, review applicants and sort them into teams 
-                 of similarily matched applicants, manage team conflict issues, and check on the "health" of an ongoing
-                 cohort and corresponding teams. 
-                `,
-    workDone: [
-        'Work in a remote engineering team of 8',
-        'Work as sole UI/UX Designer',
-        'Work as part of the front-end team with React and Apollo (which grabs API data from GraphQL)'
-    ],
-    liveLink: 'https://admin.chingu.io/',
-    githubLink: 'https://github.com/the-vampiire/chingu-admin',
-    coverPhoto: require('../assets/chingu.png'),
-    features: [
-        {
-            title: 'Voyage Portal',
-            description: `Admin can create and manage voyages`,
-            image: require('../assets/chingu-voyage.png')
-        },
-        {
-            title: 'Applicant Review & Team Sort',
-            description: `Team sort algorithsm matches users into best-match teams based off key categories and the user's 
-                        desired techstack. The admin then reviews the teams, adjust as necessary, and then officially forms them as teams. 
-                        `,
-            image: require('../assets/chingu-voyage.png')
-        }
     ]
 }
 
