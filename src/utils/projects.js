@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const Form_Creator = {
-    name: 'Form Creator',
+    name: 'Form Creator V1',
     date: 'Aug. 2018',
     tech: ['React'],
     description: `Data driven form creator in React.`,
@@ -103,17 +103,15 @@ const Chingu = {
     name: 'Chingu',
     date: 'July. 2018 - Current',
     tech: ['React', 'Apollo', 'GraphQL', 'D3'],
-    description: `Chingu aims to build a coding platform in which programmers elevate their technical and professional team skills by building a project in 8 weeks with a remote team. `,
+    description: `Chingu aims to build a coding platform in which programmers elevate their technical and soft skills by building a project in 8 weeks with a remote team.
+                The client facing sites are built with React and Apollo Client (GraphQL).`,
     workDone: [
         'Sole designer to mockup and implement custom styles and page layouts on the entire platform.',
         'Part of a 3-person team using React and Apollo / GraphQL to build the front-end.',
         'Launched and running a Beta cohort with a test group of 100 users.',
-        `Improved code reuse and ease of development by implementing a data driven form creator.`,
-        `Provided a funnel for user submitted help/bug/suggestion tickets by implementing a
-        floating ticketbox entirely in React.`,
-        `Reduced team sorting process from a few days to a few hours by using D3 data
-        visualization, drag-drop user interface, and an interactive table to quickly find and sort
-        similar users into teams.`
+        `Reduced code reuse and ease of development by implementing reusable input elements and standardized styles for a data-driven form creator.`,
+        `Reduced team sorting process from 4-Days to 4-Hours by using D3 data visualization to sort users into teams.`,
+        `Provided a funnel for user submitted help/bug/suggestion tickets by implementing a floating ticketbox entirely in React.`,
     ],
     liveLink: 'https://beta.chingu.io/',
     githubLink: 'https://github.com/chingu-x/chingu-frontend/tree/master',
