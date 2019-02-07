@@ -6,10 +6,8 @@ const Form_Creator = {
     tech: ['React'],
     description: `Data driven form creator in React.`,
     workDone: [
-        'Convert question data objects into a fully functioning form.',
-        'Implement standard input elements such as radio, checkbox, textarea, etc.',
-        'Standardize form styling for all question and answer components.',
-        'Fully integrated change handlers in all input elements hooked up to parent state management.',
+        'Systemize form creation by implementing a data-driven form creator that converts question data into a fully functioning form.',
+        'Create cohesive form styles and usability by standardizing input elements.',
     ],
     liveLink: 'https://serpient.github.io/form-creator/',
     githubLink: 'https://github.com/serpient/form-creator',
@@ -145,8 +143,8 @@ const projectMatch = {
                     dedicated platform for mockup reviews/redlines and group chat.`,
     workDone: [
         'Acted as Project Manager, Designer, and Full-Stack Programmer in a remote team of 4.',
-        'Working primarily on the front-end using React/Redux.',
-        'Coded the User and Project backend API routes and associated test units.',
+        'Implemented User Profiles, Project Pages, and Landing Page using React/Redux.',
+        'Coded the User and Project API routes and associated test units.',
         'Implemented git and git pull request workflow to prevent merge conflicts and facilitate code reviews.'
     ],
     liveLink: 'https://www.projectmatch.me',
