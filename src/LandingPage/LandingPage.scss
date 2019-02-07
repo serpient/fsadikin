@@ -117,7 +117,7 @@ SHAPES
 .circle-small, .circle-big {
     animation-timing-function: linear;
     animation-name: pulse;
-    animation-duration: 7s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
@@ -139,6 +139,10 @@ SHAPES
     height: 0px;
     border-left: 200px solid transparent;
     border-top: 200px solid $pastel-purple;
+    // animation-timing-function: linear;
+    // animation-name: pulse;
+    // animation-duration: 7s;
+    // animation-iteration-count: infinite;
 }
 /*
 ==========================
@@ -151,9 +155,9 @@ ANIMATION
 }
 
 @keyframes pulse {
-    0% {transform: scale(1)}
+    0% {transform: scale(1.2)}
     50% {transform: scale(0.8)}
-    100% {transform: scale(1)}
+    100% {transform: scale(1.2)}
 }
 /*
 ==========================
