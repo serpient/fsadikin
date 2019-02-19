@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import About from '../About/About';
 import Projects from '../Projects/Projects';
