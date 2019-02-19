@@ -48,7 +48,7 @@ const Connect_4 = {
     date: 'Jan. 2019',
     tech: ['React', 'Jest/Enzyme'],
     description: `Connect 4 game with 2 local players. Match 4 coins horizontally, vertically, or diagonally to win.`,
-    workDone: [ 'Design and implement game in React',
+    workDone: [ 'Implement game play using a 2D array data structure, built in React',
         'Test units for horizontal, vertical and diagonal wins using Jest/Enzyme.',
     ],
     liveLink: 'https://serpient.github.io/connect-4/',
@@ -57,7 +57,6 @@ const Connect_4 = {
     features: [
         {
             title: 'Connect 4 Gameplay',
-            // description: `Admin can create and manage voyages`,
             image: require('../assets/connect-4-short.gif')
         },
     ]
@@ -66,15 +65,15 @@ const Connect_4 = {
 const Chingu = {
     name: 'Chingu',
     date: 'July. 2018 - Current',
-    tech: ['React', 'Apollo', 'GraphQL', 'D3'],
+    tech: ['React', 'Apollo Client', 'GraphQL', 'D3'],
     description: `Chingu aims to build a coding platform in which programmers elevate their technical and soft skills by building a project in 8 weeks with a remote team.
                 The client facing sites are built with React and Apollo Client (GraphQL).`,
     workDone: [
+        `Reduced team sorting process from 4-Days to 4-Hours by using D3 data visualization to sort users into teams.`,
+        `Improved ease of development by implementing reusable input elements and standardized styles for a data-driven form creator.`,
         'Sole designer to mockup and implement custom styles and page layouts on the entire platform.',
         'Ideate user features and implement them as part of a 3-person team using React and Apollo / GraphQL. Features include User Profile, Newsfeed, and Project Pages.',
         'Gathered feedback from users, identified the main issue (high attrition rates), created a hypothesis and drafted solutions & metrics to be implemented in the next launch. ',
-        `Improved ease of development by implementing reusable input elements and standardized styles for a data-driven form creator.`,
-        `Reduced team sorting process from 4-Days to 4-Hours by using D3 data visualization to sort users into teams.`,
     ],
     liveLink: 'https://beta.chingu.io/',
     githubLink: 'https://github.com/chingu-x/chingu-frontend/tree/master',
@@ -86,7 +85,7 @@ const Chingu = {
             description: `Chingu currently manually sort hundreds of users into teams using Google Sheets. We needed a solution that can scale as Chingu’s community grows. 
                             <br />
                             <br />
-                            The first version of Team Sort features a D3 Force Graph to visualize the closest matches to a selected user, 
+                            Team Sort features a D3 Force Graph to visualize the closest matches to a selected user, 
                             React Drag-and-Drop areas to set teams, and a interactive table to quickly pull up all applicant data.`
                             ,
             image: require('../assets/Team-Sort-Features.png'),
