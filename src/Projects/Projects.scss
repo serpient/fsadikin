@@ -165,13 +165,13 @@ BUTTON
     grid-gap: 10px;
 }
 .btn-more {
-    background-color: $theme-blue;
-    color: white;
+    // background-color: $theme-blue;
+    color: $theme-blue;
     border-radius: 25px;
     text-decoration: none;
     border: 1px solid $light-blue;
-    padding: 6px 20px;
-    box-shadow: $box-shadow;
+    padding: 6px 10px;
+    box-shadow: $box-shadow-light;
     margin: 2px 0px;
     text-align: center;
     &:last-child {
