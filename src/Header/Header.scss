@@ -58,6 +58,7 @@ LINKS
     margin-top: 15px;
     text-decoration: none;
     text-transform: uppercase;
+    justify-self: end;
 }
 
 .logo {
@@ -73,10 +74,12 @@ LINKS
 
 .navigation {
     font-size: 12px;
+    
 }
 
 .nav-projects, .nav-about {
     text-align: right;
+    text-align: left;
 }
 
 /*
