@@ -17,7 +17,11 @@ class Projects extends React.Component {
                             <div className="project-title">{project.name}</div>
                             <div className="project-tech">{skillCreator(project.tech)}</div>
                             <div className="project-description">{project.description}</div>
-                            <Link to={'/projects/' + project.name.replace(/ /g, '-')} className="btn-more">More Details</Link>
+                            <div className='project-btns'>
+                                <Link to={'/projects/' + project.name.replace(/ /g, '-')} className="btn-more">More Details</Link>
+                                <Link to={project.liveLink} className="btn-more">Live Link</Link>
+                                <Link to={project.githubLink} className="btn-more">GitHub Link</Link>
+                            </div>
                         </div>
                         <img className="project-coverPhoto" src={project.coverPhoto} alt="coverPhoto" />
                     </div>
@@ -28,7 +32,11 @@ class Projects extends React.Component {
     render() {
         return (
             <main className="projects-container">
-                <div className="projects-container-title">Projects</div>
+                <div className="projects-container-title">Francesca Sadikin</div>
+                <div className="projects-container-subtext">
+                    Front End Developer & UI/UX Designer
+                </div>
+                {/* <div className="projects-container-title">Projects</div> */}
                 <section className="projects projects-border">
                     {this.projectCreator()}
                 </section>
