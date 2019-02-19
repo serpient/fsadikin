@@ -19,7 +19,13 @@ class Projects extends React.Component {
         console.log(this.props.location);
         return (
             <React.Fragment>
-                <nav className="sub-header">
+               
+                <main className="projects-container">
+                    <div className="projects-container-title">Francesca Sadikin</div>
+                    <div className="projects-container-subtext">
+                        Front End Developer & UI/UX Designer
+                    </div>
+                    <nav className="sub-header">
                     <div onClick={() => {this.toggleProjectType()}} className={`project-switch ${currTypeIsEng && 'project-switch-active'}`}>
                         <div 
                             className={`project-type ${currTypeIsEng && 'project-type-active'}`}
@@ -35,11 +41,6 @@ class Projects extends React.Component {
                         </div>
                     </div>
                 </nav>
-                <main className="projects-container">
-                    <div className="projects-container-title">Francesca Sadikin</div>
-                    <div className="projects-container-subtext">
-                        Front End Developer & UI/UX Designer
-                    </div>
                     <section className="projects projects-border">
                         <ProjectCreator projects={projects} />
                     </section>

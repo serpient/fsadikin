@@ -33,7 +33,7 @@ GRID & PROJECTS CONTAINER
     text-align: center;
     font-size: 20px;
     color: $dark-grey;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 /*
 ==========================
@@ -44,18 +44,15 @@ PROJECT TYPE
     box-sizing: border-box;
     width: 100%;
     display: grid;
-    // margin: 0 auto; 
     justify-items: stretch;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
     background-color: $palest-grey;
     padding: 3px;
-    margin-top: -95px;
-    position: fixed;
     z-index: 10;
+    margin-bottom: 30px;
     box-shadow: $box-shadow-light;
-    border-top: 1px solid $light-grey;
-    border-bottom: 1px solid $light-grey;
+    border: 1px solid $paler-grey;
 }
 .project-switch {
     padding: 10px;
