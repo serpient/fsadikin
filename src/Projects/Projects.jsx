@@ -64,8 +64,8 @@ const ProjectCreator = ({ projects }) => {
                         <div className="project-tech">{skillCreator(project.tech)}</div>
                         <div className="project-description">{project.description}</div>
                         <div className='project-btns'>
-                            <Link to={project.liveLink} className="btn-more">Live Link</Link>
-                            <Link to={project.githubLink} className="btn-more">GitHub Link</Link>
+                            <a to={project.liveLink} className="btn-more">Live Link</a>
+                            <a to={project.githubLink} className="btn-more">GitHub Link</a>
                             <Link to={'/projects/' + project.name.replace(/ /g, '-')} className="btn-more">More Details</Link>
                         </div>
                     </div>
