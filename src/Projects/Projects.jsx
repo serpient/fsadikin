@@ -19,8 +19,8 @@ class Projects extends React.Component {
                             <div className="project-description">{project.description}</div>
                             <div className='project-btns'>
                                 <Link to={'/projects/' + project.name.replace(/ /g, '-')} className="btn-more">More Details</Link>
-                                <Link to={project.liveLink} className="btn-more">Live Link</Link>
-                                <Link to={project.githubLink} className="btn-more">GitHub Link</Link>
+                                <a href={project.liveLink} className="btn-more">Live Link</a>
+                                <a href={project.githubLink} className="btn-more">GitHub Link</a>
                             </div>
                         </div>
                         <img className="project-coverPhoto" src={project.coverPhoto} alt="coverPhoto" />
