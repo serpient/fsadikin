@@ -222,22 +222,13 @@ TIMELINE
 MEDIA QUERY
 ==========================
 */
-@media all and (max-width: 1079px) {
-    // .project {
-    //     max-width: 65%;
-    //     grid-template-areas: "i i i i" "d d d d";
-    // }
-    // .projects {
-    //     margin-left: 20%;
-    //     width: 100%;
-    // }
-    .project-coverPhoto {
-        width: 100%;
-        height: auto;
+@media all and (max-width: 1120px) {
+    .projects { 
+        padding: 0px 20px;
     }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 900px) {
     // .project {
     //     max-width: 90%;
     //     grid-template-areas: "i i i i" "d d d d";
@@ -245,6 +236,7 @@ MEDIA QUERY
     // .projects {
     //     margin-left: 0%;
     // }
+
     .project-description {
         font-size: 12px;
     }
