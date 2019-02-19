@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router'
 import './Header.css';
 
 class Header extends React.Component {
@@ -11,10 +12,6 @@ class Header extends React.Component {
                     <Link to="/about" className="navigation nav-about">About</Link>
                     <Link to="/projects" className="navigation nav-projects">Projects</Link>
                     <Link to="/resume" className="navigation nav-resume">Resume</Link>
-                </nav>
-                <nav className="header-container">
-                    <Link to="/projects/engineering" className="navigation">Engineering</Link>
-                    <Link to="/projects/design" className="navigation">Design</Link>
                 </nav>
                 <nav className="header-container--mobile">
                     <Link to="/" className="logo">Francesca Sadikin</Link>
@@ -39,4 +36,4 @@ const MobileHeaderDropdown = () => {
     )
 }
 
-export default Header;
+export default Header = withRouter(Header);
