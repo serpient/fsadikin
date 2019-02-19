@@ -16,6 +16,7 @@ $lightest-blue: rgb(195, 215, 236);
 $theme-blue: $light-blue;
 $hover-blue: rgb(103, 145, 190);
 $attention-red: #f37070;
+$attention-red--hover: #ee6060;
 $light-red: #f5cbcb;
 
 $pastel-pink: #F6E4E4;
@@ -37,3 +38,4 @@ STYLING
 ==========================
 */
 $box-shadow: 0px 3px 4px $light-grey;
+$box-shadow-light: 0px 3px 4px $palest-grey;
