@@ -19,13 +19,13 @@ class LandingPage extends React.Component {
     render() {
         return (
             <main className="landing-container">
-                <section className="landing-shapes">
+                {/* <section className="landing-shapes">
                     <div className="diamond-large pink" />
                     <div className="diamond yellow" />
                     <div className="circle-small blue" />
                     <div className="circle-big green" />
                     <div className="triangle purple" />
-                </section>
+                </section> */}
                 {
                     this.props.about
                         ? <About />
