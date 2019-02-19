@@ -9,7 +9,7 @@ class LandingPage extends React.Component {
             <section className="landing-text">
                 <div className="landing-name">Francesca Sadikin</div>
                 <div className="landing-description">
-                    Architect turned Web Developer looking for the opportunity to build awesome projects with an amazing team.
+                    Front End Developer & UI/UX Designer
                     </div>
                 <Link to="/projects" className="btn-navi">Projects</Link>
             </section>
