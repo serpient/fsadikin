@@ -12,6 +12,10 @@ class Header extends React.Component {
                     <Link to="/projects" className="navigation nav-projects">Projects</Link>
                     <Link to="/resume" className="navigation nav-resume">Resume</Link>
                 </nav>
+                <nav className="header-container">
+                    <Link to="/projects/engineering" className="navigation">Engineering</Link>
+                    <Link to="/projects/design" className="navigation">Design</Link>
+                </nav>
                 <nav className="header-container--mobile">
                     <Link to="/" className="logo">Francesca Sadikin</Link>
                     <img onClick={(e) => this.props.toggleDropdown(e)} className="menu-icon" alt="menu" src={require('../assets/menu.png')} />
