@@ -39,6 +39,67 @@ GRID & PROJECTS CONTAINER
 }
 /*
 ==========================
+PROJECT TYPE
+==========================
+*/
+.sub-header {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    // margin: 0 auto; 
+    justify-items: stretch;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $palest-grey;
+    padding: 3px;
+    margin-top: -95px;
+    position: fixed;
+    z-index: 10;
+    box-shadow: $box-shadow-light;
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+}
+.project-switch {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    // -webkit-transition: all 2s ease;
+    // -moz-transition:all 0.5s ease;
+    // -o-transition:all 0.5s ease;
+    // transition:all 2s ease;
+}
+.project-switch-active,
+.project-switch-active-design {
+    color: white;
+    border-radius: 20px;
+}
+.project-switch-active {
+    background-color: $theme-blue;
+    &:hover {
+        background-color: $hover-blue;
+    }
+}
+.project-switch-active-design {
+    background-color: $attention-red;
+    &:hover {
+        background-color: $attention-red--hover;
+    }
+}
+.project-type {
+    text-decoration: none;
+    font-weight: 600;
+    &:visited {
+        color: $dark-grey;
+    }
+}
+.project-type-active {
+    &:visited {
+        color: white;
+    }
+}
+
+/*
+==========================
 PROJECT
 ==========================
 */
