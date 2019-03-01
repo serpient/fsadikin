@@ -1,11 +1,11 @@
 import * as React from "react";
-import { projects } from "../utils/projects";
-import { individualProjectPageCreator } from "../utils/individualProjectPageCreator";
+import ProjectPageCreator from "./index";
+import projects from "project_data";
 
 var Connect4Data = projects.get("connect-4");
 class Connect4 extends React.Component {
   render() {
-    return individualProjectPageCreator(Connect4Data, "connect-4-main.png");
+    return <ProjectPageCreator projectData={Connect4Data} />;
   }
 }
 

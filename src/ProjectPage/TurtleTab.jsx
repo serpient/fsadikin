@@ -1,12 +1,12 @@
 import * as React from "react";
-import { projects } from "../utils/projects";
-import { individualProjectPageCreator } from "../utils/individualProjectPageCreator";
+import ProjectPageCreator from "./index";
+import projects from "project_data";
 
 var turtleTabData = projects.get("turtle-tab");
 
 class TurtleTab extends React.Component {
   render() {
-    return individualProjectPageCreator(turtleTabData, "turtleTab-main.png");
+    return <ProjectPageCreator projectData={turtleTabData} />;
   }
 }
 

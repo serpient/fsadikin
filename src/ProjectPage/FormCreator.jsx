@@ -1,11 +1,11 @@
 import * as React from "react";
-import { projects } from "../utils/projects";
-import { individualProjectPageCreator } from "../utils/individualProjectPageCreator";
+import ProjectPageCreator from "./index";
+import projects from "project_data";
 
 var FormCreatorData = projects.get("form-creator");
 class FormCreator extends React.Component {
   render() {
-    return individualProjectPageCreator(FormCreatorData, "form-creator.gif");
+    return <ProjectPageCreator projectData={FormCreatorData} />;
   }
 }
 

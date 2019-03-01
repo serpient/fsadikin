@@ -1,11 +1,11 @@
 import * as React from "react";
-import { projects } from "../utils/projects";
-import { individualProjectPageCreator } from "../utils/individualProjectPageCreator";
+import projects from "project_data";
+import ProjectPageCreator from "./index";
 
 var ChinguData = projects.get("chingu");
 class Chingu extends React.Component {
   render() {
-    return individualProjectPageCreator(ChinguData, "chingu-landingImage.JPG");
+    return <ProjectPageCreator projectData={ChinguData} />;
   }
 }
 
