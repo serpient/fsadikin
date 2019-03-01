@@ -13,6 +13,7 @@ const Connect_4 = {
   blogLink:
     "https://medium.com/@fsadikin/lessons-learned-in-making-connect-4-41c0b86df360",
   coverPhoto: require("../assets/connect-4_1000.png"),
+  mainImage: require("../assets/connect-4-main.png"),
   features: [
     {
       title: "Connect 4 Gameplay",

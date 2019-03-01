@@ -16,6 +16,7 @@ const Turtles_Tab = {
   blogLink:
     "https://medium.com/chingu/turtlestab-chrome-extension-a-chingu-voyage-2-project-97d5b664d2fd",
   coverPhoto: require("../assets/turtleTab.png"),
+  mainImage: require("../assets/turtleTab-main.png"),
   features: [
     {
       title: "Project Walkthrough",

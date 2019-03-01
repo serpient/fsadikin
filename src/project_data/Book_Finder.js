@@ -11,6 +11,7 @@ const Book_Finder = {
   liveLink: "https://quiet-brushlands-15098.herokuapp.com/",
   githubLink: "https://github.com/serpient/google-books-api",
   coverPhoto: require("../assets/book-finder_1000.png"),
+  mainImage: require("../assets/book-finder-main.png"),
   features: [
     {
       title: "Book Finder Usability",

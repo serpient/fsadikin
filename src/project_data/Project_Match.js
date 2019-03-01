@@ -17,6 +17,7 @@ const Project_Match = {
   blogLink:
     "https://medium.com/@fsadikin/project-match-post-mortem-3f79496d727d",
   coverPhoto: require("../assets/project-match.png"),
+  mainImage: require("../assets/project-match-main.png"),
   features: [
     {
       title: "Get Matched",

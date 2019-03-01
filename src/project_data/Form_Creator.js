@@ -10,6 +10,7 @@ const Form_Creator = {
   liveLink: "https://serpient.github.io/form-creator/",
   githubLink: "https://github.com/serpient/form-creator",
   coverPhoto: require("../assets/form-creator_1000.png"),
+  mainImage: require("../assets/form-creator.gif"),
   features: [
     {
       title: "Converts data into React form",

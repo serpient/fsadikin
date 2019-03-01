@@ -21,6 +21,7 @@ const Chingu = {
   githubLink: "https://github.com/chingu-x/chingu-frontend/tree/master",
   blogLink: "https://medium.com/@fsadikin/team-sort-version-1-afea3c018120",
   coverPhoto: require("../assets/chingu.png"),
+  mainImage: require("../assets/chingu-landingImage.JPG"),
   features: [
     {
       title: "Team Sort",
