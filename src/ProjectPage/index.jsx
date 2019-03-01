@@ -1,6 +1,6 @@
 import * as React from "react";
-import "./ProjectPage.css";
-import SkillCreator from "./components/SkillCreator";
+import "./ProjectPage.scss";
+import SkillCreator from "../UI/SkillCreator";
 import FeatureCreator from "./components/FeatureCreator";
 
 const removeRelativeLink = string => {

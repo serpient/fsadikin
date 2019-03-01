@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import "./Projects.css";
+import "./Projects.scss";
 import { projects } from "../utils/projects";
-import { skillCreator } from "../utils/skillCreator";
+import { skillCreator } from "../UI/SkillCreator";
 
 class Projects extends React.Component {
   projectCreator = () => {
