@@ -1,8 +1,8 @@
 import * as React from "react";
 const ReactMarkdown = require("react-markdown/with-html");
 
-export const projectFeatureCreator = feature => {
-  return feature.map((feature, index) => {
+const FeatureCreator = ({ features }) => {
+  return features.map((feature, index) => {
     return (
       <React.Fragment key={"feature" + index}>
         <hr className="hline" />
@@ -32,8 +32,17 @@ export const projectFeatureCreator = feature => {
               title="resume"
             />
           )}
+          <div className="project-page-writeup">
+            {feature.writeup && (
+              <div className="project-page-feature-description">
+                <ReactMarkdown source={feature.writeup} escapeHtml={false} />
+              </div>
+            )}
+          </div>
         </section>
       </React.Fragment>
     );
   });
 };
+
+export default FeatureCreator;
