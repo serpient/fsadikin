@@ -15,16 +15,16 @@ import FormCreator from './Projects/FormCreator';
 
 class App extends React.Component {
   state = {
-    dropdownVisibility: false
-  }
+    dropdownVisibility: false,
+  };
   closeDropdown = () => {
-    this.setState({ dropdownVisibility: false })
-  }
-  toggleDropdown = (e) => {
+    this.setState({ dropdownVisibility: false });
+  };
+  toggleDropdown = e => {
     e.stopPropagation();
-    this.setState({ dropdownVisibility: !this.state.dropdownVisibility })
-  }
-  scrollWithArrows = (e) => {
+    this.setState({ dropdownVisibility: !this.state.dropdownVisibility });
+  };
+  scrollWithArrows = e => {
     let keyCode = e.key;
     let interval = 1000;
     switch (keyCode) {
@@ -39,21 +39,48 @@ class App extends React.Component {
       default:
         return;
     }
-  }
+  };
   render() {
     return (
-      <div onClick={() => this.closeDropdown()} onKeyPress={e => this.scrollWithArrows(e)} className="App">
-        <Header dropdownVisibility={this.state.dropdownVisibility} toggleDropdown={this.toggleDropdown}/>
+      <div
+        onClick={() => this.closeDropdown()}
+        onKeyPress={e => this.scrollWithArrows(e)}
+        className="App"
+      >
+        <Header
+          dropdownVisibility={this.state.dropdownVisibility}
+          toggleDropdown={this.toggleDropdown}
+        />
         <Switch>
           <Route exact={true} path={'/'} component={Projects} />
-          <Route exact={true} path={'/about'} render={() => <LandingPage about={true} />} />
+          <Route
+            exact={true}
+            path={'/about'}
+            render={() => <LandingPage about={true} />}
+          />
           <Route exact={true} path={'/projects'} component={Projects} />
-          <Route exact={true} path="/projects/Project-Match" component={ProjectMatch} />
-          <Route exact={true} path="/projects/turtlesTab" component={TurtleTab} />
+          <Route
+            exact={true}
+            path="/projects/Project-Match"
+            component={ProjectMatch}
+          />
+          <Route
+            exact={true}
+            path="/projects/turtlesTab"
+            component={TurtleTab}
+          />
           <Route exact={true} path="/projects/chingu" component={Chingu} />
-          <Route exact={true} path="/projects/Book-Finder" component={BookFinder} />
+          <Route
+            exact={true}
+            path="/projects/Book-Finder"
+            component={BookFinder}
+          />
           <Route exact={true} path="/projects/Connect-4" component={Connect4} />
-          <Route exact={true} path="/projects/form-creator-v1" component={FormCreator} />
+          <Route
+            exact={true}
+            path="/projects/form-creator-v1"
+            component={FormCreator}
+          />
           <Route exact={true} path="/resume" component={Resume} />
           <Route path="/*" component={ErrorPage} />
         </Switch>
