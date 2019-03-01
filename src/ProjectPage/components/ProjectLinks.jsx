@@ -6,21 +6,22 @@ const removeRelativeLink = string => {
 };
 
 const ProjectLinks = ({ projectData }) => {
+  let { liveLink, githubLink, blogLink } = projectData;
   let returnedArray = [
     {
       title: "Live Link",
-      link: removeRelativeLink(projectData.liveLink)
+      link: removeRelativeLink(liveLink)
     },
     {
       title: "Github Link",
-      link: removeRelativeLink(projectData.githubLink)
+      link: removeRelativeLink(githubLink)
     }
   ];
 
-  if (projectData.blogLink) {
+  if (blogLink) {
     returnedArray.push({
       title: "Writeup Link",
-      link: removeRelativeLink(projectData.blogLink)
+      link: removeRelativeLink(blogLink)
     });
   }
 
@@ -30,9 +31,9 @@ const ProjectLinks = ({ projectData }) => {
         <a
           key={idx}
           href={linkObject.link}
-          rel="external"
           target="_blank"
           className="main-navi-btn"
+          rel="noopener noreferrer"
         >
           {linkObject.title}
         </a>
