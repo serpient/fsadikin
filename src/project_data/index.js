@@ -1,5 +1,5 @@
 import Book_Finder from "./Book_Finder";
-import Chingu from "../ProjectPage/Chingu";
+import Chingu from "./Chingu";
 import Connect_4 from "./Connect_4";
 import Form_Creator from "./Form_Creator";
 import Project_Match from "./Project_Match";
