@@ -49,7 +49,8 @@ const Connect_4 = {
   tech: ['React', 'Jest/Enzyme'],
   description: `Connect 4 game with 2 local players. Match 4 coins horizontally, vertically, or diagonally to win.`,
   workDone: [
-    'Implement game play using a 2D array data structure, built in React',
+    'Implement game play using a 2D array data structure, built in React.',
+    'Created a win algorithm that checks for horizontal, vertical and diagonal wins',
     'Test units for horizontal, vertical and diagonal wins using Jest/Enzyme.',
   ],
   liveLink: 'https://serpient.github.io/connect-4/',
@@ -62,24 +63,27 @@ const Connect_4 = {
       title: 'Connect 4 Gameplay',
       image: require('../assets/connect-4-short.gif'),
     },
-    {
-      writeup: connect4Blog,
-    },
   ],
 };
 
 const Chingu = {
   name: 'Chingu',
   date: 'July. 2018 - Current',
-  tech: ['React', 'Apollo Client', 'GraphQL', 'D3'],
+  tech: ['React', 'Apollo Client', 'GraphQL', 'D3', 'CSS/SCSS/CSS Grid'],
   description: `Chingu aims to build a coding platform in which programmers elevate their technical and soft skills by building a project in 8 weeks with a remote team.
                 The client facing sites are built with React and Apollo Client (GraphQL).`,
   workDone: [
-    `Reduced team sorting process from 4-Days to 4-Hours by using D3 data visualization to sort users into teams.`,
-    `Improved ease of development by implementing reusable input elements and standardized styles for a data-driven form creator.`,
-    'Sole designer to mockup and implement custom styles and page layouts on the entire platform.',
-    'Ideate user features and implement them as part of a 3-person team using React and Apollo / GraphQL. Features include User Profile, Newsfeed, and Project Pages.',
-    'Gathered feedback from users, identified the main issue (high attrition rates), created a hypothesis and drafted solutions & metrics to be implemented in the next launch. ',
+    `Reduce team sorting time by 50% by implementing a D3 data visualization driven
+        workflow for sorting users into teams.`,
+    `Increase ease of development by creating reusable input elements and
+        standardized styles for a data-driven form creator in React.`,
+    `Design and build Chingu's web presence by ideating user features and implement
+        them as part of a 3-person team using React and Apollo / GraphQL. Features
+        include Landing Page, User Profile, Newsfeed, Project Pages and Ticketbox.`,
+    `Establish company aesthetic and branding by prototyping and implementing
+        styles, responsive design, and layouts for the entire platform using HTML,
+        CSS Grid, and SCSS.`,
+    'Tackle user abandonment rates by gathering feedback from users, creating a hypothesis and drafting solutions & metrics to be implemented in the next launch.',
   ],
   liveLink: 'https://beta.chingu.io/',
   githubLink: 'https://github.com/chingu-x/chingu-frontend/tree/master',

@@ -20,12 +20,10 @@ const projectLinks = projectData => {
   ];
 
   if (projectData.blogLink) {
-    returnedArray.push([
-      {
-        title: 'Writeup Link',
-        link: removeRelativeLink(projectData.blogLink),
-      },
-    ]);
+    returnedArray.push({
+      title: 'Writeup Link',
+      link: removeRelativeLink(projectData.blogLink),
+    });
   }
 
   return returnedArray;
