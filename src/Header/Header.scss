@@ -1,4 +1,4 @@
-@import '../_variables.scss';
+@import "_variables.scss";
 
 /*
 ==========================
@@ -6,12 +6,12 @@ GRID
 ==========================
 */
 .header-container-all {
-    position: fixed;
-    top: 0px;
-    z-index: 10;
-    left: 0px;
-    right: 0px;
-    background-color: rgba(255, 255, 255, 0.939);
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.939);
 }
 /*
 ==========================
@@ -19,63 +19,66 @@ MAIN HEADER
 ==========================
 */
 .header-container {
-    width: 100%;
-    max-width: 1080px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-areas: "logo logo logo . about project resume";
-    height: 30px;
-    margin: 0 auto; 
-    justify-items: center;
+  width: 100%;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: "logo logo logo . about project resume";
+  height: 30px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .header-border {
-    position: relative;
-    top: 10px;
-    border-top: 1px solid $pale-grey;
+  position: relative;
+  top: 10px;
+  border-top: 1px solid $pale-grey;
 }
 
 .nav-projects {
-    grid-area: project;
+  grid-area: project;
 }
 
 .nav-about {
-    grid-area: about;
+  grid-area: about;
 }
 
 .nav-resume {
-    grid-area: resume;
+  grid-area: resume;
 }
 /*
 ==========================
 LINKS
 ==========================
 */
-.logo, .navigation {
-    color: $grey;
-    font-size: 14px;
-    margin-top: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
+.logo,
+.navigation {
+  color: $grey;
+  font-size: 14px;
+  margin-top: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .logo {
-    justify-self: start;
-    grid-area: logo;
-    letter-spacing: 2px;
-    font-weight: 600;
+  justify-self: start;
+  grid-area: logo;
+  letter-spacing: 2px;
+  font-weight: 600;
 }
 
-.logo:hover, .navigation:hover {
-    color: $dark-grey;
+.logo:hover,
+.navigation:hover {
+  color: $dark-grey;
 }
 
 .navigation {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-.nav-projects, .nav-about {
-    text-align: right;
+.nav-projects,
+.nav-about {
+  text-align: right;
 }
 /*
 ==========================
@@ -83,50 +86,50 @@ MOBILE HEADER
 ==========================
 */
 .header-container--mobile {
+  height: 30px;
+  width: 90%;
+  max-width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "logo logo menu";
+  height: 30px;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 16px;
+  .logo {
+    margin: 0;
+    justify-self: start;
+    grid-area: logo;
+  }
+  .menu-icon {
+    justify-self: end;
+    grid-area: menu;
+    width: 30px;
     height: 30px;
-    width: 90%;
-    max-width: 1080px;
+    object-fit: cover;
+  }
+  .menu {
+    position: relative;
+    z-index: 20;
+    justify-self: end;
+    grid-column: 2 / -1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "logo logo menu";
-    height: 30px;
-    margin: 0 auto; 
-    align-items: center;
-    padding-top: 16px;
-    .logo {
-        margin: 0;
-        justify-self: start;
-        grid-area: logo;
+    grid-template-rows: repeat(3, 1fr);
+    width: 50%;
+    min-width: 100px;
+    vertical-align: middle;
+    background-color: white;
+    box-shadow: $box-shadow;
+    padding-bottom: 10px;
+  }
+  .navigation {
+    text-align: center;
+    padding: 10px;
+    &:hover {
+      background-color: $lightest-blue;
     }
-    .menu-icon {
-        justify-self: end;
-        grid-area: menu;
-        width: 30px;
-        height: 30px;
-        object-fit: cover;
-    }
-    .menu {
-        position: relative;
-        z-index: 20;
-        justify-self: end;
-        grid-column: 2 / -1;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        width: 50%;
-        min-width: 100px;
-        vertical-align: middle;
-        background-color: white;
-        box-shadow: $box-shadow;
-        padding-bottom: 10px;
-    }
-    .navigation {
-        text-align: center;
-        padding: 10px;
-        &:hover {
-            background-color: $lightest-blue;
-        }
-    }
-    display: none;
+  }
+  display: none;
 }
 /*
 ==========================
@@ -135,16 +138,16 @@ MEDIA QUERY
 */
 
 @media all and (max-width: 1079px) and (min-width: 0px) {
-    .header-container {
-        padding: 0px 20px;
-    }
+  .header-container {
+    padding: 0px 20px;
+  }
 }
 
 @media all and (max-width: 500px) and (min-width: 0px) {
-    .header-container--mobile {
-        display: grid;
-    }
-    .header-container {
-        display: none;
-    }
+  .header-container--mobile {
+    display: grid;
+  }
+  .header-container {
+    display: none;
+  }
 }

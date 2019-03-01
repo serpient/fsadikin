@@ -1,26 +1,26 @@
-@import '../_variables.scss';
+@import "_variables.scss";
 
 .about-page-container {
-    z-index: 1;
-    position: absolute;
-    display: block;
-    top: 200px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    max-width: 1000px;
-    background-color: white;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: ("user bio bio");
-    color: $dark-grey;
-    padding: 80px 0px;
-    box-shadow: $box-shadow;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 50px;
-    border: 2px solid $palest-grey;
+  z-index: 1;
+  position: absolute;
+  display: block;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: ("user bio bio");
+  color: $dark-grey;
+  padding: 80px 0px;
+  box-shadow: $box-shadow;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+  border: 2px solid $palest-grey;
 }
 /*
 ==========================
@@ -28,26 +28,24 @@ USER INFO
 ==========================
 */
 .user-info-section {
-    grid-area: user;
-    text-align: center;
-    
-
+  grid-area: user;
+  text-align: center;
 }
 .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: $box-shadow;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: $box-shadow;
 }
 
 .name {
-    font-size: 26px;
-    margin-top: 20px;
+  font-size: 26px;
+  margin-top: 20px;
 }
 
 .location {
-    font-size: 14px;
+  font-size: 14px;
 }
 /*
 ==========================
@@ -55,14 +53,14 @@ USER LINKS
 ==========================
 */
 .user-links-section {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .user-link-img {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    margin: 8px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 8px;
 }
 
 /*
@@ -71,16 +69,16 @@ DESCRIPTION
 ==========================
 */
 .description {
-    grid-area: bio;
-    padding: 0px 50px;
-    border-left: 1px solid $light-grey;
-    font-size: 18px;
-    line-height: 30px;
+  grid-area: bio;
+  padding: 0px 50px;
+  border-left: 1px solid $light-grey;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .bio-link {
-    color: $light-blue;
-    display: inline-block;
+  color: $light-blue;
+  display: inline-block;
 }
 
 /*
@@ -90,46 +88,46 @@ MEDIA QUERY
 */
 
 @media all and (max-width: 1079px) and (min-width: 0px) {
-    .about-page-container {
-        width: 80vw;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto; 
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: ("user" "bio");
-    }
+  .about-page-container {
+    width: 80vw;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: ("user" "bio");
+  }
 
-    .user-info-section {
-        padding-bottom: 50px;
-    }
+  .user-info-section {
+    padding-bottom: 50px;
+  }
 
-    .description {
-        border: none;
-        border-top: 1px solid $light-grey;
-        padding-top: 50px;
-    }
-    .bio-link {
-        margin-left: 8px;
-    }
+  .description {
+    border: none;
+    border-top: 1px solid $light-grey;
+    padding-top: 50px;
+  }
+  .bio-link {
+    margin-left: 8px;
+  }
 }
 
 @media all and (max-width: 500px) and (min-width: 0px) {
-    .profile-img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: $box-shadow;
-    }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: $box-shadow;
+  }
 
-    .description {
-        padding: 30px;
-        font-size: 16px;
-    }
+  .description {
+    padding: 30px;
+    font-size: 16px;
+  }
 
-    .about-page-container {
-        padding-bottom: 0px;
-        top: 100px
-    }
+  .about-page-container {
+    padding-bottom: 0px;
+    top: 100px;
+  }
 }

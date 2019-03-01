@@ -1,18 +1,18 @@
-@import '../_variables.scss';
+@import "_variables.scss";
 
 .resume-container {
-    background-color: $black-grey;
-    min-height: 100vh;
+  background-color: $black-grey;
+  min-height: 100vh;
 }
 
 .resume-object {
-    width: 100vw;
-    min-height: calc(100vh - 50px);
-    display: block;
-    margin: 0 auto;
-    padding-top: 50px;
-    height: auto;
+  width: 100vw;
+  min-height: calc(100vh - 50px);
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+  height: auto;
 }
 .resume-iframe {
-    width: 100%;
+  width: 100%;
 }
