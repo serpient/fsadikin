@@ -10,7 +10,7 @@ const ProjectPageCreator = ({ projectData }) => {
     <section className="individual-project-container">
       <img
         className="project-image project-image-padding"
-        src={require("../assets/" + mainImage)}
+        src={mainImage}
         alt="main-project"
       />
       <div className="project-page-title">{name}</div>
