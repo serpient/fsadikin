@@ -1,3 +1,10 @@
+import * as React from "react";
+
+const removeRelativeLink = string => {
+  var index = string.search("http");
+  return string.substring(index);
+};
+
 const ProjectLinks = ({ projectData }) => {
   let returnedArray = [
     {
