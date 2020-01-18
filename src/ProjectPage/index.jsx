@@ -5,11 +5,12 @@ import FeatureCreator from "./components/FeatureCreator";
 import ProjectLinks from "./components/ProjectLinks";
 
 const ProjectPageCreator = ({ projectData }) => {
-  let { mainImage, name, description, workDone, tech, features } = projectData;
+  let { mainImage, name, description, workDone, tech, features, verticalMainImage } = projectData;
   return (
+    <>
     <section className="individual-project-container">
       <img
-        className="project-image project-image-padding"
+        className={`project-image project-image-padding ${verticalMainImage && 'project-image--vertical'}`}
         src={mainImage}
         alt="main-project"
       />
@@ -36,6 +37,7 @@ const ProjectPageCreator = ({ projectData }) => {
       </div>
       <FeatureCreator features={features} />
     </section>
+    </>
   );
 };
 

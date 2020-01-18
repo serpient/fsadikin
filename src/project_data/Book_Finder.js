@@ -1,7 +1,7 @@
 const Book_Finder = {
   name: "Book Finder",
   date: "Jan. 2019",
-  tech: ["React", "Jest/Enzyme"],
+  tech: ["React", "Jest", "Enzyme", "JavaScript"],
   description: `Powered by Google Books API, search for any book and find more information about it. Website demonstrates RESTful API call, handling of edge cases, and corresponding test units. `,
   workDone: [
     "Design and implement web app in React.",

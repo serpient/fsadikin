@@ -32,9 +32,11 @@ const ProjectCardCreator = ({ projects }) => {
               >
                 More Details
               </Link>
-              <a href={liveLink} className="btn-more">
-                Live Link
-              </a>
+              {
+               liveLink &&  <a href={liveLink} className="btn-more">
+               Live Link
+             </a>
+              }
               <a href={githubLink} className="btn-more">
                 GitHub Link
               </a>

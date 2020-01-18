@@ -1,18 +1,13 @@
 import * as React from "react";
 import { Switch, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import LandingPage from "./LandingPage/LandingPage";
 import Header from "./Header/Header";
 import ErrorPage from "./ErrorPage/ErrorPage";
 import Resume from "./Resume/Resume";
-
+import projects from "project_data";
 import Projects from "./Projects/Projects";
-import Chingu from "./ProjectPage/Chingu";
-import Connect4 from "./ProjectPage/Connect4";
-import BookFinder from "./ProjectPage/BookFinder";
-import FormCreator from "./ProjectPage/FormCreator";
-import TurtleTab from "./ProjectPage/TurtleTab";
-import ProjectMatch from "./ProjectPage/ProjectMatch";
+import ProjectPageCreator from "./ProjectPage/index";
 
 class App extends React.Component {
   state = {
@@ -27,7 +22,7 @@ class App extends React.Component {
   };
   scrollWithArrows = e => {
     let keyCode = e.key;
-    let interval = 1000;
+    let interval = 2000;
     switch (keyCode) {
       case 38:
         document.body.scrollTop -= interval;
@@ -63,23 +58,33 @@ class App extends React.Component {
           <Route
             exact={true}
             path="/projects/Project-Match"
-            component={ProjectMatch}
+            render={() => <ProjectPageCreator projectData={projects.get("project-match")} />}
           />
           <Route
             exact={true}
             path="/projects/turtlesTab"
-            component={TurtleTab}
+            render={() => <ProjectPageCreator projectData={projects.get("turtle-tab")} />}
           />
-          <Route exact={true} path="/projects/chingu" component={Chingu} />
+          <Route 
+            exact={true} 
+            path="/projects/chingu"  
+            render={() => <ProjectPageCreator projectData={projects.get("chingu")} />} 
+          />
           <Route
             exact={true}
             path="/projects/Book-Finder"
-            component={BookFinder}
+            render={() => <ProjectPageCreator projectData={projects.get("book-finder")} />}
           />
-          <Route exact={true} path="/projects/Connect-4" component={Connect4} />
+          <Route 
+            exact={true} 
+            path="/projects/Connect-4" 
+            render={() => <ProjectPageCreator projectData={projects.get("connect-4")} />} 
+          />
           <Route
             exact={true}
             path="/projects/form-creator-v1"
+            render={() => <ProjectPageCreator projectData={projects.get("form-creator")} />}
+          />
             component={FormCreator}
           />
           <Route exact={true} path="/resume" component={Resume} />

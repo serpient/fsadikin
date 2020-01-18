@@ -1,7 +1,7 @@
 const Connect_4 = {
   name: "Connect 4",
   date: "Jan. 2019",
-  tech: ["React", "Jest/Enzyme"],
+  tech: ["React", "Jest", "Enzyme", "JavaScript"],
   description: `Connect 4 game with 2 local players. Match 4 coins horizontally, vertically, or diagonally to win.`,
   workDone: [
     "Implement game play using a 2D array data structure, built in React.",

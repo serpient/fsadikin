@@ -1,7 +1,7 @@
 const Project_Match = {
   name: "Project Match",
   date: "Feb. 2018 - July. 2018",
-  tech: ["MongoDB", "Express", "React", "NodeJS", "TypeScript", "Redux"],
+  tech: ["MongoDB", "Express", "React", "NodeJS", "TypeScript", "Redux", "JavaScript"],
   description: `Project Match is a full-stack web app created with the MERN stack with typescript integration. 
                     It's primary function is to help programmers and designers match with projects they would be interested in. 
                     Project Match will then provide team collaboration tools to support new teams with features such as a 

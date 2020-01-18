@@ -12,6 +12,9 @@ GRID
   left: 0px;
   right: 0px;
   background-color: rgba(255, 255, 255, 0.939);
+  padding-bottom: 2px;
+  border-bottom: 1px solid $light-grey;
+  box-shadow: $box-shadow-light;
 }
 /*
 ==========================
@@ -69,11 +72,14 @@ LINKS
 
 .logo:hover,
 .navigation:hover {
-  color: $dark-grey;
+  color: $darker-grey;
+  font-weight: 700;
 }
 
 .navigation {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
 }
 
 .nav-projects,

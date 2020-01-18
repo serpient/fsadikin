@@ -1,7 +1,7 @@
 const Chingu = {
   name: "Chingu",
-  date: "July. 2018 - Current",
-  tech: ["React", "Apollo Client", "GraphQL", "D3", "CSS/SCSS/CSS Grid"],
+  date: "July. 2018 - Mar. 2018",
+  tech: ["React", "Apollo Client", "GraphQL", "D3", "CSS/SCSS/CSS Grid", "JavaScript"],
   description: `Chingu aims to build a coding platform in which programmers elevate their technical and soft skills by building a project in 8 weeks with a remote team.
                 The client facing sites are built with React and Apollo Client (GraphQL).`,
   workDone: [

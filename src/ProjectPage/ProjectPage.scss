@@ -17,13 +17,18 @@ IMAGE
 */
 
 .project-image {
-  width: 900px;
-  height: auto;
+  width: auto;
+  height: 500px;
   object-fit: cover;
   margin: 0 auto;
   margin-top: 40px;
   box-shadow: 0px 15px 15px $light-grey;
   display: block;
+}
+
+.project-image--vertical {
+  width: auto;
+  height: 900px;
 }
 
 .project-image-padding {
@@ -186,7 +191,14 @@ MEDIA QUERY
 @media all and (max-width: 1079px) and (min-width: 0px) {
   .project-image {
     width: 80vw;
+    height: auto;
   }
+
+  .project-image--vertical {
+    width: 70vw;
+    height: auto;
+  }
+
   .project-page-description {
     width: 450px;
   }
@@ -201,6 +213,12 @@ MEDIA QUERY
   .project-image {
     width: 90vw;
   }
+
+  .project-image--vertical {
+    width: 90vw;
+    height: auto;
+  }
+
   .project-page-feature--video {
     width: 90vw;
     min-height: 300px;

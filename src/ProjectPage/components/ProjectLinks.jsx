@@ -1,17 +1,13 @@
 import * as React from "react";
 
 const removeRelativeLink = string => {
-  var index = string.search("http");
+  var index = string.search("http") || string.search("https");
   return string.substring(index);
 };
 
 const ProjectLinks = ({ projectData }) => {
-  let { liveLink, githubLink, blogLink } = projectData;
+  const { liveLink, githubLink, blogLink } = projectData;
   let returnedArray = [
-    {
-      title: "Live Link",
-      link: removeRelativeLink(liveLink)
-    },
     {
       title: "Github Link",
       link: removeRelativeLink(githubLink)
@@ -22,6 +18,13 @@ const ProjectLinks = ({ projectData }) => {
     returnedArray.push({
       title: "Writeup Link",
       link: removeRelativeLink(blogLink)
+    });
+  }
+
+  if (liveLink) {
+    returnedArray.push({
+      title: "Live Link",
+      link: removeRelativeLink(liveLink)
     });
   }
 

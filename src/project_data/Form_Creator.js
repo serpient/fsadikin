@@ -1,7 +1,7 @@
 const Form_Creator = {
   name: "Form Creator V1",
   date: "Aug. 2018",
-  tech: ["React"],
+  tech: ["React", "JavaScript"],
   description: `Data driven form creator in React.`,
   workDone: [
     "Systemize form creation by implementing a data-driven form creator that converts question data into a fully functioning form.",

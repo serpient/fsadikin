@@ -5,7 +5,8 @@ COLORS
 ==========================
 */
 $grey: #95989a;
-$dark-grey: #757575;
+$darker-grey: rgb(75, 75, 75)75;
+$dark-grey: #5e5e5e;
 $light-grey: #d1d1d1;
 $pale-grey: #f7f7f7;
 $black-grey: #2b353d;
@@ -37,3 +38,4 @@ STYLING
 ==========================
 */
 $box-shadow: 0px 3px 4px $light-grey;
+$box-shadow-light: 0px 3px 4px $pale-grey;

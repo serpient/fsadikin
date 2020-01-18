@@ -9,7 +9,7 @@ class About extends React.Component {
           <img
             className="profile-img"
             alt="profile"
-            src={require("../assets/profile.jpg")}
+            src="https://media-exp2.licdn.com/dms/image/C5603AQG0i93SB1dbmw/profile-displayphoto-shrink_200_200/0?e=1584576000&v=beta&t=qdTxEvmodknfDLC8n3gqLHB1DTAsPYOlo9l1PdqanX0"
           />
           <div className="name">Francesca Sadikin</div>
           <div className="location">Based in Los Angeles</div>
@@ -52,7 +52,7 @@ class About extends React.Component {
           Once I found programming and web development, I realized that this is
           where my passion is. After honing my skills by working on and helping
           launch an educational platform, I'm looking to further improve my
-          skills and use my solid design background to bring a company's vision
+          skills and use my design background to bring a company's vision
           to life.
           <br />
           <br />

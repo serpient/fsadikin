@@ -42,6 +42,7 @@ USER INFO
 .name {
   font-size: 26px;
   margin-top: 20px;
+  font-weight: 700;
 }
 
 .location {
@@ -74,6 +75,7 @@ DESCRIPTION
   border-left: 1px solid $light-grey;
   font-size: 18px;
   line-height: 30px;
+  color: $darker-grey !important;
 }
 
 .bio-link {
