@@ -85,7 +85,16 @@ class App extends React.Component {
             path="/projects/form-creator-v1"
             render={() => <ProjectPageCreator projectData={projects.get("form-creator")} />}
           />
-            component={FormCreator}
+          <Route
+            exact={true}
+            path="/projects/inclusive-maps"
+            render={() => <ProjectPageCreator projectData={projects.get("inclusive-maps")} />}
+          />
+          <Route
+            exact={true}
+            path="/projects/tic-tac-toe"
+            render={() => <ProjectPageCreator projectData={projects.get("tic-tac-toe")} />}
+          />
           />
           <Route exact={true} path="/resume" component={Resume} />
           <Route path="/*" component={ErrorPage} />
