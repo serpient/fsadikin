@@ -11,9 +11,9 @@ class About extends React.Component {
             alt="profile"
             src="https://media-exp2.licdn.com/dms/image/C5603AQG0i93SB1dbmw/profile-displayphoto-shrink_200_200/0?e=1584576000&v=beta&t=qdTxEvmodknfDLC8n3gqLHB1DTAsPYOlo9l1PdqanX0"
           />
-          <div className="name">Francesca Sadikin</div>
-          <div className="location">Based in Los Angeles</div>
-          <div className="user-links-section">
+          <h1 className="name">Francesca Sadikin</h1>
+          <h2 className="location">Based in Los Angeles</h2>
+          <section className="user-links-section">
             <a
               className="user-link"
               rel="noopener noreferrer"
@@ -38,10 +38,10 @@ class About extends React.Component {
                 src={require('../assets/linkedin.png')}
               />
             </a>
-          </div>
+          </section>
         </section>
 
-        <section className="description">
+        <p className="description">
           After graduating from UC Berkeley with a B.A. in Architecture, I
           became a professional Architectural Designer at a boutique firm in Los
           Angeles working on multi-million dollar projects for well-known
@@ -58,7 +58,7 @@ class About extends React.Component {
           <br />
           If you would like to chat with me, please feel free to email me at
           <div className="bio-link"> FrancescaSadikin@gmail.com</div>
-        </section>
+        </p>
       </main>
     );
   }

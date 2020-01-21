@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import '_variables.scss';
 
 .about-page-container {
   z-index: 1;
@@ -13,7 +13,7 @@
   background-color: white;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: ("user bio bio");
+  grid-template-areas: ('user bio bio');
   color: $dark-grey;
   padding: 80px 0px;
   box-shadow: $box-shadow;
@@ -42,11 +42,14 @@ USER INFO
 .name {
   font-size: 26px;
   margin-top: 20px;
+  margin-bottom: 0px;
   font-weight: 700;
 }
 
 .location {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0px;
 }
 /*
 ==========================
@@ -97,7 +100,7 @@ MEDIA QUERY
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: ("user" "bio");
+    grid-template-areas: ('user' 'bio');
   }
 
   .user-info-section {

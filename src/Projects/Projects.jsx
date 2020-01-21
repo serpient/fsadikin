@@ -36,10 +36,10 @@ const Projects = () => {
 
   return (
     <main className="projects-container">
-      <div className="projects-container-title">Francesca Sadikin</div>
-      <div className="projects-container-subtext">
+      <h1 className="projects-container-title">Francesca Sadikin</h1>
+      <h2 className="projects-container-subtext">
         Software Developer & UI/UX Designer
-      </div>
+      </h2>
       {viewControlsIsVisible && (
         <div className="project-view-mode-controller">
           <button

@@ -9,14 +9,14 @@ const ProjectCardCreator = ({ projects }) => {
     return (
       <section key={'project_' + index}>
         <div className="project-timeline-dot" />
-        <div className="project-timeline-text">{date}</div>
+        <p className="project-timeline-text">{date}</p>
         <div className="project">
           <div className="project-info">
-            <div className="project-title">{name}</div>
+            <h1 className="project-title">{name}</h1>
             <div className="project-tech">
               <SkillCreator techArray={tech} />
             </div>
-            <div className="project-description">{description}</div>
+            <p className="project-description">{description}</p>
           </div>
           <Link
             to={'/projects/' + name.replace(/ /g, '-')}
