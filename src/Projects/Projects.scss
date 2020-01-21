@@ -1,16 +1,17 @@
-@import "_variables.scss";
+@import '_variables.scss';
 /*
 ==========================
 GRID & PROJECTS CONTAINER
 ==========================
 */
 .projects-container {
-  max-width: 1080px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 .projects-border {
   border-left: 1px solid $light-grey;
 }
+
 .projects {
   margin-left: 180px;
   padding: 30px;
@@ -37,6 +38,91 @@ GRID & PROJECTS CONTAINER
   color: $dark-grey;
   margin-bottom: 50px;
 }
+
+.project-view-mode-controller {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.projects-view-mode-btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  i {
+    font-size: 30px;
+    color: $dark-grey;
+    &:hover {
+      color: $theme-blue;
+    }
+  }
+}
+
+.projects-view-mode-btn--active {
+  i {
+    color: $theme-blue;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin: 0 auto;
+  padding: 30px;
+  color: $dark-grey;
+
+  .projects-border {
+    display: none !important;
+  }
+
+  .project {
+    max-width: 900px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: none;
+    display: grid;
+    grid-template-areas: 'i' 'd';
+    grid-template-columns: repeat(1, 1fr);
+    text-align: left;
+    grid-gap: 20px;
+    justify-items: left;
+    align-items: start;
+  }
+
+  .project-timeline-dot {
+    display: none;
+  }
+
+  .project-timeline-dot:hover {
+    display: none;
+  }
+
+  .project-timeline-text {
+    display: none;
+  }
+
+  .project-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3px;
+    display: none;
+  }
+
+  .project-description {
+    display: none;
+  }
+
+  .btn-more {
+    margin: 0px;
+  }
+
+  .project-coverPhoto {
+    grid-area: i;
+    width: 100%;
+    box-shadow: $box-shadow;
+  }
+}
 /*
 ==========================
 PROJECT
@@ -48,7 +134,7 @@ PROJECT
   padding-bottom: 30px;
   border-top: 1px solid $light-grey;
   display: grid;
-  grid-template-areas: "d d d i";
+  grid-template-areas: 'd d d i';
   grid-template-columns: repeat(4, 1fr);
   text-align: left;
   grid-gap: 20px;
@@ -165,7 +251,7 @@ MEDIA QUERY
 @media all and (max-width: 1079px) {
   .project {
     max-width: 65%;
-    grid-template-areas: "i i i i" "d d d d";
+    grid-template-areas: 'i i i i' 'd d d d';
   }
   .projects {
     margin-left: 20%;
@@ -175,12 +261,24 @@ MEDIA QUERY
     width: 100%;
     height: auto;
   }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    .project-title {
+      font-size: 34px;
+    }
+    .project-btns {
+      grid-template-columns: 1fr;
+    }
+  }
 }
 
 @media all and (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
   .project {
     max-width: 90%;
-    grid-template-areas: "i i i i" "d d d d";
+    grid-template-areas: 'i i i i' 'd d d d';
   }
   .projects {
     margin-left: 0%;
