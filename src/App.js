@@ -95,6 +95,20 @@ class App extends React.Component {
             path="/projects/tic-tac-toe"
             render={() => <ProjectPageCreator projectData={projects.get("tic-tac-toe")} />}
           />
+           <Route
+            exact={true}
+            path="/projects/http-server"
+            render={() => <ProjectPageCreator projectData={projects.get("http-server")} />}
+          />
+          <Route
+            exact={true}
+            path="/projects/rebay"
+            render={() => <ProjectPageCreator projectData={projects.get("rebay")} />}
+          />
+           <Route
+            exact={true}
+            path="/projects/focal"
+            render={() => <ProjectPageCreator projectData={projects.get("focal")} />}
           />
           <Route exact={true} path="/resume" component={Resume} />
           <Route path="/*" component={ErrorPage} />

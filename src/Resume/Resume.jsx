@@ -1,7 +1,7 @@
-import * as React from "react";
-import "./Resume.scss";
+import * as React from 'react';
+import './Resume.scss';
 
-const resume = require("../assets/francesca_resume_programming.pdf");
+const resume = require('../assets/francesca_resume_programming.pdf');
 const googleLinkToResume = `https://drive.google.com/file/d/187O5LIWAhOzcjyhKzdogsnWEoxkk_Krm/view?usp=sharing`;
 const embeddedGoogleLinkToResume = `https://drive.google.com/file/d/187O5LIWAhOzcjyhKzdogsnWEoxkk_Krm/preview`;
 class Resume extends React.Component {

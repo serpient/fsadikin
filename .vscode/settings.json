@@ -1,0 +1,37 @@
+{
+  "window.zoomLevel": 0,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "eslint.alwaysShowStatus": true,
+  "javascript.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "html.format.wrapLineLength": 80,
+  "eslint.autoFixOnSave": false,
+  "editor.rulers": [80],
+  "eslint.validate": [
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.associations": {
+    ".prettierrc": "jsonc"
+  }
+}

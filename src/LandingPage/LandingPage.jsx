@@ -1,7 +1,7 @@
-import * as React from "react";
-import "./LandingPage.scss";
-import About from "../About/About";
-import Projects from "../Projects/Projects";
+import * as React from 'react';
+import './LandingPage.scss';
+import About from '../About/About';
+import Projects from '../Projects/Projects';
 
 class LandingPage extends React.Component {
   landingText = () => {

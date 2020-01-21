@@ -1,5 +1,5 @@
-import * as React from "react";
-import "./About.scss";
+import * as React from 'react';
+import './About.scss';
 
 class About extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class About extends React.Component {
               <img
                 className="user-link-img"
                 alt="github"
-                src={require("../assets/github.png")}
+                src={require('../assets/github.png')}
               />
             </a>
             <a
@@ -35,7 +35,7 @@ class About extends React.Component {
               <img
                 className="user-link-img"
                 alt="github"
-                src={require("../assets/linkedin.png")}
+                src={require('../assets/linkedin.png')}
               />
             </a>
           </div>
@@ -52,8 +52,8 @@ class About extends React.Component {
           Once I found programming and web development, I realized that this is
           where my passion is. After honing my skills by working on and helping
           launch an educational platform, I'm looking to further improve my
-          skills and use my design background to bring a company's vision
-          to life.
+          skills and use my design background to bring a company's vision to
+          life.
           <br />
           <br />
           If you would like to chat with me, please feel free to email me at

@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Link } from "react-router-dom";
-import "./ErrorPage.scss";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import './ErrorPage.scss';
 
 class ErrorPage extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class ErrorPage extends React.Component {
         <img
           className="error-image"
           alt="404"
-          src={require("../assets/404-03.png")}
+          src={require('../assets/404-03.png')}
         />
         <div className="back-btn">
           <Link to="/" className="error-goBack-btn">

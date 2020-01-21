@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import '_variables.scss';
 /*
 ==========================
 GRID
@@ -27,12 +27,35 @@ IMAGE
 }
 
 .project-image--vertical {
-  width: auto;
-  height: 900px;
+  width: 80vw;
+  height: auto;
+}
+
+.project-image--horizontal {
+  max-width: 80vw;
+  height: auto;
 }
 
 .project-image-padding {
   margin-top: 80px;
+}
+
+.project-image--medium {
+  max-width: 50vw;
+  height: auto;
+}
+
+.project-image--small {
+  max-width: 30vw;
+  height: auto;
+}
+
+.project-page-feature--video {
+  margin: 30px auto;
+  display: block;
+  width: 80vw;
+  max-width: 1000px;
+  height: 600px;
 }
 
 /*
@@ -92,13 +115,6 @@ FEATURE
   text-align: left;
   font-size: 18px;
   margin-top: 10px;
-}
-
-.project-page-feature--video {
-  margin: 30px auto;
-  display: block;
-  width: 900px;
-  height: 600px;
 }
 
 /*
@@ -189,32 +205,31 @@ MEDIA QUERY
 */
 
 @media all and (max-width: 1079px) and (min-width: 0px) {
-  .project-image {
-    width: 80vw;
-    height: auto;
-  }
+  // .project-image {
+  //   width: 80vw;
+  //   height: auto;
+  // }
 
-  .project-image--vertical {
-    width: 70vw;
-    height: auto;
-  }
+  // .project-image--vertical {
+  //   width: 70vw;
+  //   height: auto;
+  // }
 
   .project-page-description {
     width: 450px;
   }
   .project-page-feature--video {
-    width: 80vw;
-    height: auto;
+    // width: 80vw;
+    // height: auto;
     min-height: 400px;
   }
 }
 
 @media (max-width: 650px) and (min-width: 0px) {
-  .project-image {
-    width: 90vw;
-  }
-
-  .project-image--vertical {
+  .project-image,
+  .project-image--vertical,
+  .project-image--horizontal {
+    max-width: 90vw;
     width: 90vw;
     height: auto;
   }

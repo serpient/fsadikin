@@ -1,7 +1,7 @@
-import * as React from "react";
-import "./Projects.scss";
-import projects from "project_data";
-import ProjectCardCreator from "./components/ProjectCardCreator";
+import * as React from 'react';
+import './Projects.scss';
+import projects from 'project_data';
+import ProjectCardCreator from './components/ProjectCardCreator';
 
 class Projects extends React.Component {
   render() {

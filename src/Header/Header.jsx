@@ -1,6 +1,6 @@
-import * as React from "react";
-import { Link } from "react-router-dom";
-import "./Header.scss";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import './Header.scss';
 
 class Header extends React.Component {
   render() {
@@ -28,7 +28,7 @@ class Header extends React.Component {
             onClick={e => this.props.toggleDropdown(e)}
             className="menu-icon"
             alt="menu"
-            src={require("../assets/menu.png")}
+            src={require('../assets/menu.png')}
           />
           {this.props.dropdownVisibility && <MobileHeaderDropdown />}
         </nav>
