@@ -15,6 +15,7 @@ GRID & PROJECTS CONTAINER
 }
 
 .projects {
+  max-width: 90vw;
   margin-left: 180px;
   padding: 30px;
   padding-right: 0px;
@@ -66,6 +67,7 @@ GRID & PROJECTS CONTAINER
 }
 
 .projects-grid {
+  max-width: 90vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;

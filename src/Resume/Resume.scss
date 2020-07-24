@@ -1,10 +1,5 @@
 @import '_variables.scss';
 
-.resume-container {
-  background-color: $black-grey;
-  min-height: 100vh;
-}
-
 .resume-object {
   width: 100vw;
   height: 100vh;
@@ -13,6 +8,6 @@
 
 @media (max-width: 650px) {
   .resume-object {
-    margin-top: 90px;
+    padding-top: 45px;
   }
 }
