@@ -11,7 +11,7 @@ GRID
   z-index: 10;
   left: 0px;
   right: 0px;
-  background-color: rgba(107, 169, 240, 0.877);
+  background-color: rgba(107, 169, 240, 0.938);
   border-bottom: 1px solid $light-blue;
   box-shadow: 0px 2px 9px $lightest-blue;
 }
@@ -111,6 +111,9 @@ MOBILE HEADER
     justify-self: end;
     grid-area: menu;
     margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
     i {
       font-size: 30px;
       color: white;
@@ -123,16 +126,20 @@ MOBILE HEADER
     grid-column: 2 / -1;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    width: 50%;
-    min-width: 100px;
+    width: 150px;
     vertical-align: middle;
     background-color: white;
     box-shadow: $box-shadow;
+    padding: 15px;
     padding-bottom: 10px;
+    align-items: center;
+    justify-items: stretch;
   }
   .navigation {
-    text-align: center;
+    color: $dark-grey;
+    text-align: left;
     padding: 10px;
+    margin: 0px;
     &:hover {
       background-color: $lightest-blue;
     }

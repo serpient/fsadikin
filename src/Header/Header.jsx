@@ -24,9 +24,12 @@ class Header extends React.Component {
           <Link to="/" className="logo">
             Francesca Sadikin
           </Link>
-          <a onClick={e => this.props.toggleDropdown(e)} className="menu-icon">
+          <button
+            onClick={e => this.props.toggleDropdown(e)}
+            className="menu-icon"
+          >
             <i class="fas fa-bars"></i>
-          </a>
+          </button>
           {this.props.dropdownVisibility && <MobileHeaderDropdown />}
         </nav>
         <hr className="header-border" />

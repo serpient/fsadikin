@@ -8,7 +8,6 @@ import Resume from './Resume/Resume';
 import projects from 'project_data';
 import Projects from './Projects/Projects';
 import ProjectPageCreator from './ProjectPage/index';
-import Blog from './Blog/index';
 
 class App extends React.Component {
   state = {
