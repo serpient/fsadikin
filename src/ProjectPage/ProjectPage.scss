@@ -8,6 +8,8 @@ GRID
 .individual-project-container {
   margin: 0 auto;
   color: $dark-grey;
+  max-width: 90vw;
+  width: 1180px;
 }
 
 /*
@@ -54,8 +56,10 @@ IMAGE
   margin: 30px auto;
   display: block;
   width: 70vw;
+  height: auto;
+  min-height: 450px;
+  max-height: 600px;
   max-width: 1000px;
-  height: 600px;
 }
 
 /*
@@ -93,6 +97,7 @@ FEATURE
 */
 
 .hline {
+  max-width: 80vw;
   width: 1080px;
   border-top: 1px solid $light-grey;
   margin-top: -2px;
@@ -148,10 +153,11 @@ WORK
 }
 
 .role {
+  max-width: 80vw;
   display: grid;
-  grid-template-columns: 1fr 12fr;
+  grid-template-columns: 25px auto;
   justify-items: start;
-  grid-gap: 10px;
+  grid-gap: 5px;
   margin-bottom: 15px;
 }
 
@@ -165,6 +171,7 @@ WORK
 .role-text {
   font-size: 18px;
   text-align: left;
+  width: auto;
 }
 
 /*
@@ -204,16 +211,21 @@ MEDIA QUERY
 ==========================
 */
 
-@media all and (max-width: 1079px) and (min-width: 0px) {
+@media all and (max-width: 1079px) {
+  .project-image,
+  .project-image--vertical,
+  .project-image--horizontal {
+    max-width: 80vw;
+    width: 80vw;
+    height: auto;
+  }
+
   .project-page-description {
     width: 450px;
   }
-  .project-page-feature--video {
-    min-height: 400px;
-  }
 }
 
-@media (max-width: 650px) and (min-width: 0px) {
+@media (max-width: 650px) {
   .project-image,
   .project-image--vertical,
   .project-image--horizontal {
@@ -224,14 +236,14 @@ MEDIA QUERY
 
   .project-page-feature--video {
     width: 80vw;
-    min-height: 300px;
+    min-height: 250px;
   }
   .project-page-title {
     font-size: 35px;
     font-weight: 600;
   }
   .role {
-    width: 90vw;
+    width: 80vw;
   }
   .project-page-description,
   .project-page-work,
@@ -244,11 +256,6 @@ MEDIA QUERY
   .role-text {
     width: auto;
   }
-  // .role-container {
-  //     margin: 0 auto;
-  //     margin-top: 10px;
-  //     margin-bottom: 10px;
-  // }
   .project-page-tech {
     width: 80vw;
   }

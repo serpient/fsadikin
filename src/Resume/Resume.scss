@@ -10,5 +10,9 @@
   height: 100vh;
   margin-top: 45px;
 }
-.resume-iframe {
+
+@media (max-width: 650px) {
+  .resume-object {
+    margin-top: 90px;
+  }
 }
