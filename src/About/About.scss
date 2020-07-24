@@ -1,5 +1,10 @@
 @import '_variables.scss';
 
+.about-page {
+  // height: 100%;
+  // background-color: $pale-grey;
+}
+
 .about-page-container {
   z-index: 1;
   position: absolute;
@@ -19,8 +24,8 @@
   box-shadow: $box-shadow;
   justify-items: center;
   align-items: center;
-  margin-bottom: 50px;
-  border: 2px solid $palest-grey;
+  border: 2px solid $lightest-blue;
+  margin-bottom: 100px;
 }
 /*
 ==========================
@@ -75,7 +80,7 @@ DESCRIPTION
 .description {
   grid-area: bio;
   padding: 0px 50px;
-  border-left: 1px solid $light-grey;
+  border-left: 1px solid $lightest-blue;
   font-size: 18px;
   line-height: 30px;
   color: $darker-grey !important;
@@ -109,7 +114,7 @@ MEDIA QUERY
 
   .description {
     border: none;
-    border-top: 1px solid $light-grey;
+    border-top: 1px solid $lightest-blue;
     padding-top: 50px;
   }
   .bio-link {

@@ -1,16 +1,12 @@
 @import '_variables.scss';
 
 .landing-container {
-  height: 100vh;
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  // height: calc(100vh - 45px);
+  height: 100%;
   background-color: $pale-grey;
+  // margin-top: -45px;
 }
 
-.landing-shapes {
-  height: 100vh;
-}
 /*
 ==========================
 TEXT
@@ -57,168 +53,12 @@ BUTTON
 .btn-navi:hover {
   background-color: $hover-blue;
 }
-/*
-==========================
-COLORS
-==========================
-*/
-.pink {
-  background-color: $pastel-pink;
-  margin-top: 120px;
-  margin-left: -5vw;
-}
-.yellow {
-  background-color: $pastel-yellow;
-  right: 0px;
-  top: 600px;
-}
-.blue {
-  background-color: $pastel-blue;
-  top: 680px;
-  left: 25vw;
-}
-.green {
-  background-color: $pastel-green;
-  right: 10vw;
-  top: 150px;
-}
 
-.purple {
-  right: 30vw;
-  top: 400px;
-}
-/*
-==========================
-SHAPES
-==========================
-*/
-.diamond-large,
-.diamond,
-.circle-small,
-.circle-big,
-.triangle {
-  position: absolute;
-}
-.diamond,
-.diamond-large {
-  transform: rotate(0deg);
-  animation-timing-function: linear;
-  animation-name: rotate;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-}
-
-.diamond {
-  width: 400px;
-  height: 400px;
-}
-
-.diamond-large {
-  width: 475px;
-  height: 475px;
-  animation-direction: reverse;
-  animation-delay: 3s;
-}
-
-.circle-small,
-.circle-big {
-  animation-timing-function: linear;
-  animation-name: pulse;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-}
-
-.circle-small {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  animation-delay: 3s;
-}
-
-.circle-big {
-  width: 275px;
-  height: 275px;
-  border-radius: 50%;
-}
-
-.triangle {
-  width: 0px;
-  height: 0px;
-  border-left: 200px solid transparent;
-  border-top: 200px solid $pastel-purple;
-  // animation-timing-function: linear;
-  // animation-name: pulse;
-  // animation-duration: 7s;
-  // animation-iteration-count: infinite;
-}
-/*
-==========================
-ANIMATION
-==========================
-*/
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1.2);
-  }
-  50% {
-    transform: scale(0.8);
-  }
-  100% {
-    transform: scale(1.2);
-  }
-}
 /*
 ==========================
 MEDIA QUERIES
 ==========================
 */
-@media all and (max-width: 1500px) and (min-width: 0px) {
-  .diamond {
-    width: 20vw;
-    height: 20vw;
-  }
-  .diamond-large {
-    width: 30vw;
-    height: 30vw;
-  }
-  .blue {
-    left: 15vw;
-    top: 85vh;
-  }
-  .green {
-    right: 5vw;
-    top: 75px;
-  }
-  .purple {
-    right: 20vw;
-    top: 30vh;
-  }
-  .circle-big {
-    width: 15vw;
-    height: 15vw;
-  }
-  .circle-small {
-    width: 13vw;
-    height: 13vw;
-  }
-  .triangle {
-    border-left: 15vw solid transparent;
-    border-top: 15vw solid $pastel-purple;
-  }
-  .yellow {
-    top: 65vh;
-  }
-}
-
 @media all and (max-width: 700px) {
   .landing-text {
     max-width: 90vw;

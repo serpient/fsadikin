@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import '_variables.scss';
 
 /*
 ==========================
@@ -11,10 +11,9 @@ GRID
   z-index: 10;
   left: 0px;
   right: 0px;
-  background-color: rgba(255, 255, 255, 0.939);
-  padding-bottom: 2px;
-  border-bottom: 1px solid $light-grey;
-  box-shadow: $box-shadow-light;
+  background-color: rgba(107, 169, 240, 0.877);
+  border-bottom: 1px solid $light-blue;
+  box-shadow: 0px 2px 9px $lightest-blue;
 }
 /*
 ==========================
@@ -24,12 +23,14 @@ MAIN HEADER
 .header-container {
   width: 100%;
   max-width: 1080px;
+  width: 90vw;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-areas: "logo logo logo . about project resume";
+  grid-template-columns: 200px auto repeat(3, 100px);
+  grid-template-areas: 'logo . about project resume';
   height: 30px;
   margin: 0 auto;
-  justify-items: center;
+  justify-items: end;
+  padding: 0px 20px;
 }
 
 .header-border {
@@ -49,6 +50,10 @@ MAIN HEADER
 .nav-resume {
   grid-area: resume;
 }
+
+.nav-blog {
+  grid-area: blog;
+}
 /*
 ==========================
 LINKS
@@ -56,30 +61,24 @@ LINKS
 */
 .logo,
 .navigation {
-  color: $grey;
+  color: white;
   font-size: 14px;
   margin-top: 15px;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 .logo {
   justify-self: start;
   grid-area: logo;
-  letter-spacing: 2px;
-  font-weight: 600;
+  font-size: 18px;
+  margin-top: 13px;
 }
 
 .logo:hover,
 .navigation:hover {
-  color: $darker-grey;
-  font-weight: 700;
-}
-
-.navigation {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1.1px;
+  color: $darker-blue;
 }
 
 .nav-projects,
@@ -97,11 +96,12 @@ MOBILE HEADER
   max-width: 1080px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "logo logo menu";
+  grid-template-areas: 'logo logo menu';
   height: 30px;
   margin: 0 auto;
   align-items: center;
   padding-top: 16px;
+
   .logo {
     margin: 0;
     justify-self: start;
@@ -110,9 +110,11 @@ MOBILE HEADER
   .menu-icon {
     justify-self: end;
     grid-area: menu;
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
+    margin-right: 10px;
+    i {
+      font-size: 30px;
+      color: white;
+    }
   }
   .menu {
     position: relative;
@@ -149,7 +151,7 @@ MEDIA QUERY
   }
 }
 
-@media all and (max-width: 500px) and (min-width: 0px) {
+@media all and (max-width: 789px) and (min-width: 0px) {
   .header-container--mobile {
     display: grid;
   }
