@@ -7,20 +7,20 @@ const removeRelativeLink = string => {
 
 const ProjectLinks = ({ projectData }) => {
   const { liveLink, githubLink, blogLink } = projectData;
-  let returnedArray = [
-    {
+  let returnedArray = [];
+
+  if (githubLink) {
+    returnedArray.push({
       title: 'Github Link',
       link: removeRelativeLink(githubLink)
-    }
-  ];
-
+    });
+  }
   if (blogLink) {
     returnedArray.push({
       title: 'Writeup Link',
       link: removeRelativeLink(blogLink)
     });
   }
-
   if (liveLink) {
     returnedArray.push({
       title: 'Live Link',

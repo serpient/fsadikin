@@ -9,8 +9,10 @@ import TicTacToe from './TicTacToe';
 import HttpServer from './HttpServer';
 import Rebay from './Rebay';
 import Focal from './Focal';
+import HWDA from './HWDA';
 
 const projects = new Map([
+  ['hwda', HWDA],
   ['focal', Focal],
   ['rebay', Rebay],
   ['http-server', HttpServer],

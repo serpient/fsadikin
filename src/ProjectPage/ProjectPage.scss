@@ -27,12 +27,12 @@ IMAGE
 }
 
 .project-image--vertical {
-  width: 80vw;
+  width: 70vw;
   height: auto;
 }
 
 .project-image--horizontal {
-  max-width: 80vw;
+  max-width: 70vw;
   height: auto;
 }
 
@@ -53,7 +53,7 @@ IMAGE
 .project-page-feature--video {
   margin: 30px auto;
   display: block;
-  width: 80vw;
+  width: 70vw;
   max-width: 1000px;
   height: 600px;
 }
@@ -205,22 +205,10 @@ MEDIA QUERY
 */
 
 @media all and (max-width: 1079px) and (min-width: 0px) {
-  // .project-image {
-  //   width: 80vw;
-  //   height: auto;
-  // }
-
-  // .project-image--vertical {
-  //   width: 70vw;
-  //   height: auto;
-  // }
-
   .project-page-description {
     width: 450px;
   }
   .project-page-feature--video {
-    // width: 80vw;
-    // height: auto;
     min-height: 400px;
   }
 }
@@ -229,13 +217,13 @@ MEDIA QUERY
   .project-image,
   .project-image--vertical,
   .project-image--horizontal {
-    max-width: 90vw;
-    width: 90vw;
+    max-width: 80vw;
+    width: 80vw;
     height: auto;
   }
 
   .project-page-feature--video {
-    width: 90vw;
+    width: 80vw;
     min-height: 300px;
   }
   .project-page-title {
@@ -249,7 +237,7 @@ MEDIA QUERY
   .project-page-work,
   .project-page-feature-description,
   .role-text {
-    width: 90vw;
+    width: 80vw;
     font-size: 16px;
   }
 
@@ -262,7 +250,7 @@ MEDIA QUERY
   //     margin-bottom: 10px;
   // }
   .project-page-tech {
-    width: 90vw;
+    width: 80vw;
   }
   .project-page-feature {
     padding: 10px;
@@ -271,8 +259,7 @@ MEDIA QUERY
   }
   .project-page-feature-title {
     margin: 0 auto;
-    max-width: 90vw;
-    // margin-bottom: 10px;
+    max-width: 80vw;
     font-size: 24px;
   }
   .project-page-feature-description {

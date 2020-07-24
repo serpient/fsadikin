@@ -10,12 +10,18 @@ BODY
 html,
 body {
   width: 100vw;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
   overflow: scroll;
   overflow-x: hidden;
   font-family: $font;
+
+  white-space: pre-line;
+}
+
+.App {
+  min-height: 100vh;
+  height: initial;
+  margin: 0px;
+  padding: 0px;
 }
 
 /*
