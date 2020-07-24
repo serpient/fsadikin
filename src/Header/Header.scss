@@ -11,7 +11,7 @@ GRID
   z-index: 10;
   left: 0px;
   right: 0px;
-  background-color: rgba(107, 169, 240, 0.938);
+  background-color: rgba(255, 255, 255, 0.938);
   border-bottom: 1px solid $light-blue;
   box-shadow: 0px 2px 9px $lightest-blue;
 }
@@ -61,7 +61,7 @@ LINKS
 */
 .logo,
 .navigation {
-  color: white;
+  color: $dark-grey;
   font-size: 14px;
   margin-top: 15px;
   text-decoration: none;
@@ -116,7 +116,7 @@ MOBILE HEADER
     cursor: pointer;
     i {
       font-size: 30px;
-      color: white;
+      color: $dark-grey;
     }
   }
   .menu {
