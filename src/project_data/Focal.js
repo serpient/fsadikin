@@ -1,6 +1,6 @@
 const Focal = {
   name: 'Focal',
-  date: 'Sept. 2019 - Current',
+  date: 'Sept. - Oct. 2019',
   tech: [
     'Elixir',
     'Phoenix',
