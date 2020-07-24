@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.132a6d46.chunk.css",
+    "main.css": "/static/css/main.a26bbc40.chunk.css",
     "main.js": "/static/js/main.e8439225.chunk.js",
     "main.js.map": "/static/js/main.e8439225.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1cbc98ff.js",
@@ -8,9 +8,9 @@
     "static/js/2.bb4f358b.chunk.js": "/static/js/2.bb4f358b.chunk.js",
     "static/js/2.bb4f358b.chunk.js.map": "/static/js/2.bb4f358b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.85cc8074bf126984496087d9c77e0b05.js": "/precache-manifest.85cc8074bf126984496087d9c77e0b05.js",
+    "precache-manifest.5598780de4ab231421db3a9e5c01d8dd.js": "/precache-manifest.5598780de4ab231421db3a9e5c01d8dd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.132a6d46.chunk.css.map": "/static/css/main.132a6d46.chunk.css.map",
+    "static/css/main.a26bbc40.chunk.css.map": "/static/css/main.a26bbc40.chunk.css.map",
     "static/js/2.bb4f358b.chunk.js.LICENSE": "/static/js/2.bb4f358b.chunk.js.LICENSE",
     "static/media/404-03.png": "/static/media/404-03.0d9c03b7.png",
     "static/media/Chingu-Example NewsFeed.png": "/static/media/Chingu-Example NewsFeed.ac7bcf8f.png",
@@ -76,7 +76,7 @@
   "entrypoints": [
     "static/js/runtime-main.1cbc98ff.js",
     "static/js/2.bb4f358b.chunk.js",
-    "static/css/main.132a6d46.chunk.css",
+    "static/css/main.a26bbc40.chunk.css",
     "static/js/main.e8439225.chunk.js"
   ]
 }
