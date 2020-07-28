@@ -19,11 +19,11 @@ const projects = new Map([
   ['tic-tac-toe', TicTacToe],
   ['inclusive-maps', InclusiveMaps],
   ['chingu', Chingu],
-  ['connect-4', Connect_4],
-  ['book-finder', Book_Finder],
-  ['form-creator', Form_Creator],
-  ['project-match', Project_Match],
-  ['turtle-tab', Turtles_Tab]
+  ['connect-4', Connect_4]
+  // ['book-finder', Book_Finder],
+  // ['form-creator', Form_Creator]
+  // ['project-match', Project_Match],
+  // ['turtle-tab', Turtles_Tab]
 ]);
 
 export default projects;

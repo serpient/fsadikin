@@ -57,21 +57,6 @@ class App extends React.Component {
           <Route exact={true} path={'/projects'} component={Projects} />
           <Route
             exact={true}
-            path="/projects/Project-Match"
-            render={() => (
-              <ProjectPageCreator projectData={projects.get('project-match')} />
-            )}
-          />
-
-          <Route
-            exact={true}
-            path="/projects/turtlesTab"
-            render={() => (
-              <ProjectPageCreator projectData={projects.get('turtle-tab')} />
-            )}
-          />
-          <Route
-            exact={true}
             path="/projects/chingu"
             render={() => (
               <ProjectPageCreator projectData={projects.get('chingu')} />
@@ -79,23 +64,9 @@ class App extends React.Component {
           />
           <Route
             exact={true}
-            path="/projects/Book-Finder"
-            render={() => (
-              <ProjectPageCreator projectData={projects.get('book-finder')} />
-            )}
-          />
-          <Route
-            exact={true}
             path="/projects/Connect-4"
             render={() => (
               <ProjectPageCreator projectData={projects.get('connect-4')} />
-            )}
-          />
-          <Route
-            exact={true}
-            path="/projects/form-creator-v1"
-            render={() => (
-              <ProjectPageCreator projectData={projects.get('form-creator')} />
             )}
           />
           <Route
