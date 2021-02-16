@@ -21,7 +21,6 @@ const HWDA = {
     'Presented the project & initiative at the digital tech conference GoodTechFest.'
   ],
   githubLink: undefined,
-  blogLink: 'https://www.goodtechfest.com/agenda/session/258257',
   liveLink: 'https://survey.healthworkerdata.org/',
   coverPhoto: require('../assets/HWDA.png'),
   mainImage: require('../assets/hwda-cover.png'),
