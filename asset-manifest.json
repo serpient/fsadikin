@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.efc3d0b1.chunk.css",
-    "main.js": "/static/js/main.455ec3d7.chunk.js",
-    "main.js.map": "/static/js/main.455ec3d7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.1cbc98ff.js",
-    "runtime-main.js.map": "/static/js/runtime-main.1cbc98ff.js.map",
-    "static/js/2.bb4f358b.chunk.js": "/static/js/2.bb4f358b.chunk.js",
-    "static/js/2.bb4f358b.chunk.js.map": "/static/js/2.bb4f358b.chunk.js.map",
+    "main.css": "/static/css/main.d624c80e.chunk.css",
+    "main.js": "/static/js/main.ed52cc73.chunk.js",
+    "main.js.map": "/static/js/main.ed52cc73.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.84950fa5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.84950fa5.js.map",
+    "static/js/2.91c251d5.chunk.js": "/static/js/2.91c251d5.chunk.js",
+    "static/js/2.91c251d5.chunk.js.map": "/static/js/2.91c251d5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cb74ff80fca85f0b351d8a4a5ffe1385.js": "/precache-manifest.cb74ff80fca85f0b351d8a4a5ffe1385.js",
+    "precache-manifest.86e75a459a1daac4ae6a7153368251a6.js": "/precache-manifest.86e75a459a1daac4ae6a7153368251a6.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.efc3d0b1.chunk.css.map": "/static/css/main.efc3d0b1.chunk.css.map",
-    "static/js/2.bb4f358b.chunk.js.LICENSE": "/static/js/2.bb4f358b.chunk.js.LICENSE",
+    "static/css/main.d624c80e.chunk.css.map": "/static/css/main.d624c80e.chunk.css.map",
+    "static/js/2.91c251d5.chunk.js.LICENSE.txt": "/static/js/2.91c251d5.chunk.js.LICENSE.txt",
     "static/media/404-03.png": "/static/media/404-03.0d9c03b7.png",
     "static/media/Chingu-Example NewsFeed.png": "/static/media/Chingu-Example NewsFeed.ac7bcf8f.png",
     "static/media/HWDA.png": "/static/media/HWDA.d1d30ce0.png",
@@ -37,7 +37,7 @@
     "static/media/form-creator-main.png": "/static/media/form-creator-main.faa139f6.png",
     "static/media/form-creator.gif": "/static/media/form-creator.e5d1f8e2.gif",
     "static/media/form-creator_1000.png": "/static/media/form-creator_1000.55121836.png",
-    "static/media/francesca_resume_programming.pdf": "/static/media/francesca_resume_programming.28fab9b1.pdf",
+    "static/media/francesca_resume_programming.pdf": "/static/media/francesca_resume_programming.1d70ee31.pdf",
     "static/media/http-server.png": "/static/media/http-server.da916b09.png",
     "static/media/http_server_code.png": "/static/media/http_server_code.d3387183.png",
     "static/media/hwda-cover.png": "/static/media/hwda-cover.0d09bf2b.png",
@@ -74,9 +74,9 @@
     "static/media/update_package_and_create_event.mp4": "/static/media/update_package_and_create_event.4b8aaeed.mp4"
   },
   "entrypoints": [
-    "static/js/runtime-main.1cbc98ff.js",
-    "static/js/2.bb4f358b.chunk.js",
-    "static/css/main.efc3d0b1.chunk.css",
-    "static/js/main.455ec3d7.chunk.js"
+    "static/js/runtime-main.84950fa5.js",
+    "static/js/2.91c251d5.chunk.js",
+    "static/css/main.d624c80e.chunk.css",
+    "static/js/main.ed52cc73.chunk.js"
   ]
 }
