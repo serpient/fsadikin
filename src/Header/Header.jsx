@@ -10,9 +10,6 @@ class Header extends React.Component {
           <Link to="/" className="logo">
             Francesca Sadikin
           </Link>
-          <Link to="/about" className="navigation nav-about">
-            About
-          </Link>
           <Link to="/projects" className="navigation nav-projects">
             Projects
           </Link>
