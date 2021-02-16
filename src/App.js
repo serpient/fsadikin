@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import './App.scss';
-import LandingPage from './LandingPage/LandingPage';
 import Header from './Header/Header';
 import ErrorPage from './ErrorPage/ErrorPage';
 import Resume from './Resume/Resume';

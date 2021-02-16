@@ -1,6 +1,82 @@
 @import '_variables.scss';
 @import 'breakpoints.scss';
 
+@import '_variables.scss';
+
+/*	
+==========================	
+USER INFO	
+==========================	
+*/
+.user-info-section {
+  grid-area: user;
+  text-align: center;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: $box-shadow;
+}
+
+.name {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 700;
+}
+
+.location {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0px;
+}
+/*	
+==========================	
+USER LINKS	
+==========================	
+*/
+.user-links-section {
+  margin-top: 10px;
+}
+
+.user-link-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 8px;
+}
+
+@media all and (max-width: 500px) and (min-width: 0px) {
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: $box-shadow;
+  }
+}
+/*
+==========================
+BUTTON
+==========================
+*/
+.btn-navi {
+  text-align: center;
+  color: white;
+  background-color: var(--theme-color);
+  top: 30px;
+  padding: 10px 50px;
+  border-radius: 20px;
+  position: relative;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px $light-grey;
+}
+.btn-navi:hover {
+  background-color: $hover-blue;
+}
+
 /*
 ==========================
 GRID & PROJECTS CONTAINER
@@ -132,7 +208,7 @@ SOCIAL CONTAINER
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  padding: 30px;
+  // padding: 30px;
   color: $dark-grey;
 
   .projects-border {
@@ -140,7 +216,6 @@ SOCIAL CONTAINER
   }
 
   .project {
-    // max-width: 900px;
     padding-top: 30px;
     padding-bottom: 30px;
     border-top: none;
@@ -192,7 +267,6 @@ PROJECT
 ==========================
 */
 .project {
-  // max-width: 900px;
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 1px solid $light-grey;
@@ -323,6 +397,7 @@ TALKS CONTAINER
   grid-template-columns: 1fr;
   grid-gap: 20px;
   align-items: start;
+  padding: 0;
 
   h3,
   p {
@@ -374,7 +449,6 @@ MEDIA QUERY
 */
 @media all and (max-width: 1079px) {
   .project {
-    max-width: 65%;
     grid-template-areas: 'i i i i' 'd d d d';
   }
   .projects {
@@ -385,8 +459,12 @@ MEDIA QUERY
     width: 100%;
     height: auto;
   }
+  .talks-container {
+    padding: 30px;
+  }
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
     .project-title {
       font-size: 34px;
     }
