@@ -42,7 +42,7 @@ BUTTON
 .btn-navi {
   text-align: center;
   color: white;
-  background-color: $theme-blue;
+  background-color: var(--theme-color);
   top: 30px;
   padding: 10px 50px;
   border-radius: 20px;
