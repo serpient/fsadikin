@@ -1,6 +1,6 @@
 export const talk_data = [
   {
-    name: 'Intentional Responsive Design',
+    name: 'Intentionally Responsive',
     date: 'Jan. 15 2021',
     description: `Fundamentally, I believe a lot of developers struggle with CSS & Responsive Design because it overlaps with design. At the end of this talk, I hope to bridge the gap between designers and developers. I want developers to understand how the task is essentially a design challenge, understand a design intent, and pickup some practical tips and tricks to implementing responsive designs at scale.
     `,
