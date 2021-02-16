@@ -1,13 +1,12 @@
 @import '_variables.scss';
+@import 'breakpoints.scss';
+
 /*
 ==========================
 GRID & PROJECTS CONTAINER
 ==========================
 */
 .projects-container {
-  max-width: 90vw;
-  width: 1180px;
-  margin: 0 auto;
   box-sizing: border-box;
 }
 .projects-border {
@@ -15,30 +14,93 @@ GRID & PROJECTS CONTAINER
 }
 
 .projects {
-  max-width: 90vw;
   margin-left: 180px;
   padding: 30px;
   padding-right: 0px;
   color: $dark-grey;
 }
 
-.projects-container-title {
-  color: $dark-grey;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 40px;
-  margin-top: 150px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+/*
+==========================
+SOCIAL CONTAINER
+==========================
+*/
 
-.projects-container-subtext {
-  text-align: center;
-  font-size: 20px;
-  font-weight: 500;
-  color: $dark-grey;
-  margin-bottom: 50px;
-  margin-top: -1px;
+.projects-container--header {
+  background-color: var(--purple-100);
+  padding: 40px 0;
+  background-color: #fdf8e1;
+  color: var(--grey-800);
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    text-align: left;
+    width: var(--full-width);
+    margin: 0 auto;
+  }
+
+  .header-info {
+    justify-content: start;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .projects-container-title {
+    color: $dark-grey;
+    font-size: 32px;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .projects-container-subtext {
+    font-size: 20px;
+    font-weight: 500;
+    color: $dark-grey;
+    margin: 0;
+  }
+
+  .social-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    i {
+      font-size: 32px;
+      color: var(--theme-color);
+      margin: 16px;
+      margin-left: 0;
+    }
+  }
+
+  .profile-img {
+    margin: 0 auto;
+  }
+
+  @media (min-width: $screen-md) {
+    .content {
+      grid-template-columns: min-content 1fr;
+      grid-gap: 50px;
+
+      .header-info {
+        justify-content: start;
+        text-align: left;
+        padding: 0;
+      }
+
+      .social-container {
+        justify-content: start;
+      }
+
+      .projects-container-title {
+        font-size: 40px;
+      }
+    }
+  }
 }
 
 .project-view-mode-controller {
@@ -55,23 +117,21 @@ GRID & PROJECTS CONTAINER
     font-size: 30px;
     color: $dark-grey;
     &:hover {
-      color: $theme-blue;
+      color: var(--theme-color);
     }
   }
 }
 
 .projects-view-mode-btn--active {
   i {
-    color: $theme-blue;
+    color: var(--theme-color);
   }
 }
 
 .projects-grid {
-  max-width: 90vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  margin: 0 auto;
   padding: 30px;
   color: $dark-grey;
 
@@ -80,7 +140,7 @@ GRID & PROJECTS CONTAINER
   }
 
   .project {
-    max-width: 900px;
+    // max-width: 900px;
     padding-top: 30px;
     padding-bottom: 30px;
     border-top: none;
@@ -132,7 +192,7 @@ PROJECT
 ==========================
 */
 .project {
-  max-width: 900px;
+  // max-width: 900px;
   padding-top: 30px;
   padding-bottom: 30px;
   border-top: 1px solid $light-grey;
@@ -169,12 +229,12 @@ PROJECT INFO
 }
 
 .project-tech-skill {
-  border: 1px solid $theme-blue;
+  border: 1px solid var(--grey-700);
   padding: 4px 10px;
   font-size: 14px;
   display: inline-block;
   margin-right: 10px;
-  color: $theme-blue;
+  color: var(--grey-700);
   font-weight: 600;
   margin-top: 10px;
 }
@@ -201,7 +261,7 @@ BUTTON
   grid-gap: 10px;
 }
 .btn-more {
-  background-color: $theme-blue;
+  background-color: var(--theme-color);
   color: white;
   border-radius: 25px;
   text-decoration: none;
@@ -209,8 +269,6 @@ BUTTON
   padding: 6px 20px;
   box-shadow: $box-shadow;
   margin: 10px 0px;
-  // display: block;
-  // max-width: 150px;
   text-align: center;
 }
 
@@ -247,6 +305,70 @@ TIMELINE
 
 /*
 ==========================
+TALKS CONTAINER
+==========================
+*/
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: var(--grey-800);
+  margin-top: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.talk-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  align-items: start;
+
+  h3,
+  p {
+    margin: 0;
+  }
+
+  p {
+    line-height: 28px;
+  }
+
+  .talk-container--info-description {
+    margin: 10px 0;
+  }
+
+  .talk-date {
+    font-size: 16px;
+    line-height: 34px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  a {
+    color: var(--grey-700);
+    font-weight: 600;
+  }
+}
+
+.talks-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+  margin-bottom: 100px;
+  color: var(--grey-800);
+
+  @media (min-width: $screen-lg) {
+    .talk-container {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+}
+
+/*
+==========================
 MEDIA QUERY
 ==========================
 */
@@ -279,7 +401,7 @@ MEDIA QUERY
     grid-template-columns: 1fr;
   }
   .project {
-    max-width: 90%;
+    max-width: 100%;
     grid-template-areas: 'i i i i' 'd d d d';
   }
   .projects {

@@ -21,7 +21,7 @@ const FeatureCreator = ({ features }) => {
 
 export default FeatureCreator;
 
-const VideoPlayer = ({ link }) => {
+export const VideoPlayer = ({ link }) => {
   return link.includes('http') === true ? (
     <iframe
       className="project-page-feature--video"
