@@ -6,9 +6,7 @@ import { VideoPlayer } from '../ProjectPage/components/FeatureCreator';
 import { talk_data } from '../talk_data';
 
 const Projects = () => {
-  const [viewMode, setViewMode] = useState(
-    localStorage.getItem('projectViewMode') || 'timeline'
-  );
+  const [viewMode, setViewMode] = useState('grid');
   const [viewControlsIsVisible, setViewControlVisibility] = useState(false);
 
   const getProjectClassName = viewMode => {
@@ -101,7 +99,7 @@ const Projects = () => {
         </div>
         <hr />
         <h3 className="section-title">Projects</h3>
-        {viewControlsIsVisible && (
+        {/* {viewControlsIsVisible && (
           <div className="project-view-mode-controller">
             <button
               className={getButtonClassName(viewMode, 'grid')}
@@ -116,7 +114,7 @@ const Projects = () => {
               <i class="fas fa-bars"></i>
             </button>
           </div>
-        )}
+        )} */}
         <section className={getProjectClassName(viewMode)}>
           <ProjectCardCreator projects={projects} />
         </section>
