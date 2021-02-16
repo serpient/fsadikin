@@ -137,7 +137,7 @@ WORK
   text-align: left;
   font-weight: 600;
   font-size: 18px;
-  color: $light-blue;
+  color: var(--grey-800);
   margin-top: 40px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -159,7 +159,7 @@ WORK
 
 .role-dot {
   justify-self: center;
-  color: $light-blue;
+  color: var(--theme-color);
   margin-top: 5px;
   margin-right: 10px;
 }
