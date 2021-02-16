@@ -14,8 +14,10 @@ const HWDA = {
   HWDA is a collection of volunteers trying to help hospitals monitor physical health, mental health, and safety of frontline health workers. Data on their mental and physical health is limited, and  fragmented. To help, HWDA aggregates and visualizes health worker experiences across institutions to drive policy change. 
   `,
   workDone: [
-    'Act as Lead Developer to build a custom survey web app in React and JavaScript with international language support.',
-    'Architecting and implementing a data pipeline utilizing AWS (Firehose, Lambdas, Glue and Athena) services to transform and prepare survey results for data visualizations in Tableau.',
+    'Lead Developer to build a custom survey web app in React and JavaScript with international language support.',
+    'Led decision to replace SurveyMonkey with a custom web app in React+JavaScript by working with the client to understand their goals of improved survey experience, automated low-cost data ingestion for custom analytics, and ease of use for their non-technical administrators.',
+    'Architected and implemented a $1/month AWS data pipeline with a 1-click process for the client’s data scientist to pull in survey data into Tableau with an emphasis on easy maintainability for non-technical administrators.',
+    'Ensured on-schedule project completion by taking over critical data pivoting lambda necessary to prep data for Tableau after client’s data analysts could not complete the work, necessitating learning Python in 2 days to complete and integrate.',
     'Presented the project & initiative at the digital tech conference GoodTechFest.'
   ],
   githubLink: undefined,
