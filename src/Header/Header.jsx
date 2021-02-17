@@ -38,9 +38,6 @@ class Header extends React.Component {
 const MobileHeaderDropdown = () => {
   return (
     <section className="menu">
-      <Link to="/about" className="navigation">
-        About
-      </Link>
       <Link to="/projects" className="navigation">
         Projects
       </Link>
